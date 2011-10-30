@@ -19,11 +19,6 @@ namespace TDD_Katas_project.StringCalculator
             var sum = 0;
             if (number.Length > 0)
             {
-                for (int i = 0; i < number.Length; i++)
-                {
-                    VelidateNumbersArePerRule(Convert.ToInt32(string.IsNullOrEmpty(number[i]) ? "0" : number[i]));
-                }
-
                 sum = number.Sum(n => ParseToInt(n));
             }
             return sum;
