@@ -41,5 +41,14 @@ namespace TDD_Katas_project.StringCalculator
             var result = Calculator.Add(numbers);
             Assert.That(result, Is.EqualTo(expectedResult));
         }
+        [TestCase("1,4",4)]
+        [Test]
+        public void Add_ThrowArgumentException_WhenSuppliedString_DoesNot_Meet_Rule(string numbers,int beyondRule)
+        {
+            var exception = Assert.Throws<ArgumentException>(() => Calculator.Add(numbers));
+
+            Assert.That(exception.Message, Is.EqualTo(string.Format("string contains [{0}], which does not meet rule. enter numbers between [0-3]", beyondRule)));
+
+        }
     }
 }
