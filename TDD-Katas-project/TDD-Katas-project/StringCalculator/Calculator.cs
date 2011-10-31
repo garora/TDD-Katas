@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
-//Refere : http://osherove.com/tdd-kata-1/ of String Calculator exercise - detail is in StringCalculator.txt
 namespace TDD_Katas_project.StringCalculator
 {
     public class Calculator
@@ -35,7 +32,7 @@ namespace TDD_Katas_project.StringCalculator
 
         private static void VelidateNumbersArePerRule(int number)
         {
-            if (number < 0 )
+            if (number < 0)
                 throw new ArgumentException(string.Format("string contains [{0}], which does not meet rule. entered number should not negative.", number));
         }
     }
