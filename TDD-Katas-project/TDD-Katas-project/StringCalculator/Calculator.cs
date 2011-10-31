@@ -35,8 +35,8 @@ namespace TDD_Katas_project.StringCalculator
 
         private static void VelidateNumbersArePerRule(int number)
         {
-            if (number < 0 || number > 3)
-                throw new ArgumentException(string.Format("string contains [{0}], which does not meet rule. enter numbers between [0-3]", number));
+            if (number < 0 )
+                throw new ArgumentException(string.Format("string contains [{0}], which does not meet rule. enter numbers should not negative.", number));
         }
     }
 }
