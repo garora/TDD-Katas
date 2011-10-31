@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using NUnit.Framework;
+
 namespace TDD_Katas_project.StringCalculator
 {
     [TestFixture]
@@ -47,7 +45,7 @@ namespace TDD_Katas_project.StringCalculator
         {
             var exception = Assert.Throws<ArgumentException>(() => Calculator.Add(numbers));
 
-            Assert.That(exception.Message, Is.EqualTo(string.Format("string contains [{0}], which does not meet rule. enter numbers between [0-3]", beyondRuleNumber)));
+            Assert.That(exception.Message, Is.EqualTo(string.Format("string contains [{0}], which does not meet rule. entered number should not negative.", beyondRuleNumber)));
 
         }
     }
