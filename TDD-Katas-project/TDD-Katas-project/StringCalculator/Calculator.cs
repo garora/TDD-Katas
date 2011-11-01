@@ -13,25 +13,23 @@ namespace TDD_Katas_project.StringCalculator
         private static int GetSum(string numbers)
         {
             var delimiter = GetPossibleDelimiter(numbers);
-            string[] number = { };
-            var sum = 0;
             var newnumbers = numbers;
-            var specificnumber = string.Empty;
-            if (numbers.StartsWith("//")) //for specific delimiters
+
+            if (HasSpecificDelimiter(numbers)) //for specific delimiters
             {
                 delimiter = GetSpecificDelimiter(numbers);
                 newnumbers = GetSpecificNumbers(numbers);
-                 
-                
             }
 
-            number = newnumbers.Split(delimiter.ToCharArray());
-            if (ContainsAny(numbers, delimiter))
-                sum = number.Sum(n => ParseToInt(n));
-            else
-                sum = ParseToInt(newnumbers);
-               
-            return sum;
+            var number = newnumbers.Split(delimiter.ToCharArray());
+
+            return ContainsAny(numbers, delimiter) ? number.Sum(n => ParseToInt(n)) : ParseToInt(newnumbers);
+
+        }
+
+        private static bool HasSpecificDelimiter(string numbers)
+        {
+            return numbers.StartsWith("//");
         }
 
         private static string GetPossibleDelimiter(string numbers)
