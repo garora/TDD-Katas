@@ -26,7 +26,14 @@ namespace TDD_Katas_project.StringCalculator
             Assert.That(result, Is.EqualTo(expectedResult));
         }
 
-        [TestCase("0,1",1)]
+        [TestCase("3\n2", 5)]
+        [Test]
+        public void AddReturSumWhenSuppliedNumbersInStringWithNewLineAsDelimiter(string numbers, int expectedResult)
+        {
+            var result = Calculator.Add(numbers);
+            Assert.That(result, Is.EqualTo(expectedResult));
+        }
+        [TestCase("0,1", 1)]
         [TestCase("0,1,1", 2)]
         [TestCase("0,2", 2)]
         [TestCase("0,2,2", 4)]
@@ -40,9 +47,10 @@ namespace TDD_Katas_project.StringCalculator
             var result = Calculator.Add(numbers);
             Assert.That(result, Is.EqualTo(expectedResult));
         }
-        [TestCase("1,-1",-1)]
+
+        [TestCase("1,-1", -1)]
         [Test]
-        public void AddThrowArgumentExceptionWhenSuppliedStringDoesNotMeetRule(string numbers,int beyondRuleNumber)
+        public void AddThrowArgumentExceptionWhenSuppliedStringDoesNotMeetRule(string numbers, int beyondRuleNumber)
         {
             var exception = Assert.Throws<ArgumentException>(() => Calculator.Add(numbers));
 
