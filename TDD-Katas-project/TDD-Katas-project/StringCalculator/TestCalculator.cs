@@ -25,8 +25,8 @@ namespace TDD_Katas_project.StringCalculator
             var result = Calculator.Add(number);
             Assert.That(result, Is.EqualTo(expectedResult));
         }
-        [TestCase("1\n2,3", 6)]
-        [TestCase("3\n2", 6)]
+        [TestCase("1,2,3", 6)]
+        [TestCase("3\n2", 5)]
         [Test]
         public void AddReturSumWhenSuppliedNumbersInStringWithNewLineAsDelimiter(string numbers, int expectedResult)
         {

@@ -14,7 +14,6 @@ namespace TDD_Katas_project.StringCalculator
         {
             var delimiter = GetPossibleDelimiter(numbers);
             var number = numbers.Split(delimiter.ToCharArray());
-
             var sum = number.Sum(n => ParseToInt(n));
             return sum;
         }
@@ -26,11 +25,20 @@ namespace TDD_Katas_project.StringCalculator
 
         private static int ParseToInt(string n)
         {
+            var number = 0;
+            if (ContainsAny(n, GetPossibleDelimiter(n)))
+                number = Convert.ToInt32(n.Remove(n.IndexOf(GetPossibleDelimiter(n)), 0));
+
             var result = Convert.ToInt32(string.IsNullOrEmpty(n) ? "0" : n);
 
             VelidateNumbersArePerRule(result);
 
             return result;
+        }
+
+        private static bool ContainsAny(string input, string getPossibleDelimiters)
+        {
+            return getPossibleDelimiters.ToCharArray().Any(input.Contains);
         }
 
         private static void VelidateNumbersArePerRule(int number)
