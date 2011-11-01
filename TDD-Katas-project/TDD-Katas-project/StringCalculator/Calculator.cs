@@ -14,13 +14,23 @@ namespace TDD_Katas_project.StringCalculator
         {
             var delimiter = GetPossibleDelimiter(numbers);
             string[] number = { };
+            var sum = 0;
+            var newnumbers = numbers;
+            var specificnumber = string.Empty;
             if (numbers.StartsWith("//")) //for specific delimiters
             {
                 delimiter = GetSpecificDelimiter(numbers);
+                newnumbers = GetSpecificNumbers(numbers);
+                 
                 
             }
-            number = numbers.Split(delimiter.ToCharArray());
-            var sum = number.Sum(n => ParseToInt(n));
+
+            number = newnumbers.Split(delimiter.ToCharArray());
+            if (ContainsAny(numbers, delimiter))
+                sum = number.Sum(n => ParseToInt(n));
+            else
+                sum = ParseToInt(newnumbers);
+               
             return sum;
         }
 
@@ -32,9 +42,12 @@ namespace TDD_Katas_project.StringCalculator
         {
             return numbers.Substring(2, numbers.IndexOf("\n") - 2);
         }
+        private static string GetSpecificNumbers(string numbers)
+        {
+            return numbers.Substring(numbers.IndexOf("\n") + 1, numbers.Length - numbers.IndexOf("\n") - 1);
+        }
         private static int ParseToInt(string n)
         {
-
             var result = Convert.ToInt32(string.IsNullOrEmpty(n) ? "0" : n);
 
             VelidateNumbersArePerRule(result);

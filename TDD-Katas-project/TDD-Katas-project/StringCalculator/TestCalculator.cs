@@ -49,7 +49,14 @@ namespace TDD_Katas_project.StringCalculator
             var result = Calculator.Add(numbers);
             Assert.That(result, Is.EqualTo(expectedResult));
         }
+        [TestCase("//;\n1;2", 3)]
+        [Test]
+        public void Add_WhenGivenDefinedDelimiter_UsesThatDelimiter(string input, int expectation)
+        {
+            var result = Calculator.Add(input);
 
+            Assert.That(result, Is.EqualTo(expectation));
+        }
         [TestCase("1,-1", -1)]
         [Test]
         public void AddThrowArgumentExceptionWhenSuppliedStringDoesNotMeetRule(string numbers, int beyondRuleNumber)
