@@ -20,14 +20,11 @@ namespace TDD_Katas_project.StringCalculator
 
         private static string GetPossibleDelimiter(string numbers)
         {
-            return numbers.Contains("\n") ? "\n" : ",";
+            return ",\n";
         }
 
         private static int ParseToInt(string n)
         {
-            var number = 0;
-            if (ContainsAny(n, GetPossibleDelimiter(n)))
-                number = Convert.ToInt32(n.Remove(n.IndexOf(GetPossibleDelimiter(n)), 0));
 
             var result = Convert.ToInt32(string.IsNullOrEmpty(n) ? "0" : n);
 
@@ -35,6 +32,7 @@ namespace TDD_Katas_project.StringCalculator
 
             return result;
         }
+
 
         private static bool ContainsAny(string input, string getPossibleDelimiters)
         {

@@ -27,6 +27,8 @@ namespace TDD_Katas_project.StringCalculator
         }
         [TestCase("1,2,3", 6)]
         [TestCase("3\n2", 5)]
+        [TestCase("1\n2,3", 6)]
+        [TestCase("1\n2\n3,4,5", 15)]
         [Test]
         public void AddReturSumWhenSuppliedNumbersInStringWithNewLineAsDelimiter(string numbers, int expectedResult)
         {
