@@ -50,6 +50,7 @@ namespace TDD_Katas_project.StringCalculator
             Assert.That(result, Is.EqualTo(expectedResult));
         }
         [TestCase("0,3,1001", 3)]
+        [TestCase("0,3,1000", 1003)]
         [Test]
         public void AddReturnSumByIgnoringMoreThanThousandWhenSuppliedMultipleNumbersInString(string numbers, int expectedResult)
         {

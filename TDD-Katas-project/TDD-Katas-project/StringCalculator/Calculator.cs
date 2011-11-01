@@ -44,12 +44,15 @@ namespace TDD_Katas_project.StringCalculator
         }
         private static int ParseToInt(string n)
         {
-            var nn = Convert.ToInt32(n);
-            var result = nn>1000 ? 0:(Convert.ToInt32(string.IsNullOrEmpty(n) ? "0" : n));
-
+            var result = IsGreaterThanThousand(Convert.ToInt32(n)) ? 0 : (Convert.ToInt32(string.IsNullOrEmpty(n) ? "0" : n));
             VelidateNumbersArePerRule(result);
 
             return result;
+        }
+
+        private static bool IsGreaterThanThousand(int nn)
+        {
+            return nn > 1000;
         }
 
 
