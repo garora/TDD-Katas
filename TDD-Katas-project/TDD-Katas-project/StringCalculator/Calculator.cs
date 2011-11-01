@@ -21,9 +21,7 @@ namespace TDD_Katas_project.StringCalculator
                 newnumbers = GetSpecificNumbers(numbers);
             }
 
-            var number = newnumbers.Split(delimiter.ToCharArray());
-
-            return ContainsAny(numbers, delimiter) ? number.Sum(n => ParseToInt(n)) : ParseToInt(newnumbers);
+            return ContainsAny(numbers, delimiter) ? newnumbers.Split(delimiter.ToCharArray()).Sum(n => ParseToInt(n)) : ParseToInt(newnumbers);
 
         }
 
@@ -46,7 +44,8 @@ namespace TDD_Katas_project.StringCalculator
         }
         private static int ParseToInt(string n)
         {
-            var result = Convert.ToInt32(string.IsNullOrEmpty(n) ? "0" : n);
+            var nn = Convert.ToInt32(n);
+            var result = nn>1000 ? 0:(Convert.ToInt32(string.IsNullOrEmpty(n) ? "0" : n));
 
             VelidateNumbersArePerRule(result);
 
