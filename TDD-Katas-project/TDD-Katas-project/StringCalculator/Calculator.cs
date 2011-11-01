@@ -13,7 +13,13 @@ namespace TDD_Katas_project.StringCalculator
         private static int GetSum(string numbers)
         {
             var delimiter = GetPossibleDelimiter(numbers);
-            var number = numbers.Split(delimiter.ToCharArray());
+            string[] number = { };
+            if (numbers.StartsWith("//")) //for specific delimiters
+            {
+                delimiter = GetSpecificDelimiter(numbers);
+                
+            }
+            number = numbers.Split(delimiter.ToCharArray());
             var sum = number.Sum(n => ParseToInt(n));
             return sum;
         }
@@ -22,7 +28,10 @@ namespace TDD_Katas_project.StringCalculator
         {
             return ",\n";
         }
-
+        private static string GetSpecificDelimiter(string numbers)
+        {
+            return numbers.Substring(2, numbers.IndexOf("\n") - 2);
+        }
         private static int ParseToInt(string n)
         {
 
