@@ -13,11 +13,8 @@ namespace TDD_Katas_project.StringCalculator
         private static int GetSum(string numbers)
         {
             var number = numbers.Split(','); //in first step we have only commas [,] as delimiter
-            var sum = 0;
-            if (number.Length > 0)
-            {
-                sum = number.Sum(n => ParseToInt(n));
-            }
+
+            var sum = number.Sum(n => ParseToInt(n));
             return sum;
         }
 
