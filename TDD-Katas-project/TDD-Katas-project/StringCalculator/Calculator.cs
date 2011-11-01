@@ -12,11 +12,16 @@ namespace TDD_Katas_project.StringCalculator
 
         private static int GetSum(string numbers)
         {
-            var delimiter = numbers.Contains("\n") ? "\n" : ",";
-            var number = numbers.Split(delimiter.ToCharArray()); 
+            var delimiter = GetPossibleDelimiter(numbers);
+            var number = numbers.Split(delimiter.ToCharArray());
 
             var sum = number.Sum(n => ParseToInt(n));
             return sum;
+        }
+
+        private static string GetPossibleDelimiter(string numbers)
+        {
+            return numbers.Contains("\n") ? "\n" : ",";
         }
 
         private static int ParseToInt(string n)
