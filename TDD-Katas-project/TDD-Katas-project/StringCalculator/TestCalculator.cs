@@ -49,6 +49,13 @@ namespace TDD_Katas_project.StringCalculator
             var result = Calculator.Add(numbers);
             Assert.That(result, Is.EqualTo(expectedResult));
         }
+        [TestCase("0,3,1001,", 3)]
+        [Test]
+        public void AddReturnSumByIgnoringMoreThanThousandWhenSuppliedMultipleNumbersInString(string numbers, int expectedResult)
+        {
+            var result = Calculator.Add(numbers);
+            Assert.That(result, Is.EqualTo(expectedResult));
+        }
         [TestCase("//;\n1;2", 3)]
         [Test]
         public void Add_WhenGivenDefinedDelimiter_UsesThatDelimiter(string input, int expectation)
