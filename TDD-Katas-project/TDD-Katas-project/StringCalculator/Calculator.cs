@@ -40,10 +40,6 @@ namespace TDD_Katas_project.StringCalculator
         }
         private static string GetSpecificNumbers(string numbers)
         {
-            //var num = numbers.Substring(numbers.IndexOf("//"),numbers.Length-numbers.IndexOf("//"));
-            ////var startIndex = numbers.IndexOf("\n");
-            ////return numbers.Substring(numbers.Length - (numbers.IndexOf("\n") + 1));
-            //return num.Substring(num.IndexOf("\n",num.Length-num.IndexOf("\n")));
             return numbers.Substring(numbers.IndexOf("\n") + 1, numbers.Length - numbers.IndexOf("\n") - 1);
         }
         private static int ParseToInt(string n)
