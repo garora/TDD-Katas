@@ -14,13 +14,11 @@ namespace TDD_Katas_project.BowlingGame
         }
         [Test]
         [TestCase(0, 0)]
+        [TestCase  (1,20)]
         public void Can_Get_Calculate_Scores(int pins, int result)
         {
             
-            for (var i = 0; i < 20; i++)
-            {
-                _game.Roll(pins);
-            }
+            FrameHits(pins);
             Assert.That(result, Is.EqualTo(_game.Score()));
         }
 

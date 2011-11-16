@@ -4,7 +4,7 @@ namespace TDD_Katas_project.BowlingGame
 {
     public class Game
     {
-        private int _score = 0;
+        private static int _score = 0;
         public void Roll(int pins)
         {
             _score = +pins;
@@ -13,7 +13,7 @@ namespace TDD_Katas_project.BowlingGame
         
         public int Score()
         {
-            return 0;
+            return _score;
         }
     }
 }
