@@ -12,6 +12,6 @@ namespace TDD_Katas_project.BowlingGame
             var g = new Game();
             Assert.That(0, Is.EqualTo(g.Score()));
         }
-       
+
     }
 }
