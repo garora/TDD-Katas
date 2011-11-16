@@ -7,11 +7,17 @@ namespace TDD_Katas_project.BowlingGame
     public class TestGame
     {
         [Test]
-        public void Can_Get_Calculate_Scores()
+        [TestCase(0, 0)]
+        public void Can_Get_Calculate_Scores(int pins, int result)
         {
             var g = new Game();
-            Assert.That(0, Is.EqualTo(g.Score()));
+            for (var i = 0; i < 20; i++)
+            {
+                g.Roll(pins);
+            }
+            Assert.That(result, Is.EqualTo(g.Score()));
         }
+        
 
     }
 }
