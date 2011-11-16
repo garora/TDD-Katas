@@ -20,5 +20,5 @@
 	Completed first Kata example	
 ----------------------------------------------------------------
 
-## Bowling Game
+## The Bowling Game Kata
 	- Following Uncle bob post from here : http://butunclebob.com/ArticleS.UncleBob.TheBowlingGameKata
