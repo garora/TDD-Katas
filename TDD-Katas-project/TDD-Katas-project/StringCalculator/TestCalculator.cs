@@ -4,8 +4,15 @@ using NUnit.Framework;
 namespace TDD_Katas_project.StringCalculator
 {
     [TestFixture]
+    [Category("StringCalculatorKata")]
     public class TestCalculator
     {
+        #region Setup/TearDown
+        
+        #endregion
+
+        #region TestMethods
+
         [TestCase("")]
         [TestCase(null)]
         [Test]
@@ -51,7 +58,7 @@ namespace TDD_Katas_project.StringCalculator
         }
         [TestCase("0,3,1001", 3)]
         [TestCase("0,3,1000", 1003)]
-        
+
         [Test]
         public void AddReturnSumByIgnoringMoreThanThousandWhenSuppliedMultipleNumbersInString(string numbers, int expectedResult)
         {
@@ -77,5 +84,11 @@ namespace TDD_Katas_project.StringCalculator
             Assert.That(exception.Message, Is.EqualTo(string.Format("string contains [{0}], which does not meet rule. entered number should not negative.", beyondRuleNumber)));
 
         }
+        #endregion
+
+        #region Private Methods
+        
+        #endregion
     }
+
 }
