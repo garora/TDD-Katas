@@ -29,3 +29,4 @@
 	- Rectified both test and class methods
 	- Write new test
 	- This is called a 'Green' Test as it is going to pass.
+	-Rectified TestMethods to meet total 20 frames hit
