@@ -26,3 +26,6 @@
 	- Create two public methods methods [refer to the presentation file]
 	- Create Test Methods for the above Methods
 	- This is called a 'RED' Test as it is going to fail.
+	- Rectified both test and class methods
+	- Write new test
+	- This is called a 'Green' Test as it is going to pass.
