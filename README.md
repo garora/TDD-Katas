@@ -31,3 +31,4 @@
 	- This is called a 'Green' Test as it is going to pass.
 	- Rectified TestMethods to meet total 20 frames hit.
 	- Rectified test to accept multiple frame and pins
+	- Test 3 is a 'Red' test
