@@ -22,3 +22,7 @@
 
 ## The Bowling Game Kata
 	- Following Uncle bob post from here : http://butunclebob.com/ArticleS.UncleBob.TheBowlingGameKata
+	- Create a new project or start in the existing project by adding Game.cs and TestGame.cs
+	- Create two public methods methods [refer to the presentation file]
+	- Create Test Methods for the above Methods
+	- This is called a 'RED' Test as it is going to fail.
