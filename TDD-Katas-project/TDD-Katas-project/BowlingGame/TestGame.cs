@@ -38,21 +38,17 @@ namespace TDD_Katas_project.BowlingGame
         {
             _game.Roll(5);
             _game.Roll(5);
-            _game.Roll(1);
-
-            Console.WriteLine(string.Format("Roll Total - {0}, Result - {1}", 12, _game.Score()));
-            Assert.That(12, Is.EqualTo(_game.Score()));
+            _game.Roll(3);
+            FrameHits(0, 17);
+            Console.WriteLine(string.Format("Roll Total - {0}, Result - {1}", 16, _game.Score()));
+            Assert.That(16, Is.EqualTo(_game.Score()));
         }
         [Test]
-        [Ignore]
-        [TestCase(0, 0)]
-        [TestCase(1, 20)]
-        [TestCase(1, 20)]
-        [TestCase(5, 18)]
-        public void Can_Get_Calculate_Scores(int pins, int result)
+        
+        public void Can_Get_Calculate_Scores()
         {
-            FrameHits(pins, _frames);
-            Assert.That(result, Is.EqualTo(_game.Score()));
+            FrameHits(0, _frames);
+            Assert.That(0, Is.EqualTo(_game.Score()));
         }
         #endregion
 
