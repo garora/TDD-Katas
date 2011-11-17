@@ -36,15 +36,15 @@ namespace TDD_Katas_project.BowlingGame
         [Test]
         public void Can_Get_Calculate_Spare_Scores()
         {
-            _game.Roll(5);
-            _game.Roll(5);
+            RollSpare();
             _game.Roll(3);
             FrameHits(0, 17);
             Console.WriteLine(string.Format("Roll Total - {0}, Result - {1}", 16, _game.Score()));
             Assert.That(16, Is.EqualTo(_game.Score()));
         }
+
+
         [Test]
-        
         public void Can_Get_Calculate_Scores()
         {
             FrameHits(0, _frames);
@@ -60,6 +60,11 @@ namespace TDD_Katas_project.BowlingGame
                 _game.Roll(pin);
 
             }
+        }
+        private void RollSpare()
+        {
+            _game.Roll(5);
+            _game.Roll(5);
         }
         #endregion
 
