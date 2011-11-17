@@ -60,6 +60,13 @@ namespace TDD_Katas_project.BowlingGame
             FrameHits(0, _frames);
             Assert.That(0, Is.EqualTo(_game.Score()));
         }
+        [Test]
+        public void Can_Get_Calculate_Full_Game_Scores()
+        {
+            FrameHits(10, 12);
+            Console.WriteLine(string.Format("Roll Total - {0}, Result - {1}", 300, _game.Score()));
+            Assert.That(30, Is.EqualTo(_game.Score()));
+        }
         #endregion
 
         #region Private Methods
