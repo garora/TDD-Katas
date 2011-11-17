@@ -27,7 +27,7 @@ namespace TDD_Katas_project.BowlingGame
         [Test]
         [TestCase(0, 20)]
         [TestCase(1, 20)]
-        //[TestCase(5, 18)]
+        [TestCase(5, 18)]
         public void Can_Get_Calculate_Scores(int pins, int result)
         {
             FrameHits(pins, 20);
