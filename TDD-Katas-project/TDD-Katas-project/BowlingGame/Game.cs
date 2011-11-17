@@ -19,7 +19,7 @@
             var frameIndex = 0;
             for (var frame = 0; frame < 10; frame++)
             {
-                if (rolls[frameIndex] == 10)
+                if (IsStrike(frameIndex))
                 {
                     score += StrikeBonus(frameIndex);
                     frameIndex++;
@@ -37,6 +37,11 @@
                 }
             }
             return score;
+        }
+
+        private bool IsStrike(int frameIndex)
+        {
+            return rolls[frameIndex] == 10;
         }
 
         #endregion
