@@ -42,7 +42,16 @@ namespace TDD_Katas_project.BowlingGame
             Console.WriteLine(string.Format("Roll Total - {0}, Result - {1}", 16, _game.Score()));
             Assert.That(16, Is.EqualTo(_game.Score()));
         }
-
+        [Test]
+        public void Can_Get_Calculate_Strike_Scores()
+        {
+            _game.Roll(10);
+            _game.Roll(3);
+            _game.Roll(4);
+            FrameHits(0, 16);
+            Console.WriteLine(string.Format("Roll Total - {0}, Result - {1}", 24, _game.Score()));
+            Assert.That(24, Is.EqualTo(_game.Score()));
+        }
 
         [Test]
         public void Can_Get_Calculate_Scores()
