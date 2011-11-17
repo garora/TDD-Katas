@@ -1,23 +1,23 @@
-﻿using System;
-
-namespace TDD_Katas_project.BowlingGame
+﻿namespace TDD_Katas_project.BowlingGame
 {
     public class Game
     {
-        private int _score = 0;
+        #region Private members
         private int[] rolls = new int[21];
-        private int currentRoll = 0;
+        private int _currentRoll = 0;
+
+        #endregion
+
+        #region Public Methods
         public void Roll(int pins)
         {
-            rolls[currentRoll++] = pins;
+            rolls[_currentRoll++] = pins;
         }
-
-
         public int Score()
         {
-            int score = 0;
-            int frameIndex = 0;
-            for (int frame = 0; frame < 10; frame++)
+            var score = 0;
+            var frameIndex = 0;
+            for (var frame = 0; frame < 10; frame++)
             {
                 if (IsSpare(frameIndex))
                 {
@@ -30,12 +30,15 @@ namespace TDD_Katas_project.BowlingGame
                     frameIndex += 2;
                 }
             }
-            return _score;
+            return score;
         }
+        #endregion
+        #region Private Methods
 
         private bool IsSpare(int frameIndex)
         {
             return rolls[frameIndex] + rolls[frameIndex + 1] == 10;
         }
+        #endregion
     }
 }

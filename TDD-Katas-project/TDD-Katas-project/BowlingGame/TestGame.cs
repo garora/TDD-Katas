@@ -12,10 +12,10 @@ namespace TDD_Katas_project.BowlingGame
 
         #region Setup/TearDown
         [TestFixtureSetUp]
-        public void Setup()  
+        public void Setup()
         {
             _game = new Game();
-            _frames = 20;
+            _frames = 10;
         }
         [TestFixtureTearDown]
         public void TearDown()
@@ -26,10 +26,27 @@ namespace TDD_Katas_project.BowlingGame
         #endregion
 
         #region TestMethods
-
         [Test]
-        [TestCase(0,0)]
-        [TestCase(0, 20)]
+        public void Can_Get_Calculate_Single_Scores()
+        {
+            _game.Roll(0);
+            Console.WriteLine(string.Format("Roll Total - {0}, Result - {1}", 0, _game.Score()));
+            Assert.That(0, Is.EqualTo(_game.Score()));
+        }
+        [Test]
+        public void Can_Get_Calculate_Spare_Scores()
+        {
+            _game.Roll(5);
+            _game.Roll(5);
+            _game.Roll(1);
+
+            Console.WriteLine(string.Format("Roll Total - {0}, Result - {1}", 12, _game.Score()));
+            Assert.That(12, Is.EqualTo(_game.Score()));
+        }
+        [Test]
+        [Ignore]
+        [TestCase(0, 0)]
+        [TestCase(1, 20)]
         [TestCase(1, 20)]
         [TestCase(5, 18)]
         public void Can_Get_Calculate_Scores(int pins, int result)
