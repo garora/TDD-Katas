@@ -8,17 +8,20 @@ namespace TDD_Katas_project.BowlingGame
     public class TestGame
     {
         private Game _game;
+        private int _frames;
 
         #region Setup/TearDown
         [TestFixtureSetUp]
         public void Setup()  
         {
             _game = new Game();
+            _frames = 20;
         }
         [TestFixtureTearDown]
         public void TearDown()
         {
             _game = null;
+            _frames = 0;
         }
         #endregion
 
@@ -31,7 +34,7 @@ namespace TDD_Katas_project.BowlingGame
         [TestCase(5, 18)]
         public void Can_Get_Calculate_Scores(int pins, int result)
         {
-            FrameHits(pins, 20);
+            FrameHits(pins, _frames);
             Assert.That(result, Is.EqualTo(_game.Score()));
         }
         #endregion
