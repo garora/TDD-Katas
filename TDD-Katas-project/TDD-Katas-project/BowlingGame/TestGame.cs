@@ -7,8 +7,10 @@ namespace TDD_Katas_project.BowlingGame
     [Category("TheBowlingGameKata")]
     public class TestGame
     {
+        #region Private Methods
         private Game _game;
         private int _frames;
+        #endregion
 
         #region Setup/TearDown
         [TestFixtureSetUp]
@@ -65,7 +67,7 @@ namespace TDD_Katas_project.BowlingGame
         {
             FrameHits(10, 12);
             Console.WriteLine(string.Format("Roll Total - {0}, Result - {1}", 300, _game.Score()));
-            Assert.That(30, Is.EqualTo(_game.Score()));
+            Assert.That(300, Is.EqualTo(_game.Score()));
         }
         #endregion
 

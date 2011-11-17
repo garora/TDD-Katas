@@ -7,7 +7,6 @@
         private int _currentRoll = 0;
 
         #endregion
-
         #region Public Methods
         public void Roll(int pins)
         {
