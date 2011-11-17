@@ -25,6 +25,7 @@ namespace TDD_Katas_project.BowlingGame
         #region TestMethods
 
         [Test]
+        [TestCase(0,0)]
         [TestCase(0, 20)]
         [TestCase(1, 20)]
         [TestCase(5, 18)]
