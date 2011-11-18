@@ -13,7 +13,7 @@ namespace TDD_Katas_project.FizzBuzzKata
        [Test]
        public void Can_Test_Fizz_Buzz()
        {
-           FizzBuzz.PrintFizzBuzz();
+           Console.WriteLine(FizzBuzz.PrintFizzBuzz());
        }
     }
 }

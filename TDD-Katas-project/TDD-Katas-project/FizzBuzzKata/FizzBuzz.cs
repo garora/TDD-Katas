@@ -8,9 +8,14 @@ namespace TDD_Katas_project.FizzBuzzKata
 {
    public class FizzBuzz
     {
-       public static void PrintFizzBuzz()
+       public static string PrintFizzBuzz()
        {
-           throw new NotImplementedException();
+           var ResultFizzBuzz = string.Empty;
+           for (int i = 0; i < 100; i++)
+           {
+               ResultFizzBuzz += " " + (i+1).ToString();
+           }
+           return ResultFizzBuzz;
        }
     }
 }
