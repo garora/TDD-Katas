@@ -17,9 +17,10 @@ namespace TDD_Katas_project.FizzBuzzKata
 
        private static string GetNumbers(string ResultFizzBuzz)
        {
-           for (int i = 0; i < 100; i++)
+           for (int i = 1; i <= 100; i++)
            {
-               ResultFizzBuzz += " " + (i + 1).ToString();
+               if (i % 3 == 0) ResultFizzBuzz += " " + "Fizz";
+               ResultFizzBuzz += " " + (i).ToString();
            }
            return ResultFizzBuzz.Trim();
        }
