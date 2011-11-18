@@ -21,6 +21,7 @@ namespace TDD_Katas_project.FizzBuzzKata
             {
                 var printNumber = string.Empty;
                 if (IsFizz(i)) printNumber += "Fizz";
+                if (i % 5 == 0) printNumber += "Buzz";
                 if (String.IsNullOrEmpty(printNumber))
                     printNumber = (i).ToString();
                 ResultFizzBuzz +=" "+ printNumber;
