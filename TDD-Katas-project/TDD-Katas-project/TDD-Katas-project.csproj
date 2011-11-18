@@ -51,6 +51,8 @@
   <ItemGroup>
     <Compile Include="BowlingGame\Game.cs" />
     <Compile Include="BowlingGame\TestGame.cs" />
+    <Compile Include="FizzBuzzKata\FizzBuzz.cs" />
+    <Compile Include="FizzBuzzKata\TestFizzBuzz.cs" />
     <Compile Include="StringCalculator\Calculator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StringCalculator\TestCalculator.cs" />
