@@ -21,12 +21,22 @@ namespace TDD_Katas_project.FizzBuzzKata
             {
                 var printNumber = string.Empty;
                 if (IsFizz(i)) printNumber += "Fizz";
-                if (i % 5 == 0) printNumber += "Buzz";
-                if (String.IsNullOrEmpty(printNumber))
+                if (IsBuzz(i)) printNumber += "Buzz";
+                if (IsNumber(printNumber))
                     printNumber = (i).ToString();
                 ResultFizzBuzz +=" "+ printNumber;
             }
             return ResultFizzBuzz.Trim();
+        }
+
+        private static bool IsNumber(string printNumber)
+        {
+            return String.IsNullOrEmpty(printNumber);
+        }
+
+        private static bool IsBuzz(int i)
+        {
+            return i % 5 == 0;
         }
         
         private static bool IsFizz(int i)
