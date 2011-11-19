@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using NUnit.Framework;
 
 namespace TDD_Katas_project.FizzBuzzKata
@@ -27,13 +24,13 @@ namespace TDD_Katas_project.FizzBuzzKata
         }
         [Test]
         [Ignore]
-        public void Can_Test_Fizz_Buzz()
+        public void CanTestFizzBuzz()
         {
             Console.WriteLine(FizzBuzz.PrintFizzBuzz());
             Assert.That(_result, Is.EqualTo(FizzBuzz.PrintFizzBuzz()));
         }
         [Test]
-        public void Can_Test_Fizz()
+        public void CanTestFizz()
         {
             Console.WriteLine(FizzBuzz.PrintFizzBuzz());
             Assert.That(_resultFizz, Is.EqualTo(FizzBuzz.PrintFizzBuzz()));

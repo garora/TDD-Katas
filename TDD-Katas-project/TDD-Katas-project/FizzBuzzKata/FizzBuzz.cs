@@ -10,23 +10,23 @@ namespace TDD_Katas_project.FizzBuzzKata
     {
         public static string PrintFizzBuzz()
         {
-            var ResultFizzBuzz = string.Empty;
-            ResultFizzBuzz = GetNumbers(ResultFizzBuzz);
-            return ResultFizzBuzz;
+            var resultFizzBuzz = string.Empty;
+            resultFizzBuzz = GetNumbers(resultFizzBuzz);
+            return resultFizzBuzz;
         }
 
-        private static string GetNumbers(string ResultFizzBuzz)
+        private static string GetNumbers(string resultFizzBuzz)
         {
-            for (int i = 1; i <= 100; i++)
+            for (var i = 1; i <= 100; i++)
             {
                 var printNumber = string.Empty;
                 if (IsFizz(i)) printNumber += "Fizz";
                 if (IsBuzz(i)) printNumber += "Buzz";
                 if (IsNumber(printNumber))
                     printNumber = (i).ToString();
-                ResultFizzBuzz +=" "+ printNumber;
+                resultFizzBuzz +=" "+ printNumber;
             }
-            return ResultFizzBuzz.Trim();
+            return resultFizzBuzz.Trim();
         }
 
         private static bool IsNumber(string printNumber)
