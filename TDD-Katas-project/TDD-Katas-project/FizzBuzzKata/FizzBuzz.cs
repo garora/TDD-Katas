@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 
 namespace TDD_Katas_project.FizzBuzzKata
@@ -17,11 +14,15 @@ namespace TDD_Katas_project.FizzBuzzKata
         public static string PrintFizzBuzz(int number)
         {
             CanThrowArgumentExceptionWhenNumberNotInRule(number);
-            var result = number.ToString();
-            result = GetFizzResult(number);
-            result = GetBuzzResult(number);
-            result = GetFizzBuzzResult(number);
-            return result;
+
+            var result = GetFizzBuzzResult(number);
+
+            if (string.IsNullOrEmpty(result))
+                result = GetFizzResult(number);
+            if (string.IsNullOrEmpty(result))
+                result = GetBuzzResult(number);
+
+            return string.IsNullOrEmpty(result) ? number.ToString() : result;
         }
 
         private static string GetFizzBuzzResult(int number)
