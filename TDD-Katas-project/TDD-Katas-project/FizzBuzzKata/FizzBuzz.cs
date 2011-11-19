@@ -17,10 +17,18 @@ namespace TDD_Katas_project.FizzBuzzKata
         public static string PrintFizzBuzz(int number)
         {
             var result = string.Empty;
-            if (number > 100 || number < 1)
-                throw new ArgumentException(string.Format("entered number is [{0}], which does not meet rule, entered number should be between 1 to 100.", number));
+            CanThrowArgumentExceptionWhenNumberNotInRule(number);
             return result;
         }
+
+        private static void CanThrowArgumentExceptionWhenNumberNotInRule(int number)
+        {
+            if (number > 100 || number < 1)
+                throw new ArgumentException(
+                    string.Format(
+                        "entered number is [{0}], which does not meet rule, entered number should be between 1 to 100.", number));
+        }
+
         private static string GetNumbers(string resultFizzBuzz)
         {
             for (var i = 1; i <= 100; i++)
