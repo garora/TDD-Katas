@@ -20,6 +20,7 @@ namespace TDD_Katas_project.FizzBuzzKata
             var result = number.ToString();
             if (IsFizz(number)) result = "Fizz";
             if (IsBuzz(number)) result = "Buzz";
+            if (IsFizz(number) && IsBuzz(number)) result = "FizzBuzz";
             return result;
         }
 
