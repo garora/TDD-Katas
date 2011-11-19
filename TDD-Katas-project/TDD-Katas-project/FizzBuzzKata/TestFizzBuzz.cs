@@ -36,11 +36,21 @@ namespace TDD_Katas_project.FizzBuzzKata
             Assert.That(_resultFizz, Is.EqualTo(FizzBuzz.PrintFizzBuzz()));
         }
         [Test]
+        [TestCase(-1)]
+        public void CanThrowArgumentExceptionWhenSuppliedNumberDoesNotMeetRule(int number)
+        {
+            var exception = Assert.Throws<ArgumentException>(()=>FizzBuzz.PrintFizzBuzz(number));
+
+            Assert.That(exception.Message, Is.EqualTo(string.Format("entered number is [{0}], which does not meet rule, entered number should be between 1 to 100.", number)));
+
+        }
+        [Test]
         public void CanTestSingleNumber()
         {
             const int number = 1;
             Assert.That(1, Is.EqualTo(FizzBuzz.PrintFizzBuzz(number)));
         }
+
     }
 }
 

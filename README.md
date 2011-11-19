@@ -49,5 +49,6 @@
 	- Print "FizzBuzz" instead of number which is divisible by both 3 and 5
 
 #### Make more test for accept numbers and provide results
-	- Create test to verify supplied number within the rane 1 to 100
+	- Create a method to accept single number
+	- Create test to verify supplied number within the range 1 to 100
 	- Create test to verify number and return result Fizz or Buzz or FizzBuzz per above criteria
