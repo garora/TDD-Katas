@@ -7,9 +7,12 @@ namespace TDD_Katas_project.FizzBuzzKata
     [Category("TheFizzBuzzKata")]
     public class TestFizzBuzz
     {
+        #region Private members
         private string _result;
         private string _resultFizz;
+        #endregion
 
+        #region Setup/TearDown
         [TestFixtureSetUp]
         public void Setup()
         {
@@ -22,6 +25,10 @@ namespace TDD_Katas_project.FizzBuzzKata
             _result = null;
             _resultFizz = null;
         }
+        #endregion
+
+        #region Test Methods
+
         [Test]
         [Ignore]
         public void CanTestFizzBuzz()
@@ -41,24 +48,25 @@ namespace TDD_Katas_project.FizzBuzzKata
         [TestCase(0)]
         public void CanThrowArgumentExceptionWhenSuppliedNumberDoesNotMeetRule(int number)
         {
-            var exception = Assert.Throws<ArgumentException>(()=>FizzBuzz.PrintFizzBuzz(number));
+            var exception = Assert.Throws<ArgumentException>(() => FizzBuzz.PrintFizzBuzz(number));
 
             Assert.That(exception.Message, Is.EqualTo(string.Format("entered number is [{0}], which does not meet rule, entered number should be between 1 to 100.", number)));
 
         }
         [Test]
-        [TestCase(1,"1")]
+        [TestCase(1, "1")]
         [TestCase(3, "Fizz")]
         [TestCase(5, "Buzz")]
-        [TestCase(15,"FizzBuzz")]
+        [TestCase(15, "FizzBuzz")]
+        [TestCase(30, "FizzBuzz")]
         public void CanTestSingleNumber(int number, string expectedresult)
         {
-           var actualresult = FizzBuzz.PrintFizzBuzz(number);
-           Assert.That(expectedresult, Is.EqualTo(actualresult),
-                            string.Format("result of entered number [{0}] is [{1}] but it should be [{2}]", number,
-                                          actualresult, expectedresult));
+            var actualresult = FizzBuzz.PrintFizzBuzz(number);
+            Assert.That(expectedresult, Is.EqualTo(actualresult),
+                             string.Format("result of entered number [{0}] is [{1}] but it should be [{2}]", number,
+                                           actualresult, expectedresult));
         }
-
+        #endregion
     }
 }
 

@@ -5,6 +5,9 @@ namespace TDD_Katas_project.FizzBuzzKata
 {
     public class FizzBuzz
     {
+        #region Public Methods
+
+
         public static string PrintFizzBuzz()
         {
             var resultFizzBuzz = string.Empty;
@@ -24,7 +27,9 @@ namespace TDD_Katas_project.FizzBuzzKata
 
             return string.IsNullOrEmpty(result) ? number.ToString() : result;
         }
+        #endregion
 
+        #region Private Methods
         private static string GetFizzBuzzResult(int number)
         {
             string result = null;
@@ -82,5 +87,6 @@ namespace TDD_Katas_project.FizzBuzzKata
         {
             return i % 3 == 0;
         }
+        #endregion
     }
 }
