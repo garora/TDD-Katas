@@ -47,10 +47,13 @@ namespace TDD_Katas_project.FizzBuzzKata
 
         }
         [Test]
-        public void CanTestSingleNumber()
+        [TestCase(1,"1")]
+        public void CanTestSingleNumber(int number, string expectedresult)
         {
-            const int number = 1;
-            Assert.That("1", Is.EqualTo(FizzBuzz.PrintFizzBuzz(number)));
+           var actualresult = FizzBuzz.PrintFizzBuzz(number);
+           Assert.That(expectedresult, Is.EqualTo(actualresult),
+                            string.Format("result of entered number [{0}] is [{1}] but it should be [{2}]", number,
+                                          expectedresult, actualresult));
         }
 
     }
