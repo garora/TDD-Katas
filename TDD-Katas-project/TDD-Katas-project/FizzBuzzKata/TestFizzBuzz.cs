@@ -49,6 +49,7 @@ namespace TDD_Katas_project.FizzBuzzKata
         [Test]
         [TestCase(1,"1")]
         [TestCase(3, "Fizz")]
+        [TestCase(5, "Buzz")]
         public void CanTestSingleNumber(int number, string expectedresult)
         {
            var actualresult = FizzBuzz.PrintFizzBuzz(number);
