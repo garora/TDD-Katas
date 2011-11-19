@@ -50,7 +50,7 @@ namespace TDD_Katas_project.FizzBuzzKata
         public void CanTestSingleNumber()
         {
             const int number = 1;
-            Assert.That(1, Is.EqualTo(FizzBuzz.PrintFizzBuzz(number)));
+            Assert.That("1", Is.EqualTo(FizzBuzz.PrintFizzBuzz(number)));
         }
 
     }

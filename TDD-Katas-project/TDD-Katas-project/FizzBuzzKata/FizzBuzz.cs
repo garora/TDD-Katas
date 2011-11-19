@@ -16,8 +16,8 @@ namespace TDD_Katas_project.FizzBuzzKata
         }
         public static string PrintFizzBuzz(int number)
         {
-            var result = string.Empty;
             CanThrowArgumentExceptionWhenNumberNotInRule(number);
+            var result = number.ToString();
             return result;
         }
 
