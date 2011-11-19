@@ -50,12 +50,13 @@ namespace TDD_Katas_project.FizzBuzzKata
         [TestCase(1,"1")]
         [TestCase(3, "Fizz")]
         [TestCase(5, "Buzz")]
+        [TestCase(15,"FizzBuzz")]
         public void CanTestSingleNumber(int number, string expectedresult)
         {
            var actualresult = FizzBuzz.PrintFizzBuzz(number);
            Assert.That(expectedresult, Is.EqualTo(actualresult),
                             string.Format("result of entered number [{0}] is [{1}] but it should be [{2}]", number,
-                                          expectedresult, actualresult));
+                                          actualresult, expectedresult));
         }
 
     }
