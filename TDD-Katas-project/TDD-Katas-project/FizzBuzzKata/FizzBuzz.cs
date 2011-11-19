@@ -14,7 +14,10 @@ namespace TDD_Katas_project.FizzBuzzKata
             resultFizzBuzz = GetNumbers(resultFizzBuzz);
             return resultFizzBuzz;
         }
-
+        public static string PrintFizzBuzz(int number)
+        {
+            throw new NotImplementedException();
+        }
         private static string GetNumbers(string resultFizzBuzz)
         {
             for (var i = 1; i <= 100; i++)

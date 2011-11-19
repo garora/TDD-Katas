@@ -35,6 +35,12 @@ namespace TDD_Katas_project.FizzBuzzKata
             Console.WriteLine(FizzBuzz.PrintFizzBuzz());
             Assert.That(_resultFizz, Is.EqualTo(FizzBuzz.PrintFizzBuzz()));
         }
+        [Test]
+        public void CanTestSingleNumber()
+        {
+            const int number = 1;
+            Assert.That(1, Is.EqualTo(FizzBuzz.PrintFizzBuzz(number)));
+        }
     }
 }
 
