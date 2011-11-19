@@ -17,7 +17,7 @@ namespace TDD_Katas_project.FizzBuzzKata
         public static string PrintFizzBuzz(int number)
         {
             var result = string.Empty;
-            if (number>100)
+            if (number > 100 || number < 1)
                 throw new ArgumentException(string.Format("entered number is [{0}], which does not meet rule, entered number should be between 1 to 100.", number));
             return result;
         }
@@ -30,7 +30,7 @@ namespace TDD_Katas_project.FizzBuzzKata
                 if (IsBuzz(i)) printNumber += "Buzz";
                 if (IsNumber(printNumber))
                     printNumber = (i).ToString();
-                resultFizzBuzz +=" "+ printNumber;
+                resultFizzBuzz += " " + printNumber;
             }
             return resultFizzBuzz.Trim();
         }
@@ -44,7 +44,7 @@ namespace TDD_Katas_project.FizzBuzzKata
         {
             return i % 5 == 0;
         }
-        
+
         private static bool IsFizz(int i)
         {
             return i % 3 == 0;

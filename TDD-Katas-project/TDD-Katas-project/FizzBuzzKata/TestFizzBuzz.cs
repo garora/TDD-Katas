@@ -37,6 +37,8 @@ namespace TDD_Katas_project.FizzBuzzKata
         }
         [Test]
         [TestCase(-1)]
+        [TestCase(101)]
+        [TestCase(0)]
         public void CanThrowArgumentExceptionWhenSuppliedNumberDoesNotMeetRule(int number)
         {
             var exception = Assert.Throws<ArgumentException>(()=>FizzBuzz.PrintFizzBuzz(number));
