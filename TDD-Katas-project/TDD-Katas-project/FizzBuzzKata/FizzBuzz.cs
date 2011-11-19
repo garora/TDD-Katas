@@ -18,9 +18,30 @@ namespace TDD_Katas_project.FizzBuzzKata
         {
             CanThrowArgumentExceptionWhenNumberNotInRule(number);
             var result = number.ToString();
-            if (IsFizz(number)) result = "Fizz";
-            if (IsBuzz(number)) result = "Buzz";
+            result = GetFizzResult(number);
+            result = GetBuzzResult(number);
+            result = GetFizzBuzzResult(number);
+            return result;
+        }
+
+        private static string GetFizzBuzzResult(int number)
+        {
+            string result = null;
             if (IsFizz(number) && IsBuzz(number)) result = "FizzBuzz";
+            return result;
+        }
+
+        private static string GetBuzzResult(int number)
+        {
+            string result = null;
+            if (IsBuzz(number)) result = "Buzz";
+            return result;
+        }
+
+        private static string GetFizzResult(int number)
+        {
+            string result = null;
+            if (IsFizz(number)) result = "Fizz";
             return result;
         }
 
