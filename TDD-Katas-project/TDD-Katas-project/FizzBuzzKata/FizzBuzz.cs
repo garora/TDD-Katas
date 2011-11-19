@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 
 namespace TDD_Katas_project.FizzBuzzKata
@@ -61,6 +63,7 @@ namespace TDD_Katas_project.FizzBuzzKata
 
         private static string GetNumbers(string resultFizzBuzz)
         {
+
             for (var i = 1; i <= 100; i++)
             {
                 var printNumber = string.Empty;
@@ -70,6 +73,15 @@ namespace TDD_Katas_project.FizzBuzzKata
                     printNumber = (i).ToString();
                 resultFizzBuzz += " " + printNumber;
             }
+            return resultFizzBuzz.Trim();
+        }
+        private static string GetNumbersUsingLinq(string resultFizzBuzz)
+        {
+            Enumerable.Range(1, 100)
+                .Select(fb => String.Format("{0}{1}", fb % 3 == 0 ? "Fizz" : "", fb % 5 == 0 ? "Buzz" : ""))
+                .Select(fb => fb != null ? (String.IsNullOrEmpty(fb) ? fb.ToString() : fb) : null)
+                .ToList()
+                .ForEach(x => resultFizzBuzz = x);
             return resultFizzBuzz.Trim();
         }
 
