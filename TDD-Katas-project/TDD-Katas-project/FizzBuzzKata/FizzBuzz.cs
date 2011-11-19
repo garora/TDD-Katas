@@ -18,6 +18,7 @@ namespace TDD_Katas_project.FizzBuzzKata
         {
             CanThrowArgumentExceptionWhenNumberNotInRule(number);
             var result = number.ToString();
+            if (IsFizz(number)) result= "Fizz";
             return result;
         }
 
