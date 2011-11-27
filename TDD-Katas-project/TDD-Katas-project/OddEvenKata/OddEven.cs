@@ -8,7 +8,7 @@ namespace TDD_Katas_project.OddEvenKata
         {
             return GetOddEvenWithinRange(startNumber, lastNumber);
         }
-        public static string PringSingleOddEven(int number)
+        public static string PrintSingleOddEven(int number)
         {
             return CheckSingleNumberOddEvenPrimeResult(number);
         }
