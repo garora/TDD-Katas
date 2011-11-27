@@ -34,5 +34,9 @@ namespace TDD_Katas_project.OddEvenKata
         {
             return (number % 2 != 0);
         }
+        private static bool IsPrimeNumber(int number)
+        {
+            return number%number == 0;
+        }
     }
 }
