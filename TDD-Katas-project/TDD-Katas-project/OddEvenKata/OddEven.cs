@@ -16,10 +16,10 @@ namespace TDD_Katas_project.OddEvenKata
             {
                 var newNumber = string.Empty;
                 if (!string.IsNullOrEmpty(newNumber))
-                    newNumber += string.Format("{0}\r", number);
+                    newNumber += string.Format("{0}\r", number % 2 == 0 ? "Even" : Convert.ToString(number));
                 else
                 {
-                    newNumber = Convert.ToString(number);
+                    newNumber = number%2==0 ? "Even" : Convert.ToString(number);
                 }
                 result += newNumber;
             }
