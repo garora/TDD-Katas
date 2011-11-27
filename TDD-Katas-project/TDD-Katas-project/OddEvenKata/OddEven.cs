@@ -6,7 +6,18 @@ namespace TDD_Katas_project.OddEvenKata
     {
         public static string PrintOddEven(int startNumber, int lastNumber)
         {
-            return GetOddEvenWithinRange(startNumber,lastNumber);
+            return GetOddEvenWithinRange(startNumber, lastNumber);
+        }
+        public static string PringSingleOddEven(int number)
+        {
+            return CheckSingleNumberOddEvenPrimeResult(number);
+        }
+
+        private static string CheckSingleNumberOddEvenPrimeResult(int number)
+        {
+            var result = string.Empty;
+            result = CheckSingleNumberOddEvenPrimeResult(result, number);
+            return result;
         }
 
         private static string GetOddEvenWithinRange(int startNumber, int lastNumber)
@@ -14,20 +25,27 @@ namespace TDD_Katas_project.OddEvenKata
             var result = string.Empty;
             for (var number = startNumber < 0 ? 1 : startNumber; number <= lastNumber; number++)
             {
-                var newNumber = string.Empty;
-
-                var oddNumber = IsOddNumber(number) ? "Odd" : Convert.ToString(number);
-                var primenumber = IsPrimeNumber(number) ? Convert.ToString(number) : oddNumber;
-                if (!string.IsNullOrEmpty(newNumber))
-                    newNumber += IsEvenNumber(number) ? "Even" : primenumber;
-                else
-                {
-                    newNumber = IsEvenNumber(number) ? "Even" : primenumber;
-                }
-                result += " " + newNumber;
+                result = CheckSingleNumberOddEvenPrimeResult(result, number);
             }
             return result;
         }
+
+        private static string CheckSingleNumberOddEvenPrimeResult(string result, int number)
+        {
+            var newNumber = string.Empty;
+
+            var oddNumber = IsOddNumber(number) ? "Odd" : Convert.ToString(number);
+            var primenumber = IsPrimeNumber(number) ? Convert.ToString(number) : oddNumber;
+
+            if (!string.IsNullOrEmpty(newNumber))
+                newNumber += IsEvenNumber(number) ? "Even" : primenumber;
+            else
+                newNumber = IsEvenNumber(number) ? "Even" : primenumber;
+
+            result += " " + newNumber;
+            return result;
+        }
+
         private static bool IsEvenNumber(int number)
         {
             return number >= 2 && number % 2 == 0;
