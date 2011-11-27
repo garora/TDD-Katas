@@ -4,15 +4,15 @@ namespace TDD_Katas_project.OddEvenKata
 {
     public class OddEven
     {
-        public static string PrintOddEven()
+        public static string PrintOddEven(int startNumber, int lastNumber)
         {
-            return GetOddEvenWithinRange();
+            return GetOddEvenWithinRange(startNumber,lastNumber);
         }
 
-        private static string GetOddEvenWithinRange()
+        private static string GetOddEvenWithinRange(int startNumber, int lastNumber)
         {
             var result = string.Empty;
-            for (var number = 1; number <= 100; number++)
+            for (var number = startNumber < 0 ? 1 : startNumber; number <= lastNumber; number++)
             {
                 var newNumber = string.Empty;
 
