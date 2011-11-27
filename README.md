@@ -57,3 +57,15 @@
 	- Create a method to accept single number
 	- Create test to verify supplied number within the range 1 to 100
 	- Create test to verify number and return result Fizz or Buzz or FizzBuzz per above criteria
+
+## The OddEven Kata
+	- Write a program that prints numbers within specified range lets say 1 to 100. If number is odd print 'Odd'
+	  instead of the number. If number is even print 'Even' instead of number. Else print number [hint - if number is Prime].
+
+### Steps :
+
+	Lets divide into following stesp:
+	- Prints numbers from 1 to 100
+	- Print "Even" instead of number, if the number is even, means divisible by 2
+	- Print "Odd" instead of number, if the number is odd, means not divisible by 2 but not divisible by itself too
+	- Print number, if it does not meet above two conditions, means if number is Prime
