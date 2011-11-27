@@ -43,7 +43,7 @@ namespace TDD_Katas_project.OddEvenKata
                 newNumber = IsEvenNumber(number) ? "Even" : primenumber;
 
             result += " " + newNumber;
-            return result;
+            return result.Trim();
         }
 
         private static bool IsEvenNumber(int number)
