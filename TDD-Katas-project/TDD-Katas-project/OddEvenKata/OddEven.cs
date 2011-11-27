@@ -24,13 +24,13 @@ namespace TDD_Katas_project.OddEvenKata
                 {
                     newNumber = IsEvenNumber(number) ? "Even" : primenumber;
                 }
-                result += newNumber;
+                result += " " + newNumber;
             }
             return result;
         }
         private static bool IsEvenNumber(int number)
         {
-            return number > 2 && number % 2 == 0;
+            return number >= 2 && number % 2 == 0;
         }
         private static bool IsOddNumber(int number)
         {
@@ -39,7 +39,6 @@ namespace TDD_Katas_project.OddEvenKata
         private static bool IsPrimeNumber(int number)
         {
             if (number < 2) return false;
-            if (number == 2) return true;
             if (IsEvenNumber(number)) return false;
             var divisble = 3;
             while (divisble * divisble <= number)
