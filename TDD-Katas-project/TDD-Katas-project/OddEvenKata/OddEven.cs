@@ -15,7 +15,7 @@ namespace TDD_Katas_project.OddEvenKata
             for (var number = 1; number <= 100; number++)
             {
                 var newNumber = string.Empty;
-                
+
                 var oddNumber = IsOddNumber(number) ? "Odd" : Convert.ToString(number);
                 var primenumber = IsPrimeNumber(number) ? Convert.ToString(number) : oddNumber;
                 if (!string.IsNullOrEmpty(newNumber))
@@ -38,13 +38,13 @@ namespace TDD_Katas_project.OddEvenKata
         }
         private static bool IsPrimeNumber(int number)
         {
-            if (number < 2) { return false; }
-            if (number == 2) { return true; }
-            if (IsEvenNumber(number)) { return false; }
+            if (number < 2) return false;
+            if (number == 2) return true;
+            if (IsEvenNumber(number)) return false;
             var divisble = 3;
             while (divisble * divisble <= number)
             {
-                if (number % divisble == 0) { return false; }
+                if (number % divisble == 0) return false;
                 divisble += 2;
             }
             return true;
