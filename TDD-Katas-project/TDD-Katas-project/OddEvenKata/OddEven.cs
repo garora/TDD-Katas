@@ -27,10 +27,10 @@ namespace TDD_Katas_project.OddEvenKata
         {
             var result = string.Empty;
             for (var number = startNumber < 0 ? 1 : startNumber; number <= lastNumber; number++)
-            {
                 result = CheckSingleNumberOddEvenPrimeResult(result, number);
-            }
+
             return result;
+
         }
 
         private static string CheckSingleNumberOddEvenPrimeResult(string result, int number)
