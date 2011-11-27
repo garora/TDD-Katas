@@ -16,19 +16,18 @@ namespace TDD_Katas_project.OddEvenKata
             {
                 var newNumber = string.Empty;
                 if (!string.IsNullOrEmpty(newNumber))
-                    newNumber += string.Format("{0} ", GetEvenIfNumberDivisibleBy2(number));
+                    newNumber += string.Format("{0} ", IsEvenNumber(number) ? "Even" : "Odd");
                 else
                 {
-                    newNumber = GetEvenIfNumberDivisibleBy2(number);
+                    newNumber = IsEvenNumber(number) ? "Even" : "Odd";
                 }
                 result += newNumber;
             }
             return result;
         }
-
-        private static string GetEvenIfNumberDivisibleBy2(int number)
+        private static bool IsEvenNumber(int number)
         {
-            return number % 2 == 0 ? "Even" : Convert.ToString(number);
+            return number % 2 == 0;
         }
     }
 }
