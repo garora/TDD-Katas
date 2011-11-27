@@ -4,6 +4,7 @@ namespace TDD_Katas_project.OddEvenKata
 {
     public class OddEven
     {
+        #region Public Methods
         public static string PrintOddEven(int startNumber, int lastNumber)
         {
             return GetOddEvenWithinRange(startNumber, lastNumber);
@@ -12,7 +13,9 @@ namespace TDD_Katas_project.OddEvenKata
         {
             return CheckSingleNumberOddEvenPrimeResult(number);
         }
+        #endregion
 
+        #region MyRePrivate Methods
         private static string CheckSingleNumberOddEvenPrimeResult(int number)
         {
             var result = string.Empty;
@@ -67,5 +70,7 @@ namespace TDD_Katas_project.OddEvenKata
             return true;
 
         }
+        #endregion
+
     }
 }
