@@ -9,7 +9,12 @@ namespace TDD_Katas_project.OddEvenKata
     {
         public static string PrintOddEven()
         {
-            throw new NotImplementedException();
+            var result = string.Empty;
+            for (var number = 1; number <= 100; number++)
+            {
+                result += number;
+            }
+            return result;
         }
 
     }

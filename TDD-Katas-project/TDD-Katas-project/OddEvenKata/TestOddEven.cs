@@ -13,7 +13,7 @@ namespace TDD_Katas_project.OddEvenKata
         public void CanPrintOddEven()
         {
             var result = OddEven.PrintOddEven();
-            Assert.NotNull(result);
+            Assert.NotNull(result,string.Format("{0}",result));
         }
     }
 }
