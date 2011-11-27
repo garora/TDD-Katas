@@ -15,11 +15,12 @@ namespace TDD_Katas_project.OddEvenKata
             for (var number = 1; number <= 100; number++)
             {
                 var newNumber = string.Empty;
+                var oddNumber = IsOddNumber(number) ? "Odd" : Convert.ToString(number);
                 if (!string.IsNullOrEmpty(newNumber))
-                    newNumber += string.Format("{0} ", IsEvenNumber(number) ? "Even" : "Odd");
+                    newNumber += IsEvenNumber(number) ? "Even" : oddNumber;
                 else
                 {
-                    newNumber = IsEvenNumber(number) ? "Even" : "Odd";
+                    newNumber = IsEvenNumber(number) ? "Even" : oddNumber;
                 }
                 result += newNumber;
             }
@@ -28,6 +29,10 @@ namespace TDD_Katas_project.OddEvenKata
         private static bool IsEvenNumber(int number)
         {
             return number % 2 == 0;
+        }
+        private static bool IsOddNumber(int number)
+        {
+            return (number % 2 != 0);
         }
     }
 }
