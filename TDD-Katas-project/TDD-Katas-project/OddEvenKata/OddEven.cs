@@ -71,6 +71,5 @@ namespace TDD_Katas_project.OddEvenKata
 
         }
         #endregion
-
     }
 }
