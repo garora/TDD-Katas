@@ -8,5 +8,6 @@ namespace TDD_Katas_project.The_PrimeFactor_Kata
   public  class PrimeFactor
     {
 
+
     }
 }
