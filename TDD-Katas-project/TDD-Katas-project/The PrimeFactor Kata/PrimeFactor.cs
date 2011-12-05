@@ -9,7 +9,7 @@ namespace TDD_Katas_project.The_PrimeFactor_Kata
     {
       public static IList<int> Generate (int number)
       {
-          throw new NotImplementedException();
+          return new List<int>();
       }
 
     }

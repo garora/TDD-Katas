@@ -8,17 +8,18 @@ using NUnit.Framework;
 namespace TDD_Katas_project.The_PrimeFactor_Kata
 {
     [TestFixture]
+    [Category("The PrimeFactor Kata")]
     public class PrimeFactorTest
     {
-        private IList List()
+        private static IList List()
         {
-            return new ArrayList();
+            return new List<int>();
         }
 
         [Test]
         public void Testone()
         {
-            Assert.Equals(List(), PrimeFactor.Generate(1));
+            Assert.That(List(),Is.EqualTo(PrimeFactor.Generate(1)));
         }
     }
 }
