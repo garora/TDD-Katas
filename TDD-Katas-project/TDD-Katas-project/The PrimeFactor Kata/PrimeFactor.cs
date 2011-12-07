@@ -10,16 +10,17 @@ namespace TDD_Katas_project.The_PrimeFactor_Kata
         public static IList<int?> Generate(int number)
         {
             IList<int?> primes = new List<int?>();
-            if (number > 1)
+            int candidate = 2;
+            while (number > 1)
             {
-                while (number % 2 == 0)
+                while (number % candidate == 0)
                 {
-                    primes.Add(2);
-                    number /= 2;
+                    primes.Add(candidate);
+                    number /= candidate;
                 }
-                if (number > 1)
-                    primes.Add(number);
+                candidate++;
             }
+
             return primes;
         }
 
