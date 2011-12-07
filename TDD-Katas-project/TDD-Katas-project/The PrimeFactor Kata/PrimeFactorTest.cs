@@ -36,5 +36,10 @@ namespace TDD_Katas_project.The_PrimeFactor_Kata
         {
             Assert.That(List(3), Is.EqualTo(PrimeFactor.Generate(3)));
         }
+        [Test]
+        public void Tesfour()
+        {
+            Assert.That(List(2,2), Is.EqualTo(PrimeFactor.Generate(4)));
+        }
     }
 }
