@@ -51,5 +51,10 @@ namespace TDD_Katas_project.The_PrimeFactor_Kata
         {
             Assert.That(List(2, 2,2), Is.EqualTo(PrimeFactor.Generate(8)));
         }
+        [Test]
+        public void TestNine()
+        {
+            Assert.That(List(3,3), Is.EqualTo(PrimeFactor.Generate(9)));
+        }
     }
 }
