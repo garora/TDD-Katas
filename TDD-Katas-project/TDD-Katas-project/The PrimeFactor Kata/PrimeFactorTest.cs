@@ -11,18 +11,20 @@ namespace TDD_Katas_project.The_PrimeFactor_Kata
     [Category("The PrimeFactor Kata")]
     public class PrimeFactorTest
     {
-        private static IList<int> List(int ints)
+        private IList<int?> List(params int[] ints)
         {
-            IList<int> list = new List<int>();
-            for (var i = 0; i < ints; i++)
+            IList<int?> list = new List<int?>();
+            foreach (int i in ints)
+            {
                 list.Add(i);
+            }
             return list;
         }
 
         [Test]
         public void Testone()
         {
-            Assert.That(List(0), Is.EqualTo(PrimeFactor.Generate(1)));
+            Assert.That(List(), Is.EqualTo(PrimeFactor.Generate(1)));
         }
         [Test]
         public void Testwo()
