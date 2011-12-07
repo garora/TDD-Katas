@@ -14,7 +14,7 @@ namespace TDD_Katas_project.The_PrimeFactor_Kata
         private IList<int?> List(params int[] ints)
         {
             IList<int?> list = new List<int?>();
-            foreach (int i in ints)
+            foreach (var i in ints)
             {
                 list.Add(i);
             }
@@ -30,6 +30,11 @@ namespace TDD_Katas_project.The_PrimeFactor_Kata
         public void Testwo()
         {
             Assert.That(List(2), Is.EqualTo(PrimeFactor.Generate(2)));
+        }
+        [Test]
+        public void Testhree()
+        {
+            Assert.That(List(3), Is.EqualTo(PrimeFactor.Generate(3)));
         }
     }
 }
