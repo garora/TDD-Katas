@@ -11,9 +11,7 @@ namespace TDD_Katas_project.The_PrimeFactor_Kata
         {
             IList<int?> primes = new List<int?>();
             if (n > 1)
-            {
                 primes.Add(2);
-            }
             return primes;
         }
 
