@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace TDD_Katas_project.The_CalcStats_Kata
 {
@@ -11,7 +12,12 @@ namespace TDD_Katas_project.The_CalcStats_Kata
         }
         public static string NumberStats(IList<int> numbers, CalcStatKeys keys)
         {
-            throw new NotImplementedException();
+            var minValue = string.Empty;
+            if (keys == CalcStatKeys.Minimum)
+            {
+                if (numbers != null) minValue = numbers.Min().ToString();
+            }
+            return minValue;
         }
     }
 }

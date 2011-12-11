@@ -19,7 +19,7 @@ namespace TDD_Katas_project.The_CalcStats_Kata
         [Test]
         public void NumberStatTest()
         {
-            Assert.That(List(1, 2), Is.EqualTo(CalcStat.NumberStats(List(1, 2),CalcStat.CalcStatKeys.Minimum)));
+            Assert.That("1", Is.EqualTo(CalcStat.NumberStats(List(1, 2),CalcStat.CalcStatKeys.Minimum)));
         }
     }
 }
