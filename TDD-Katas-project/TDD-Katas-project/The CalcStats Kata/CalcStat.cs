@@ -14,9 +14,7 @@ namespace TDD_Katas_project.The_CalcStats_Kata
         {
             var minValue = string.Empty;
             if (keys == CalcStatKeys.Minimum)
-            {
                 if (numbers != null) minValue = numbers.Min().ToString();
-            }
             return minValue;
         }
     }
