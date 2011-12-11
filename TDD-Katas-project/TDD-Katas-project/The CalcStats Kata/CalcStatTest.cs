@@ -14,11 +14,23 @@ namespace TDD_Katas_project.The_CalcStats_Kata
         }
 
         [Test]
-        public void NumberStatTest()
+        public void CanFindMinumValue()
         {
             Assert.That("-2", Is.EqualTo(CalcStat.NumberStats(List(1, -1, 2, -2, 6, 9, 15, -2, 92, 11), CalcStat.CalcStatKeys.Minimum)));
-            Assert.That("92", Is.EqualTo(CalcStat.NumberStats(List(1, -1, 2, -2, 6, 9, 15, -2, 92, 11), CalcStat.CalcStatKeys.Maximum)));
+        }
+        [Test]
+        public void CanFindMaximumValue()
+        {
             Assert.That("10", Is.EqualTo(CalcStat.NumberStats(List(1, -1, 2, -2, 6, 9, 15, -2, 92, 11), CalcStat.CalcStatKeys.ElementCount)));
+        }
+        [Test]
+        public void CanGetElementCount()
+        {
+            Assert.That("10", Is.EqualTo(CalcStat.NumberStats(List(1, -1, 2, -2, 6, 9, 15, -2, 92, 11), CalcStat.CalcStatKeys.ElementCount)));
+        }
+        [Test]
+        public void CanGetAverageOfSeries()
+        {
             Assert.That("13.1", Is.EqualTo(CalcStat.NumberStats(List(1, -1, 2, -2, 6, 9, 15, -2, 92, 11), CalcStat.CalcStatKeys.Average)));
         }
     }
