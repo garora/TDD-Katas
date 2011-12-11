@@ -1,15 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 
 namespace TDD_Katas_project.The_CalcStats_Kata
 {
     public class CalcStat
     {
+        #region Members
         public enum CalcStatKeys
         {
             Minimum = 1, Maximum = 2, ElementCount = 3, Average = 4
         }
+        #endregion
+
+        #region Public Methods
         public static string NumberStats(IList<int> numbers, CalcStatKeys keys)
         {
             switch (keys)
@@ -25,6 +28,9 @@ namespace TDD_Katas_project.The_CalcStats_Kata
             }
             return null;
         }
+        #endregion
+
+        #region Private Methods
 
         private static string GetMinimumValue(IEnumerable<int> numbers)
         {
@@ -42,5 +48,6 @@ namespace TDD_Katas_project.The_CalcStats_Kata
         {
             return numbers == null ? null : numbers.Average().ToString();
         }
+        #endregion
     }
 }
