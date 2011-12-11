@@ -15,7 +15,8 @@ namespace TDD_Katas_project.The_CalcStats_Kata
             var returnValue = string.Empty;
             if (keys == CalcStatKeys.Minimum)
                 if (numbers != null) returnValue = numbers.Min().ToString();
-
+            if (keys == CalcStatKeys.Maximum)
+                if (numbers != null) returnValue = numbers.Max().ToString();
             return returnValue;
         }
     }
