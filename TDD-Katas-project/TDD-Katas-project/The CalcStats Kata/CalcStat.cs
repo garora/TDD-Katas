@@ -19,6 +19,8 @@ namespace TDD_Katas_project.The_CalcStats_Kata
                 if (numbers != null) returnValue = numbers.Max().ToString();
             if (keys == CalcStatKeys.ElementCount)
                 if (numbers != null) returnValue = numbers.Count().ToString();
+            if (keys == CalcStatKeys.Average)
+                if (numbers != null) returnValue = numbers.Average().ToString();
             return returnValue;
         }
     }
