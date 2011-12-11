@@ -58,6 +58,8 @@
     <Compile Include="StringCalculator\Calculator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StringCalculator\TestCalculator.cs" />
+    <Compile Include="The CalcStats Kata\CalcStat.cs" />
+    <Compile Include="The CalcStats Kata\CalcStatTest.cs" />
     <Compile Include="The PrimeFactor Kata\PrimeFactor.cs" />
     <Compile Include="The PrimeFactor Kata\PrimeFactorTest.cs" />
   </ItemGroup>
