@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace TDD_Katas_project.The_CalcStats_Kata
 {
-    class CalcStat
+   public class CalcStat
     {
+       public static string NumberStats(IList<int> numbers )
+       {
+           throw new NotImplementedException();
+       }
     }
 }
