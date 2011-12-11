@@ -469,3 +469,4 @@
 		4,4,4,4,4 scores 0
 ---------------------------------------------------------------------
   
+## Many more from [url : http://codekata.pragprog.com/2007/01/code_kata_backg.html#more]
