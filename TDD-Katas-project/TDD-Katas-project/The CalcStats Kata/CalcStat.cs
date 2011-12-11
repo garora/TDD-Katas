@@ -12,10 +12,11 @@ namespace TDD_Katas_project.The_CalcStats_Kata
         }
         public static string NumberStats(IList<int> numbers, CalcStatKeys keys)
         {
-            var minValue = string.Empty;
+            var returnValue = string.Empty;
             if (keys == CalcStatKeys.Minimum)
-                if (numbers != null) minValue = numbers.Min().ToString();
-            return minValue;
+                if (numbers != null) returnValue = numbers.Min().ToString();
+
+            return returnValue;
         }
     }
 }
