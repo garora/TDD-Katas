@@ -12,16 +12,35 @@ namespace TDD_Katas_project.The_CalcStats_Kata
         }
         public static string NumberStats(IList<int> numbers, CalcStatKeys keys)
         {
-            var returnValue = string.Empty;
-            if (keys == CalcStatKeys.Minimum)
-                if (numbers != null) returnValue = numbers.Min().ToString();
-            if (keys == CalcStatKeys.Maximum)
-                if (numbers != null) returnValue = numbers.Max().ToString();
-            if (keys == CalcStatKeys.ElementCount)
-                if (numbers != null) returnValue = numbers.Count().ToString();
-            if (keys == CalcStatKeys.Average)
-                if (numbers != null) returnValue = numbers.Average().ToString();
-            return returnValue;
+            switch (keys)
+            {
+                case CalcStatKeys.Minimum:
+                    return GetMinimumValue(numbers);
+                case CalcStatKeys.Maximum:
+                    return GetMaximumValue(numbers);
+                case CalcStatKeys.ElementCount:
+                    return GetElementCount(numbers);
+                case CalcStatKeys.Average:
+                    return GetSeriesAverage(numbers);
+            }
+            return null;
+        }
+
+        private static string GetMinimumValue(IEnumerable<int> numbers)
+        {
+            return numbers == null ? null : numbers.Min().ToString();
+        }
+        private static string GetMaximumValue(IEnumerable<int> numbers)
+        {
+            return numbers == null ? null : numbers.Max().ToString();
+        }
+        private static string GetElementCount(IEnumerable<int> numbers)
+        {
+            return numbers == null ? null : numbers.Count().ToString();
+        }
+        private static string GetSeriesAverage(IEnumerable<int> numbers)
+        {
+            return numbers == null ? null : numbers.Average().ToString();
         }
     }
 }
