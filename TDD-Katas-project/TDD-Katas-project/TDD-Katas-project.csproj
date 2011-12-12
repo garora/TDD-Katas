@@ -60,6 +60,8 @@
     <Compile Include="StringCalculator\TestCalculator.cs" />
     <Compile Include="The CalcStats Kata\CalcStat.cs" />
     <Compile Include="The CalcStats Kata\CalcStatTest.cs" />
+    <Compile Include="The LeapYear Kata\LeapYear.cs" />
+    <Compile Include="The LeapYear Kata\LeapYearTest.cs" />
     <Compile Include="The PrimeFactor Kata\PrimeFactor.cs" />
     <Compile Include="The PrimeFactor Kata\PrimeFactorTest.cs" />
   </ItemGroup>
