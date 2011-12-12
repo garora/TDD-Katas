@@ -4,12 +4,7 @@
     {
        public static bool IsLeapYear(int year)
        {
-           bool blnResult = false;
-           if (year %4 ==0 || year % 400 ==0)
-           {
-               blnResult = true;
-           }
-           return blnResult;
+           return (year%4==0 || year%400==0) ? true : false;
        }
     }
 }
