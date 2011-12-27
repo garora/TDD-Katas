@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using NUnit.Framework;
 
 namespace TDD_Katas_project.The_WordWrap_Kata
@@ -30,6 +27,7 @@ namespace TDD_Katas_project.The_WordWrap_Kata
         public void CanTestNewLineCharacter()
         {
             Assert.That("\n", Is.EqualTo(WordWrap.Wrap("\n", 1)));
+            Assert.That("\nLet's\n Go\noutside.", Is.EqualTo(WordWrap.Wrap("\nLet's Go\noutside.", 5)));
         }
     }
 }

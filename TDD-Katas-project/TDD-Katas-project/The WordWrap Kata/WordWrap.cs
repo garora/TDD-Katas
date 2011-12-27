@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace TDD_Katas_project.The_WordWrap_Kata
 {
@@ -11,24 +8,27 @@ namespace TDD_Katas_project.The_WordWrap_Kata
         {
             var actualCount = 0;
             var wrappedword = string.Empty;
-            if (!IsContainNullEmptyOrWhiteSpaces(word))
+            if (IsContainNewLine(word)) return word;
+            if (IsContainNullEmptyOrWhiteSpaces(word)) return string.Empty;
+
+            foreach (var wrd in word)
             {
-                foreach (var wrd in word)
-                {
-                    wrappedword = wrappedword + Convert.ToString(wrd);
-                    if (IsWhiteSpaceOrNewLine(wrd)) continue;
+                wrappedword = wrappedword + Convert.ToString(wrd);
+                if (IsWhiteSpaceOrNewLine(wrd)) continue;
+                if (IsContainNewLine(wrd.ToString())) continue;
+                actualCount++;
 
-                    actualCount++;
+                if (actualCount == wordLength)
+                    wrappedword += "\n";
 
-                    if (actualCount == wordLength)
-                        wrappedword += "\n";
-                }
             }
 
-            else
-                wrappedword = string.Empty;
-
             return wrappedword;
+        }
+
+        private static bool IsContainNewLine(string word)
+        {
+            return word == "\n";
         }
 
 
