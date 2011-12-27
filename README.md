@@ -470,3 +470,16 @@
 ---------------------------------------------------------------------
   
 ## Many more from [url : http://codekata.pragprog.com/2007/01/code_kata_backg.html#more]
+
+----------------------------------------------------------------------
+
+## The Word Wrap Kata [http://codingdojo.org/cgi-bin/wiki.pl?KataWordWrap]
+	Create a function which breaks words on specified space with new line. Its nothing but merely similar to word-processor.
+
+### Steps:
+		1. Create a public class named WordWrap
+		2. Create a method 'wrap' it can be a static method
+		3. Create a function whcih count the number of spliter words of non-space
+		4. check for if words already having newline ['\n'] characters - ignore in counts
+		5. Check for multiple lines
+	
