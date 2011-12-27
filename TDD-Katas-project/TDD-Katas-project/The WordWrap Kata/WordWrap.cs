@@ -11,16 +11,21 @@ namespace TDD_Katas_project.The_WordWrap_Kata
         {
             var actualCount = 0;
             var wrappedword = string.Empty;
-            foreach (var wrd in word)
+            if (String.IsNullOrEmpty(word)) wrappedword = string.Empty;
+            else
             {
-                wrappedword = wrappedword + Convert.ToString(wrd);
-                if (IsWhiteSpaceOrNewLine(wrd)) continue;
+                foreach (var wrd in word)
+                {
+                    wrappedword = wrappedword + Convert.ToString(wrd);
+                    if (IsWhiteSpaceOrNewLine(wrd)) continue;
 
-                actualCount++;
-                
-                if (actualCount == wordLength)
-                    wrappedword += "\n";
+                    actualCount++;
+
+                    if (actualCount == wordLength)
+                        wrappedword += "\n";
+                }
             }
+
             return wrappedword;
         }
 
