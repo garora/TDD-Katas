@@ -11,8 +11,8 @@ namespace TDD_Katas_project.The_WordWrap_Kata
         {
             var actualCount = 0;
             var wrappedword = string.Empty;
-            if (String.IsNullOrEmpty(word)) wrappedword = string.Empty;
-                
+            if ((string.IsNullOrEmpty(word)) || (string.IsNullOrWhiteSpace(word)))
+                wrappedword = string.Empty;
             else
             {
                 foreach (var wrd in word)
