@@ -11,9 +11,7 @@ namespace TDD_Katas_project.The_WordWrap_Kata
         {
             var actualCount = 0;
             var wrappedword = string.Empty;
-            if ((string.IsNullOrEmpty(word)) || (string.IsNullOrWhiteSpace(word)))
-                wrappedword = string.Empty;
-            else
+            if (!IsContainNullEmptyOrWhiteSpaces(word))
             {
                 foreach (var wrd in word)
                 {
@@ -27,7 +25,16 @@ namespace TDD_Katas_project.The_WordWrap_Kata
                 }
             }
 
+            else
+                wrappedword = string.Empty;
+
             return wrappedword;
+        }
+
+
+        private static bool IsContainNullEmptyOrWhiteSpaces(string word)
+        {
+            return (string.IsNullOrEmpty(word)) || (string.IsNullOrWhiteSpace(word));
         }
 
         private static bool IsWhiteSpaceOrNewLine(char wrd)
