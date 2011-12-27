@@ -14,14 +14,19 @@ namespace TDD_Katas_project.The_WordWrap_Kata
             foreach (var wrd in word)
             {
                 wrappedword = wrappedword + Convert.ToString(wrd);
-                if (!char.IsWhiteSpace(wrd) || (wrd != '\n'))
-                {
-                    actualCount++;
-                    if (actualCount == wordLength)
-                        wrappedword += "\n";
-                }
+                if (IsWhiteSpaceOrNewLine(wrd)) continue;
+
+                actualCount++;
+                
+                if (actualCount == wordLength)
+                    wrappedword += "\n";
             }
             return wrappedword;
+        }
+
+        private static bool IsWhiteSpaceOrNewLine(char wrd)
+        {
+            return char.IsWhiteSpace(wrd) && (wrd == '\n');
         }
     }
 }
