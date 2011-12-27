@@ -29,5 +29,15 @@ namespace TDD_Katas_project.The_WordWrap_Kata
             Assert.That("\n", Is.EqualTo(WordWrap.Wrap("\n", 1)));
             Assert.That("\nLet's\n Go\noutside.", Is.EqualTo(WordWrap.Wrap("\nLet's Go\noutside.", 5)));
         }
+        [Test]
+        public void CanWrapMultipleLine()
+        {
+            const string inputword = "Today is friday. \nLets go outside.\n Happy weekedn!";
+            const string expectedword = "Today\n is friday. \nLets go outside.\n Happy weekedn!";
+            var actualresult = (WordWrap.Wrap(inputword, 5));
+            Assert.That(expectedword, Is.EqualTo(actualresult),
+                       string.Format("result of entered word [{0}] is [{1}] but it should be [{2}]", inputword,
+                                     actualresult, expectedword));
+        }
     }
 }
