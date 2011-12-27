@@ -10,6 +10,10 @@ namespace TDD_Katas_project.The_WordWrap_Kata
     [Category("The Word Wrap Kata")]
     public class WordWrapTest
     {
-
+        [Test]
+        public void CanWrapSingleLine()
+        {
+            Assert.That("",Is.EqualTo(WordWrap.Wrap("",1)));
+        }
     }
 }
