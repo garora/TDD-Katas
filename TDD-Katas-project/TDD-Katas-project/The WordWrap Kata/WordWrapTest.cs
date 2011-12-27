@@ -20,5 +20,11 @@ namespace TDD_Katas_project.The_WordWrap_Kata
         {
             Assert.That("", Is.EqualTo(WordWrap.Wrap(null, 5)));
         }
+        [Test]
+        public void CanTestForNullOrWhiteSpacesWord()
+        {
+            Assert.That("", Is.EqualTo(WordWrap.Wrap(null, 5)));
+            Assert.That("", Is.EqualTo(WordWrap.Wrap(" ", 5)));
+        }
     }
 }
