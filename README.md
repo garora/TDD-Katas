@@ -479,7 +479,8 @@
 ### Steps:
 		1. Create a public class named WordWrap
 		2. Create a method 'wrap' it can be a static method
-		3. Create a function whcih count the number of spliter words of non-space
+		3. Create a function which count the number of spliter words of non-space
 		4. check for if words already having newline ['\n'] characters - ignore in counts
 		5. Check for multiple lines
+		6. Remove blank spaces if any in new line eg. Actual - "this is a test" WrappedText = "this\n is a t\nest"
 	
