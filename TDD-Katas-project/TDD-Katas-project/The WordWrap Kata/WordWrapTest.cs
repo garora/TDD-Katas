@@ -13,7 +13,12 @@ namespace TDD_Katas_project.The_WordWrap_Kata
         [Test]
         public void CanWrapSingleLine()
         {
-            Assert.That("",Is.EqualTo(WordWrap.Wrap("",1)));
+            Assert.That("Let's\n Go", Is.EqualTo(WordWrap.Wrap("Let's Go", 5)));
+        }
+        [Test]
+        public void CanTestForNullWord()
+        {
+            Assert.That("", Is.EqualTo(WordWrap.Wrap(null, 5)));
         }
     }
 }
