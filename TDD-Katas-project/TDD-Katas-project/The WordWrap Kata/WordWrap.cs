@@ -20,10 +20,34 @@ namespace TDD_Katas_project.The_WordWrap_Kata
 
                 if (actualCount == wordLength)
                     wrappedword += "\n";
-
             }
 
+            wrappedword = GetWrappedwordWithoutBlankSpacesAtStartOfNewLine(wrappedword);
             return wrappedword;
+        }
+
+        private static string GetWrappedwordWithoutBlankSpacesAtStartOfNewLine(string wrappedword)
+        {
+            var newWrappedWord = wrappedword;
+            var spaceCounter = 0;
+            for (var outCounter = 0; outCounter < wrappedword.Length; outCounter++)
+            {
+                if (IsContainNewLine(wrappedword[outCounter].ToString()))
+                    for (var inCounter = outCounter + 1; inCounter < wrappedword.Length; inCounter++)
+                    {
+                        if (char.IsWhiteSpace(wrappedword[inCounter]))
+                            spaceCounter++;
+                        if (IsContainNewLine(wrappedword[inCounter].ToString()))
+                            break;
+                    }
+                newWrappedWord = RemoveWhiteSpacesFromWrappedWord(wrappedword, outCounter + 1, spaceCounter);
+            }
+            return newWrappedWord;
+        }
+
+        private static string RemoveWhiteSpacesFromWrappedWord(string wrappedword, int inCounter, int spaceCount)
+        {
+            return wrappedword.Remove(inCounter, 1);
         }
 
         private static bool IsContainNewLine(string word)
@@ -41,5 +65,6 @@ namespace TDD_Katas_project.The_WordWrap_Kata
         {
             return char.IsWhiteSpace(wrd) && (wrd == '\n');
         }
+
     }
 }
