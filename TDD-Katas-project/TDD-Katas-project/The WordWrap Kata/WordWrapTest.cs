@@ -26,5 +26,10 @@ namespace TDD_Katas_project.The_WordWrap_Kata
             Assert.That("", Is.EqualTo(WordWrap.Wrap(null, 5)));
             Assert.That("", Is.EqualTo(WordWrap.Wrap(" ", 5)));
         }
+        [Test]
+        public void CanTestNewLineCharacter()
+        {
+            Assert.That("\n", Is.EqualTo(WordWrap.Wrap("\n", 1)));
+        }
     }
 }
