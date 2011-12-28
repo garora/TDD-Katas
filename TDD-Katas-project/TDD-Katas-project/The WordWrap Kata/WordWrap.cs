@@ -40,14 +40,17 @@ namespace TDD_Katas_project.The_WordWrap_Kata
                         if (IsContainNewLine(wrappedword[inCounter].ToString()))
                             break;
                     }
-                newWrappedWord = RemoveWhiteSpacesFromWrappedWord(wrappedword, outCounter + 1, spaceCounter);
+                if (spaceCounter <= 0) continue;
+                newWrappedWord = wrappedword.Remove(outCounter + 1, spaceCounter);  //RemoveWhiteSpacesFromWrappedWord(wrappedword, outCounter + 1, spaceCounter);
+
+                spaceCounter = 0;
             }
             return newWrappedWord;
         }
 
         private static string RemoveWhiteSpacesFromWrappedWord(string wrappedword, int inCounter, int spaceCount)
         {
-            return wrappedword.Remove(inCounter, 1);
+            return wrappedword.Remove(inCounter, spaceCount);
         }
 
         private static bool IsContainNewLine(string word)
