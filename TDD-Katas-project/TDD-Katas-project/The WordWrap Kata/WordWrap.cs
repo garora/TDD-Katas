@@ -37,21 +37,22 @@ namespace TDD_Katas_project.The_WordWrap_Kata
                     {
                         if (char.IsWhiteSpace(wrappedword[inCounter]))
                             spaceCounter++;
-                        if (IsContainNewLine(wrappedword[inCounter].ToString()))
+                        else
                             break;
                     }
                 if (spaceCounter <= 0) continue;
-                newWrappedWord = wrappedword.Remove(outCounter + 1, spaceCounter);  //RemoveWhiteSpacesFromWrappedWord(wrappedword, outCounter + 1, spaceCounter);
+                newWrappedWord = RemoveWhiteSpacesFromWrappedWord(wrappedword, outCounter, spaceCounter);  //RemoveWhiteSpacesFromWrappedWord(wrappedword, outCounter + 1, spaceCounter);
 
                 spaceCounter = 0;
             }
             return newWrappedWord;
         }
 
-        private static string RemoveWhiteSpacesFromWrappedWord(string wrappedword, int inCounter, int spaceCount)
+        private static string RemoveWhiteSpacesFromWrappedWord(string wrappedword, int outCounter, int spaceCounter)
         {
-            return wrappedword.Remove(inCounter, spaceCount);
+            return wrappedword.Remove(outCounter + 1, spaceCounter);
         }
+
 
         private static bool IsContainNewLine(string word)
         {
