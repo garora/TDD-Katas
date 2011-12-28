@@ -1,5 +1,4 @@
-﻿using System;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 
 namespace TDD_Katas_project.The_WordWrap_Kata
 {

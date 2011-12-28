@@ -4,6 +4,7 @@ namespace TDD_Katas_project.The_WordWrap_Kata
 {
     public class WordWrap
     {
+        #region Public Methods
         public static string Wrap(string word, int wordLength)
         {
             var actualCount = 0;
@@ -25,7 +26,10 @@ namespace TDD_Katas_project.The_WordWrap_Kata
             wrappedword = GetWrappedwordWithoutBlankSpacesAtStartOfNewLine(wrappedword);
             return wrappedword;
         }
+        #endregion
 
+        #region MyRegion
+        
         private static string GetWrappedwordWithoutBlankSpacesAtStartOfNewLine(string wrappedword)
         {
             var newWrappedWord = wrappedword;
@@ -47,28 +51,23 @@ namespace TDD_Katas_project.The_WordWrap_Kata
             }
             return newWrappedWord;
         }
-
         private static string RemoveWhiteSpacesFromWrappedWord(string wrappedword, int outCounter, int spaceCounter)
         {
             return wrappedword.Remove(outCounter + 1, spaceCounter);
         }
-
-
         private static bool IsContainNewLine(string word)
         {
             return word == "\n";
         }
-
-
         private static bool IsContainNullEmptyOrWhiteSpaces(string word)
         {
             return (string.IsNullOrEmpty(word)) || (string.IsNullOrWhiteSpace(word));
         }
-
         private static bool IsWhiteSpaceOrNewLine(char wrd)
         {
             return char.IsWhiteSpace(wrd) && (wrd == '\n');
         }
-
+        
+        #endregion
     }
 }
