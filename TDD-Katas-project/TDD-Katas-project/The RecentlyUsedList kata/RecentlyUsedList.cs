@@ -26,13 +26,14 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace TDD_Katas_project.The_RecentlyUsedList_kata
 {
     public class RecentlyUsedList<T> : IEnumerable<T>
     {
         private List<T> _listofuniquestrings;
-        private int _listSize;
+        private int _listSize = -1;
 
         public RecentlyUsedList()
         {
@@ -43,18 +44,49 @@ namespace TDD_Katas_project.The_RecentlyUsedList_kata
             _listofuniquestrings = new List<T>();
             _listSize = listSize;
         }
+
+        public RecentlyUsedList(IEnumerable<T> listItems)
+        {
+            _listofuniquestrings = listItems.ToList();
+        }
+
+        public RecentlyUsedList(int listSize, IEnumerable<T> listItems)
+        {
+            _listofuniquestrings = listItems.ToList();
+            _listSize = listSize;
+
+            if (_listSize != -1)
+
+                while (_listofuniquestrings.Count > _listSize)
+
+                    _listofuniquestrings.RemoveAt(_listofuniquestrings.Count - 1);
+        }
+
+        public int Count
+        {
+
+            get
+            {
+                return _listofuniquestrings != null ? _listofuniquestrings.Count : 0;
+            }
+        }
+
         #region Implementation of IEnumerable
 
         public IEnumerator<T> GetEnumerator()
         {
-            throw new NotImplementedException();
+            return _listofuniquestrings.GetEnumerator();
         }
 
         IEnumerator IEnumerable.GetEnumerator()
         {
-            return GetEnumerator();
+            return _listofuniquestrings.GetEnumerator();
         }
 
         #endregion
+
     }
+
+
+
 }
