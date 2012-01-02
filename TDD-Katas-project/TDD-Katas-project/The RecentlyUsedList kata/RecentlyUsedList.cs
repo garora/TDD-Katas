@@ -32,8 +32,14 @@ namespace TDD_Katas_project.The_RecentlyUsedList_kata
 {
     public class RecentlyUsedList<T> : IEnumerable<T>
     {
+        #region Private members
+
         private List<T> _listofuniquestrings;
         private int _listSize = -1;
+
+        #endregion
+
+        #region Class Initializers
 
         public RecentlyUsedList()
         {
@@ -61,7 +67,9 @@ namespace TDD_Katas_project.The_RecentlyUsedList_kata
 
                     _listofuniquestrings.RemoveAt(_listofuniquestrings.Count - 1);
         }
+        #endregion
 
+        #region Helper Methods
         public int Count
         {
 
@@ -70,6 +78,7 @@ namespace TDD_Katas_project.The_RecentlyUsedList_kata
                 return _listofuniquestrings != null ? _listofuniquestrings.Count : 0;
             }
         }
+        #endregion
 
         #region Implementation of IEnumerable
 
