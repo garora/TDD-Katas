@@ -45,6 +45,7 @@ namespace TDD_Katas_project.The_RecentlyUsedList_kata
         public RecentlyUsedList()
         {
             _listofuniquestrings = new List<string>();
+            SetDefaultListSize();
         }
         public RecentlyUsedList(int listSize)
         {
@@ -55,6 +56,7 @@ namespace TDD_Katas_project.The_RecentlyUsedList_kata
         public RecentlyUsedList(IEnumerable<string> listItems)
         {
             _listofuniquestrings = listItems.ToList();
+            SetDefaultListSize();
         }
 
         public RecentlyUsedList(int listSize, IEnumerable<string> listItems)
@@ -79,8 +81,6 @@ namespace TDD_Katas_project.The_RecentlyUsedList_kata
                 _listofuniquestrings.RemoveAt(indexOccurenceofItem);
 
             _listofuniquestrings.Insert(0, listitem);
-
-            SetDefaultListSize();
 
             while (_listofuniquestrings.Count > _listSize)
 
