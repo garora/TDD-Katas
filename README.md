@@ -331,7 +331,10 @@
 	o) A bounded capacity can be specified, so there is an upper
 	   limit to the number of items contained, with the least
 	   recently added items dropped on overflow.
-
+#### I added more tests
+	o) While getting items by index, supplied index-value should be within the bounds of List [eg.
+	if maximum item counts of list is 5 then supplied index is less than 4 as index starts from 0 (zero)]
+	o) Size limit is must if not supplied make 5 as default [0-4]
 
 ### Reversi :
 
