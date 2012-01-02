@@ -148,11 +148,13 @@ namespace TDD_Katas_project.The_RecentlyUsedList_kata
                         Is.EqualTo(string.Format("List items should not be Empty or Null. But it was [{0}]", item1)));
             }
 
-
-            
-
         }
-
+        [Test]
+        public void CanDefineListSize()
+        {
+            var sizeableList = new RecentlyUsedList<string>(_size);
+            Assert.That(_size, Is.EqualTo(sizeableList.Size));
+        }
         #region Private Methods
         private List<string> ToList(params string[] items)
         {
