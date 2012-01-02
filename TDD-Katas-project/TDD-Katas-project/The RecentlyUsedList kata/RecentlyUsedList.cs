@@ -77,7 +77,7 @@ namespace TDD_Katas_project.The_RecentlyUsedList_kata
             if (indexOccurenceofItem > -1)
                 _listofuniquestrings.RemoveAt(indexOccurenceofItem);
 
-            _listofuniquestrings.Add(listitem);
+            _listofuniquestrings.Insert(0, listitem);
 
             if (_listSize != -1)
 
