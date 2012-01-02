@@ -64,6 +64,8 @@
     <Compile Include="The LeapYear Kata\LeapYearTest.cs" />
     <Compile Include="The PrimeFactor Kata\PrimeFactor.cs" />
     <Compile Include="The PrimeFactor Kata\PrimeFactorTest.cs" />
+    <Compile Include="The RecentlyUsedList kata\RecentlyUsedList.cs" />
+    <Compile Include="The RecentlyUsedList kata\RecentlyUsedListTest.cs" />
     <Compile Include="The WordWrap Kata\WordWrap.cs" />
     <Compile Include="The WordWrap Kata\WordWrapTest.cs" />
   </ItemGroup>
