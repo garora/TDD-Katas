@@ -50,11 +50,27 @@ namespace TDD_Katas_project.The_RecentlyUsedList_kata
 
         }
 
+
+        [Test]
+        public void CanTestItemByIndex()
+        {
+            _recentlyUsedList.Add("FirstItem");
+            _recentlyUsedList.Add("SecondItem");
+            _recentlyUsedList.Add("ThirdItem");
+            _recentlyUsedList.Add("FourthItem");
+            _recentlyUsedList.Add("FifthItem");
+            const string expectedlistitem = "ThirdItem";
+            var actuallistitem = _recentlyUsedList.GetListItem(3);
+
+            Assert.That(actuallistitem, Is.EqualTo(expectedlistitem));
+        }
+
         #region Private Methods
         private List<string> ToList(params string[] items)
         {
             return items.ToList();
         }
+
         #endregion
 
     }

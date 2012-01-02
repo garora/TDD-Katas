@@ -86,6 +86,10 @@ namespace TDD_Katas_project.The_RecentlyUsedList_kata
                     _listofuniquestrings.RemoveAt(_listofuniquestrings.Count - 1);
 
         }
+        public string GetListItem(int index)
+        {
+            throw new NotImplementedException();
+        }
 
         #endregion
 
