@@ -30,11 +30,11 @@ using System.Linq;
 
 namespace TDD_Katas_project.The_RecentlyUsedList_kata
 {
-    public class RecentlyUsedList<T> : IEnumerable<T>
+    public class RecentlyUsedList<T> : IEnumerable<String>
     {
         #region Private members
 
-        private List<T> _listofuniquestrings;
+        private List<string> _listofuniquestrings;
         private int _listSize = -1;
 
         #endregion
@@ -43,20 +43,20 @@ namespace TDD_Katas_project.The_RecentlyUsedList_kata
 
         public RecentlyUsedList()
         {
-            _listofuniquestrings = new List<T>();
+            _listofuniquestrings = new List<string>();
         }
         public RecentlyUsedList(int listSize)
         {
-            _listofuniquestrings = new List<T>();
+            _listofuniquestrings = new List<string>();
             _listSize = listSize;
         }
 
-        public RecentlyUsedList(IEnumerable<T> listItems)
+        public RecentlyUsedList(IEnumerable<string> listItems)
         {
             _listofuniquestrings = listItems.ToList();
         }
 
-        public RecentlyUsedList(int listSize, IEnumerable<T> listItems)
+        public RecentlyUsedList(int listSize, IEnumerable<string> listItems)
         {
             _listofuniquestrings = listItems.ToList();
             _listSize = listSize;
@@ -82,18 +82,17 @@ namespace TDD_Katas_project.The_RecentlyUsedList_kata
 
         #region Implementation of IEnumerable
 
-        public IEnumerator<T> GetEnumerator()
+        public IEnumerator<string> GetEnumerator()
         {
             return _listofuniquestrings.GetEnumerator();
         }
 
         IEnumerator IEnumerable.GetEnumerator()
         {
-            return _listofuniquestrings.GetEnumerator();
+            return GetEnumerator();
         }
 
         #endregion
-
     }
 
 
