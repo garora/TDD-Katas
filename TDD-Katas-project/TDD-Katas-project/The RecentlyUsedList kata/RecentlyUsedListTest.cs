@@ -29,6 +29,7 @@ namespace TDD_Katas_project.The_RecentlyUsedList_kata
         [Test]
         public void CanAddItems()
         {
+            _recentlyUsedList.Add("FirstList");
             var listCount = _recentlyUsedList.ToList().Count;
             Assert.That(listCount, Is.GreaterThan(0), string.Format("List items count should be Greater than {0} but is {1}", 0, listCount));
 
