@@ -26,26 +26,35 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace TDD_Katas_project.The_RecentlyUsedList_kata
 {
-   public class RecentlyUsedList<T> :IEnumerable<T>
+    public class RecentlyUsedList<T> : IEnumerable<T>
     {
+        private List<T> _listofuniquestrings;
+        private int _listSize;
 
-       #region Implementation of IEnumerable
+        public RecentlyUsedList()
+        {
+            _listofuniquestrings = new List<T>();
+        }
+        public RecentlyUsedList(int listSize)
+        {
+            _listofuniquestrings = new List<T>();
+            _listSize = listSize;
+        }
+        #region Implementation of IEnumerable
 
-       public IEnumerator<T> GetEnumerator()
-       {
-           throw new NotImplementedException();
-       }
+        public IEnumerator<T> GetEnumerator()
+        {
+            throw new NotImplementedException();
+        }
 
-       IEnumerator IEnumerable.GetEnumerator()
-       {
-           return GetEnumerator();
-       }
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return GetEnumerator();
+        }
 
-       #endregion
+        #endregion
     }
 }
