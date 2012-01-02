@@ -88,7 +88,7 @@ namespace TDD_Katas_project.The_RecentlyUsedList_kata
         }
         public string GetListItem(int index)
         {
-            throw new NotImplementedException();
+            return _listofuniquestrings != null ? _listofuniquestrings[index] : string.Empty;
         }
 
         #endregion

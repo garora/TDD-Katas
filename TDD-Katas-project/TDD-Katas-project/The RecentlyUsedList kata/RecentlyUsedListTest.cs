@@ -59,7 +59,7 @@ namespace TDD_Katas_project.The_RecentlyUsedList_kata
             _recentlyUsedList.Add("ThirdItem");
             _recentlyUsedList.Add("FourthItem");
             _recentlyUsedList.Add("FifthItem");
-            const string expectedlistitem = "ThirdItem";
+            const string expectedlistitem = "SecondItem";
             var actuallistitem = _recentlyUsedList.GetListItem(3);
 
             Assert.That(actuallistitem, Is.EqualTo(expectedlistitem));
