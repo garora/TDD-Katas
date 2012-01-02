@@ -72,7 +72,18 @@ namespace TDD_Katas_project.The_RecentlyUsedList_kata
         #region Public methods
         public void Add(string listitem)
         {
-            throw new NotImplementedException();
+            var indexOccurenceofItem = _listofuniquestrings.IndexOf(listitem);
+
+            if (indexOccurenceofItem > -1)
+                _listofuniquestrings.RemoveAt(indexOccurenceofItem);
+
+            _listofuniquestrings.Insert(0, listitem);
+
+            if (_listSize != -1)
+
+                while (_listofuniquestrings.Count > _listSize)
+
+                    _listofuniquestrings.RemoveAt(_listofuniquestrings.Count - 1);
 
         }
 
