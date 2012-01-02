@@ -131,7 +131,15 @@ namespace TDD_Katas_project.The_RecentlyUsedList_kata
             _recentlyUsedList.Add("FifthItem");
             const int index = -1;
             var exception = Assert.Throws<ArgumentException>(() => _recentlyUsedList.GetListItem(index));
-            Assert.That(exception.Message, Is.EqualTo(string.Format("supplied index [{0}] should be non-negative and not greater than [{1}].", index, _recentlyUsedList.Count-1)));
+            Assert.That(exception.Message, Is.EqualTo(string.Format("supplied index [{0}] should be non-negative and not greater than [{1}].", index, _recentlyUsedList.Count - 1)));
+
+        }
+
+        [Test]
+        public void CanThrowArgumentExceptionWhenSuppliedItemIsNullorEmpty()
+        {
+
+            var exception = Assert.Throws<ArgumentException>(() => _recentlyUsedList.Add(null));
 
         }
 
