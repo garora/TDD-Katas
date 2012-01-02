@@ -334,6 +334,7 @@
 #### I added more tests
 	o) While getting items by index, supplied index-value should be within the bounds of List [eg.
 	if maximum item counts of list is 5 then supplied index is less than 4 as index starts from 0 (zero)]
+	o) Negative index value not allowed [>0]
 	o) Size limit is must if not supplied make 5 as default [0-4]
 	o) List can be non-sizable means without upper limit list can be created [Hint-try property or constructor initializers]
 
