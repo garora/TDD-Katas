@@ -76,6 +76,7 @@ namespace TDD_Katas_project.The_RecentlyUsedList_kata
             _recentlyUsedList.Add("FourthItem");
             _recentlyUsedList.Add("FifthItem");
             _recentlyUsedList.Add("SixthItem"); //This should not be considered
+            _recentlyUsedList.Add("SeventhItem"); //This should not be considered
 
             var expectedlist = ToList("FifthItem", "FourthItem", "ThirdItem", "SecondItem", "FirstItem");
             var actuallist = _recentlyUsedList.ToList();

@@ -81,7 +81,7 @@ namespace TDD_Katas_project.The_RecentlyUsedList_kata
             //Trim List items beyond the size of list
             if (_listSize != -1)
                 while (_listofuniquestrings.Count > _listSize)
-                    _listofuniquestrings.RemoveAt(_listofuniquestrings.Count - 1);
+                    _listofuniquestrings.RemoveAt(0); //Remove from Top in LIFO
 
         }
 
