@@ -24,14 +24,28 @@
 #endregion
 
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
 namespace TDD_Katas_project.The_RecentlyUsedList_kata
 {
-   public class RecentlyUsedList
+   public class RecentlyUsedList<T> :IEnumerable<T>
     {
 
+       #region Implementation of IEnumerable
+
+       public IEnumerator<T> GetEnumerator()
+       {
+           throw new NotImplementedException();
+       }
+
+       IEnumerator IEnumerable.GetEnumerator()
+       {
+           return GetEnumerator();
+       }
+
+       #endregion
     }
 }
