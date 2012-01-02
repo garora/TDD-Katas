@@ -65,6 +65,14 @@ namespace TDD_Katas_project.The_RecentlyUsedList_kata
             Assert.That(actuallistitem, Is.EqualTo(expectedlistitem));
         }
 
+        [Test]
+        public void CanTestDefaultListSize()
+        {
+            const int expectedlistSize = 5;
+            var actuallistsize = _recentlyUsedList.Size;
+            Assert.That(actuallistsize,Is.EqualTo(expectedlistSize));
+        }
+
         #region Private Methods
         private List<string> ToList(params string[] items)
         {

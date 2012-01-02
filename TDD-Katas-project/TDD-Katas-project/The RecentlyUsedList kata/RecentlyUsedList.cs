@@ -36,6 +36,7 @@ namespace TDD_Katas_project.The_RecentlyUsedList_kata
 
         private List<string> _listofuniquestrings;
         private int _listSize = -1;
+        private const int DefaultListSize = 5;
 
         #endregion
 
@@ -79,13 +80,21 @@ namespace TDD_Katas_project.The_RecentlyUsedList_kata
 
             _listofuniquestrings.Insert(0, listitem);
 
-            if (_listSize != -1)
+            SetDefaultListSize();
 
-                while (_listofuniquestrings.Count > _listSize)
+            while (_listofuniquestrings.Count > _listSize)
 
-                    _listofuniquestrings.RemoveAt(_listofuniquestrings.Count - 1);
+                _listofuniquestrings.RemoveAt(_listofuniquestrings.Count - 1);
 
         }
+
+        private void SetDefaultListSize()
+        {
+
+            _listSize = _listSize < 0 ? DefaultListSize : _listSize;
+
+        }
+
         public string GetListItem(int index)
         {
             return _listofuniquestrings != null ? _listofuniquestrings[index] : string.Empty;
@@ -103,6 +112,13 @@ namespace TDD_Katas_project.The_RecentlyUsedList_kata
                 return _listofuniquestrings != null ? _listofuniquestrings.Count : 0;
             }
         }
+
+        public int Size
+        {
+
+            get { return _listSize; }
+        }
+
         #endregion
 
         #region Implementation of IEnumerable
