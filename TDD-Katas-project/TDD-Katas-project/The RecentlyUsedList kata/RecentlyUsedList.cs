@@ -76,9 +76,12 @@ namespace TDD_Katas_project.The_RecentlyUsedList_kata
         public void Add(string listitem)
         {
             AvoidDuplicateInsertion(listitem);
-
             _listofuniquestrings.Insert(0, listitem);
 
+            //Trim List items beyond the size of list
+            if (_listSize != -1)
+                while (_listofuniquestrings.Count > _listSize)
+                    _listofuniquestrings.RemoveAt(_listofuniquestrings.Count - 1);
 
         }
 
