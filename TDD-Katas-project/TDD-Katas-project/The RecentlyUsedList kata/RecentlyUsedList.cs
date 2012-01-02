@@ -69,6 +69,16 @@ namespace TDD_Katas_project.The_RecentlyUsedList_kata
         }
         #endregion
 
+        #region Public methods
+        public void Add(string listitem)
+        {
+            throw new NotImplementedException();
+
+        }
+
+        #endregion
+
+
         #region Helper Methods
         public int Count
         {
