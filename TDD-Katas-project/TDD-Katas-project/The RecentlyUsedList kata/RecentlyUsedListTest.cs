@@ -83,15 +83,11 @@ namespace TDD_Katas_project.The_RecentlyUsedList_kata
             _recentlyUsedList.Add("FourthItem");
             _recentlyUsedList.Add("FifthItem");
             const int index = 5;
-            var exception = Assert.Throws<ArgumentException>(GetListItemOnIndex);
+            var exception = Assert.Throws<ArgumentException>(() => _recentlyUsedList.GetListItem(index));
 
-            Assert.That(exception.Message, Is.EqualTo(string.Format("supplied index [{0}] should not be greater than [{1}].", index, _recentlyUsedList.Count-1)));
+            Assert.That(exception.Message, Is.EqualTo(string.Format("supplied index [{0}] should not be greater than [{1}].", index, _recentlyUsedList.Count - 1)));
         }
-
-        private void GetListItemOnIndex()
-        {
-            _recentlyUsedList.GetListItem(5);
-        }
+        
 
         #region Private Methods
         private List<string> ToList(params string[] items)
