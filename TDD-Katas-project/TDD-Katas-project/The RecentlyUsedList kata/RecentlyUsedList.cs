@@ -91,14 +91,12 @@ namespace TDD_Katas_project.The_RecentlyUsedList_kata
 
         public string GetListItem(int index)
         {
-            if (index < 0)
-                throw new ArgumentException(string.Format("supplied index [{0}] should be non-negative and not greater than [{1}].", index, _listofuniquestrings.Count - 1));
-
-            if (index > _listofuniquestrings.Count - 1)
-                throw new ArgumentException(string.Format("supplied index [{0}] should not greater than [{1}].", index, _listofuniquestrings.Count - 1));
+            CheckForValidIndex(index);
 
             return _listofuniquestrings != null ? _listofuniquestrings[index] : string.Empty;
         }
+
+
 
         #endregion
 
@@ -142,7 +140,14 @@ namespace TDD_Katas_project.The_RecentlyUsedList_kata
             _listSize = _listSize < 0 ? DefaultListSize : _listSize;
 
         }
+        private void CheckForValidIndex(int index)
+        {
+            if (index < 0)
+                throw new ArgumentException(string.Format("supplied index [{0}] should be non-negative and not greater than [{1}].", index, _listofuniquestrings.Count - 1));
 
+            if (index > _listofuniquestrings.Count - 1)
+                throw new ArgumentException(string.Format("supplied index [{0}] should not greater than [{1}].", index, _listofuniquestrings.Count - 1));
+        }
         #endregion
 
     }
