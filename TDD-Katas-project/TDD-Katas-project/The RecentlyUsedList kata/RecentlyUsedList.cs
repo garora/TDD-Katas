@@ -88,12 +88,6 @@ namespace TDD_Katas_project.The_RecentlyUsedList_kata
 
         }
 
-        private void SetDefaultListSize()
-        {
-
-            _listSize = _listSize < 0 ? DefaultListSize : _listSize;
-
-        }
 
         public string GetListItem(int index)
         {
@@ -102,8 +96,8 @@ namespace TDD_Katas_project.The_RecentlyUsedList_kata
 
         #endregion
 
+        #region Helper Methods /members
 
-        #region Helper Methods
         public int Count
         {
 
@@ -134,6 +128,17 @@ namespace TDD_Katas_project.The_RecentlyUsedList_kata
         }
 
         #endregion
+
+        #region Private members
+        private void SetDefaultListSize()
+        {
+
+            _listSize = _listSize < 0 ? DefaultListSize : _listSize;
+
+        }
+
+        #endregion
+
     }
 
 

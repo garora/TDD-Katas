@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using NUnit.Framework;
 using System.Collections.Generic;
 namespace TDD_Katas_project.The_RecentlyUsedList_kata
@@ -70,7 +71,26 @@ namespace TDD_Katas_project.The_RecentlyUsedList_kata
         {
             const int expectedlistSize = 5;
             var actuallistsize = _recentlyUsedList.Size;
-            Assert.That(actuallistsize,Is.EqualTo(expectedlistSize));
+            Assert.That(actuallistsize, Is.EqualTo(expectedlistSize));
+        }
+
+        [Test]
+        public void CanThrowArgumentExceptionWhenSuppliedIndexIsOutOfScope()
+        {
+            _recentlyUsedList.Add("FirstItem");
+            _recentlyUsedList.Add("SecondItem");
+            _recentlyUsedList.Add("ThirdItem");
+            _recentlyUsedList.Add("FourthItem");
+            _recentlyUsedList.Add("FifthItem");
+            const int index = 5;
+            var exception = Assert.Throws<ArgumentException>(GetListItemOnIndex);
+
+            Assert.That(exception.Message, Is.EqualTo(string.Format("supplied index [{0}] should not be greater than [{1}].", index, _recentlyUsedList.Count)));
+        }
+
+        private void GetListItemOnIndex()
+        {
+            _recentlyUsedList.GetListItem(4);
         }
 
         #region Private Methods
