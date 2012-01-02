@@ -64,11 +64,7 @@ namespace TDD_Katas_project.The_RecentlyUsedList_kata
             _listofuniquestrings = listItems.ToList();
             _listSize = listSize;
 
-            if (_listSize != -1)
-
-                while (_listofuniquestrings.Count > _listSize)
-
-                    _listofuniquestrings.RemoveAt(_listofuniquestrings.Count - 1);
+            TrimListToTheSizeDefined();
         }
         #endregion
 

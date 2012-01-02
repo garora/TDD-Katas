@@ -12,6 +12,7 @@ namespace TDD_Katas_project.The_RecentlyUsedList_kata
         private RecentlyUsedList<string> _recentlyUsedList;
         private int _size;
         #endregion
+
         #region Setup/TearDown
         [TestFixtureSetUp]
         public void Setup()
@@ -28,6 +29,9 @@ namespace TDD_Katas_project.The_RecentlyUsedList_kata
 
 
         #endregion
+
+        #region Test Methods
+
         [Test]
         public void CanAddItems()
         {
@@ -155,6 +159,8 @@ namespace TDD_Katas_project.The_RecentlyUsedList_kata
             var sizeableList = new RecentlyUsedList<string>(_size);
             Assert.That(_size, Is.EqualTo(sizeableList.Size));
         }
+        #endregion
+
         #region Private Methods
         private List<string> ToList(params string[] items)
         {
