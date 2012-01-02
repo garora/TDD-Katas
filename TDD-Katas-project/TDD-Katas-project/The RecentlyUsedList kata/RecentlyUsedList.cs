@@ -75,19 +75,11 @@ namespace TDD_Katas_project.The_RecentlyUsedList_kata
         #region Public methods
         public void Add(string listitem)
         {
-            var indexOccurenceofItem = _listofuniquestrings.IndexOf(listitem);
-
-            if (indexOccurenceofItem > -1)
-                _listofuniquestrings.RemoveAt(indexOccurenceofItem);
 
             _listofuniquestrings.Insert(0, listitem);
 
-            while (_listofuniquestrings.Count > _listSize)
-
-                _listofuniquestrings.RemoveAt(_listofuniquestrings.Count - 1);
 
         }
-
 
         public string GetListItem(int index)
         {
@@ -95,7 +87,6 @@ namespace TDD_Katas_project.The_RecentlyUsedList_kata
 
             return _listofuniquestrings != null ? _listofuniquestrings[index] : string.Empty;
         }
-
 
 
         #endregion
@@ -117,6 +108,10 @@ namespace TDD_Katas_project.The_RecentlyUsedList_kata
             get { return _listSize; }
         }
 
+        public List<string> ToList()
+        {
+            return _listofuniquestrings;
+        }
         #endregion
 
         #region Implementation of IEnumerable
