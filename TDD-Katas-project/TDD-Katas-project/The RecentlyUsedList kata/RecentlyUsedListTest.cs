@@ -66,7 +66,23 @@ namespace TDD_Katas_project.The_RecentlyUsedList_kata
             Assert.That(actuallist, Is.EqualTo(expectedlist));
 
         }
+        [Test]
+        public void CanAvoidInsertionOfItemsAreBeyondListSize()
+        {
+            _recentlyUsedList.Add("FirstItem");
+            _recentlyUsedList.Add("SecondItem");
+            _recentlyUsedList.Add("SecondItem");
+            _recentlyUsedList.Add("ThirdItem");
+            _recentlyUsedList.Add("FourthItem");
+            _recentlyUsedList.Add("FifthItem");
+            _recentlyUsedList.Add("SixthItem"); //This should not be considered
 
+            var expectedlist = ToList("FifthItem", "FourthItem", "ThirdItem", "SecondItem", "FirstItem");
+            var actuallist = _recentlyUsedList.ToList();
+
+            Assert.That(actuallist, Is.EqualTo(expectedlist));
+
+        }
 
         [Test]
         public void CanTestItemByIndex()

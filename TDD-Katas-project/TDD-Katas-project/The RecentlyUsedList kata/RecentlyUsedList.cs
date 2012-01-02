@@ -75,15 +75,13 @@ namespace TDD_Katas_project.The_RecentlyUsedList_kata
         #region Public methods
         public void Add(string listitem)
         {
-            var indexOccurenceofItem = _listofuniquestrings.IndexOf(listitem);
-
-            if (indexOccurenceofItem > -1)
-                _listofuniquestrings.RemoveAt(indexOccurenceofItem);
+            AvoidDuplicateInsertion(listitem);
 
             _listofuniquestrings.Insert(0, listitem);
 
 
         }
+
 
         public string GetListItem(int index)
         {
@@ -146,6 +144,14 @@ namespace TDD_Katas_project.The_RecentlyUsedList_kata
 
             if (index > _listofuniquestrings.Count - 1)
                 throw new ArgumentException(string.Format("supplied index [{0}] should not greater than [{1}].", index, _listofuniquestrings.Count - 1));
+        }
+
+        private void AvoidDuplicateInsertion(string listitem)
+        {
+            var indexOccurenceofItem = _listofuniquestrings.IndexOf(listitem);
+
+            if (indexOccurenceofItem > -1)
+                _listofuniquestrings.RemoveAt(indexOccurenceofItem);
         }
         #endregion
 
