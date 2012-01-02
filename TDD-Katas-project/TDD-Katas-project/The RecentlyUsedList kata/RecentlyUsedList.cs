@@ -75,6 +75,8 @@ namespace TDD_Katas_project.The_RecentlyUsedList_kata
         #region Public methods
         public void Add(string listitem)
         {
+            if (string.IsNullOrEmpty(listitem))
+                throw new ArgumentException(string.Format("List items should not be Empty or Null. But it was [{0}]", listitem));
             AvoidDuplicateInsertion(listitem);
             _listofuniquestrings.Insert(0, listitem);
             TrimListToTheSizeDefined();

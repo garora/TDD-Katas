@@ -138,8 +138,11 @@ namespace TDD_Katas_project.The_RecentlyUsedList_kata
         [Test]
         public void CanThrowArgumentExceptionWhenSuppliedItemIsNullorEmpty()
         {
+            const string listitem = null;
 
-            var exception = Assert.Throws<ArgumentException>(() => _recentlyUsedList.Add(null));
+            var exception = Assert.Throws<ArgumentException>(() => _recentlyUsedList.Add(listitem));
+            Assert.That(exception.Message,
+                        Is.EqualTo(string.Format("List items should not be Empty or Null. But it was [{0}]", listitem)));
 
         }
 
