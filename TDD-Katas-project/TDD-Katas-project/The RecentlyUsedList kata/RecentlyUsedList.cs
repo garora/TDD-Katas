@@ -34,7 +34,7 @@ namespace TDD_Katas_project.The_RecentlyUsedList_kata
     {
         #region Private members
 
-        private List<string> _listofuniquestrings;
+        private readonly List<string> _listofuniquestrings;
         private int _listSize = -1;
         private const int DefaultListSize = 5;
 
