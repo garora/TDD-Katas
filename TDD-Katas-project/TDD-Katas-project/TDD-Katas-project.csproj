@@ -71,6 +71,7 @@
     <Compile Include="The WordWrap Kata\WordWrap.cs" />
     <Compile Include="The WordWrap Kata\WordWrapTest.cs" />
     <Compile Include="Utility\EnumerableComparer.cs" />
+    <Compile Include="Utility\SimpleNaturalStringOrder.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="BowlingGame\TheBowlingGameKata.txt" />
