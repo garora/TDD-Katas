@@ -1,4 +1,4 @@
-# TDD-Katas : Continus TDD-Kata practices [url:http://tddkatas.codeplex.com/]
+# TDD-Katas : Continued from TDD-Kata practices [url:http://tddkatas.codeplex.com/]
 
 ## String Calculator
 
