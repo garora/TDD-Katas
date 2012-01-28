@@ -488,4 +488,13 @@
 		4. check for if words already having newline ['\n'] characters - ignore in counts
 		5. Check for multiple lines
 		6. Remove blank spaces if any in new line eg. Actual - "this is a test" WrappedText = "this\n is a t\nest"
-	
+
+--------------------------------------------------------------------------------------------------------------------------
+## Natural Order String Sorting
+--------------------------------------------------------------------------------------------------------------------------
+## There is no built-in feature available in .Net to provide us Natural String Order Soring.
+
+### What is Natural Order String Sorting?
+    Almost all framework provided ASCII order Sorting so, in case of string list : 1,2,3...,1A,2S the result would be as per ASCII order
+	But in Natural Order String this should be : 1,1A,2,2S,3... etc.
+
