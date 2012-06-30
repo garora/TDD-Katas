@@ -27,7 +27,6 @@ namespace TDD_Katas_project.The_WordWrap_Kata
             return wrappedword;
         }
         #endregion
-
         #region MyRegion
         
         private static string GetWrappedwordWithoutBlankSpacesAtStartOfNewLine(string wrappedword)
