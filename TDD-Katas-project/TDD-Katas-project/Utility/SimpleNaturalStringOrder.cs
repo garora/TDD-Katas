@@ -16,7 +16,7 @@ namespace TDD_Katas_project.Utility
             if (compareObject == null && ItemValue == null)
                 return true;
 
-            return compareObject != null ? ItemValue.Equals(compareObject.ToString()) : ItemValue.Equals(null);
+            return compareObject != null && ItemValue.Equals(compareObject.ToString());
         }
 
         public override int GetHashCode()
