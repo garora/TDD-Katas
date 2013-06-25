@@ -13,13 +13,13 @@ namespace TDD_Katas_project.BowlingGame
         #endregion
 
         #region Setup/TearDown
-        [TestFixtureSetUp]
+        [SetUp]
         public void Setup()
         {
             _game = new Game();
             _frames = 10;
         }
-        [TestFixtureTearDown]
+        [TearDown]
         public void TearDown()
         {
             _game = null;
