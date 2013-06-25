@@ -14,13 +14,13 @@ namespace TDD_Katas_project.The_RecentlyUsedList_kata
         #endregion
 
         #region Setup/TearDown
-        [TestFixtureSetUp]
+        [SetUp]
         public void Setup()
         {
             _recentlyUsedList = new RecentlyUsedList<string>();
             _size = 10;
         }
-        [TestFixtureTearDown]
+        [TearDown]
         public void TearDown()
         {
             _recentlyUsedList = null;
