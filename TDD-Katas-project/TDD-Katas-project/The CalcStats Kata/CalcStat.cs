@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 
 namespace TDD_Katas_project.The_CalcStats_Kata
@@ -34,19 +35,19 @@ namespace TDD_Katas_project.The_CalcStats_Kata
 
         private static string GetMinimumValue(IEnumerable<int> numbers)
         {
-            return numbers == null ? null : numbers.Min().ToString();
+            return numbers == null ? null : numbers.Min().ToString(CultureInfo.InvariantCulture);
         }
         private static string GetMaximumValue(IEnumerable<int> numbers)
         {
-            return numbers == null ? null : numbers.Max().ToString();
+            return numbers == null ? null : numbers.Max().ToString(CultureInfo.InvariantCulture);
         }
         private static string GetElementCount(IEnumerable<int> numbers)
         {
-            return numbers == null ? null : numbers.Count().ToString();
+            return numbers == null ? null : numbers.Count().ToString(CultureInfo.InvariantCulture);
         }
         private static string GetSeriesAverage(IEnumerable<int> numbers)
         {
-            return numbers == null ? null : numbers.Average().ToString();
+            return numbers == null ? null : numbers.Average().ToString(CultureInfo.InvariantCulture);
         }
         #endregion
     }
