@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 
 
@@ -27,7 +28,7 @@ namespace TDD_Katas_project.FizzBuzzKata
             if (string.IsNullOrEmpty(result))
                 result = GetBuzzResult(number);
 
-            return string.IsNullOrEmpty(result) ? number.ToString() : result;
+            return string.IsNullOrEmpty(result) ? number.ToString(CultureInfo.InvariantCulture) : result;
         }
         #endregion
 
@@ -70,7 +71,7 @@ namespace TDD_Katas_project.FizzBuzzKata
                 if (IsFizz(i)) printNumber += "Fizz";
                 if (IsBuzz(i)) printNumber += "Buzz";
                 if (IsNumber(printNumber))
-                    printNumber = (i).ToString();
+                    printNumber = (i).ToString(CultureInfo.InvariantCulture);
                 resultFizzBuzz += " " + printNumber;
             }
             return resultFizzBuzz.Trim();
@@ -79,7 +80,7 @@ namespace TDD_Katas_project.FizzBuzzKata
         {
             Enumerable.Range(1, 100)
                 .Select(fb => String.Format("{0}{1}", fb % 3 == 0 ? "Fizz" : "", fb % 5 == 0 ? "Buzz" : ""))
-                .Select(fb => fb != null ? (String.IsNullOrEmpty(fb) ? fb.ToString() : fb) : null)
+                .Select(fb => fb != null ? (String.IsNullOrEmpty(fb) ? fb.ToString(CultureInfo.InvariantCulture) : fb) : null)
                 .ToList()
                 .ForEach(x => resultFizzBuzz = x);
             return resultFizzBuzz.Trim();
