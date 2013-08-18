@@ -25,16 +25,16 @@ namespace TDD_Katas_project.The_Natural_String_Sorting_Kata
         public List<string> SortString(string[] strItems, SortOrder order)
         {
             Func<string, object> convert = str =>
-                                               {
-                                                   try
-                                                   {
-                                                       return int.Parse(str);
-                                                   }
-                                                   catch
-                                                   {
-                                                       return str;
-                                                   }
-                                               };
+                {
+                    try
+                    {
+                        return int.Parse(str);
+                    }
+                    catch
+                    {
+                        return str;
+                    }
+                };
 
             return GetSortedList(strItems, order, convert);
 
