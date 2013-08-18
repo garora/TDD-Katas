@@ -35,19 +35,27 @@ namespace TDD_Katas_project.The_CalcStats_Kata
 
         private static string GetMinimumValue(IEnumerable<int> numbers)
         {
-            return numbers == null ? null : numbers.Min().ToString(CultureInfo.InvariantCulture);
+            return numbers == null
+                       ? null
+                       : numbers.Min().ToString(CultureInfo.InvariantCulture);
         }
         private static string GetMaximumValue(IEnumerable<int> numbers)
         {
-            return numbers == null ? null : numbers.Max().ToString(CultureInfo.InvariantCulture);
+            return numbers == null
+                       ? null
+                       : numbers.Max().ToString(CultureInfo.InvariantCulture);
         }
         private static string GetElementCount(IEnumerable<int> numbers)
         {
-            return numbers == null ? null : numbers.Count().ToString(CultureInfo.InvariantCulture);
+            return numbers == null
+                       ? null
+                       : numbers.Count().ToString(CultureInfo.InvariantCulture);
         }
         private static string GetSeriesAverage(IEnumerable<int> numbers)
         {
-            return numbers == null ? null : numbers.Average().ToString(CultureInfo.InvariantCulture);
+            return numbers == null
+                       ? null
+                       : numbers.Average().ToString(CultureInfo.InvariantCulture);
         }
         #endregion
     }
