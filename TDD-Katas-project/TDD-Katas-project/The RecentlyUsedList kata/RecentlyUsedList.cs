@@ -72,9 +72,13 @@ namespace TDD_Katas_project.The_RecentlyUsedList_kata
         public void Add(string listitem)
         {
             if (string.IsNullOrEmpty(listitem))
-                throw new ArgumentException(string.Format("List items should not be Empty or Null. But it was [{0}]", listitem));
+                throw new ArgumentException(string.Format("List items should not be Empty or Null. But it was [{0}]",
+                                                          listitem));
+
             AvoidDuplicateInsertion(listitem);
+
             _listofuniquestrings.Insert(0, listitem);
+
             TrimListToTheSizeDefined();
 
         }
@@ -96,7 +100,10 @@ namespace TDD_Katas_project.The_RecentlyUsedList_kata
 
             get
             {
-                return _listofuniquestrings != null ? _listofuniquestrings.Count : 0;
+                return _listofuniquestrings != null
+                           ? _listofuniquestrings.Count
+                           : 0;
+
             }
         }
 
@@ -130,7 +137,9 @@ namespace TDD_Katas_project.The_RecentlyUsedList_kata
         private void SetDefaultListSize()
         {
 
-            _listSize = _listSize < 0 ? DefaultListSize : _listSize;
+            _listSize = _listSize < 0
+                            ? DefaultListSize
+                            : _listSize;
 
         }
         private void CheckForValidIndex(int index)
@@ -141,6 +150,7 @@ namespace TDD_Katas_project.The_RecentlyUsedList_kata
             if (index > _listofuniquestrings.Count - 1)
                 throw new ArgumentException(string.Format("supplied index [{0}] should not greater than [{1}].", index, _listofuniquestrings.Count - 1));
         }
+
         private void AvoidDuplicateInsertion(string listitem)
         {
             var indexOccurenceofItem = _listofuniquestrings.IndexOf(listitem);
@@ -148,12 +158,14 @@ namespace TDD_Katas_project.The_RecentlyUsedList_kata
             if (indexOccurenceofItem > -1)
                 _listofuniquestrings.RemoveAt(indexOccurenceofItem);
         }
+
         private void TrimListToTheSizeDefined()
         {
             if (_listSize != -1)
                 while (_listofuniquestrings.Count > _listSize)
                     _listofuniquestrings.RemoveAt(0); //Remove from Top in LIFO
         }
+
         #endregion
 
     }
