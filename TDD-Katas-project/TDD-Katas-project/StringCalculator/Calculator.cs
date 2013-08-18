@@ -7,7 +7,9 @@ namespace TDD_Katas_project.StringCalculator
     {
         public static int Add(string numbers)
         {
-            return string.IsNullOrEmpty(numbers) ? 0 : GetSum(numbers);
+            return string.IsNullOrEmpty(numbers)
+                       ? 0
+                       : GetSum(numbers);
         }
 
         private static int GetSum(string numbers)
@@ -21,7 +23,9 @@ namespace TDD_Katas_project.StringCalculator
                 newnumbers = GetSpecificNumbers(numbers);
             }
 
-            return ContainsAny(numbers, delimiter) ? newnumbers.Split(delimiter.ToCharArray()).Sum(n => ParseToInt(n)) : ParseToInt(newnumbers);
+            return ContainsAny(numbers, delimiter)
+                       ? newnumbers.Split(delimiter.ToCharArray()).Sum(n => ParseToInt(n))
+                       : ParseToInt(newnumbers);
 
         }
 
@@ -36,15 +40,18 @@ namespace TDD_Katas_project.StringCalculator
         }
         private static string GetSpecificDelimiter(string numbers)
         {
-            return numbers.Substring(2, numbers.IndexOf("\n") - 2);
+            return numbers.Substring(2, numbers.IndexOf("\n", StringComparison.Ordinal) - 2);
         }
         private static string GetSpecificNumbers(string numbers)
         {
-            return numbers.Substring(numbers.IndexOf("\n") + 1, numbers.Length - numbers.IndexOf("\n") - 1);
+            return numbers.Substring(numbers.IndexOf("\n", StringComparison.Ordinal) + 1,
+                                     numbers.Length - numbers.IndexOf("\n", StringComparison.Ordinal) - 1);
         }
         private static int ParseToInt(string n)
         {
-            var result = IsGreaterThanThousand(Convert.ToInt32(n)) ? 0 : (Convert.ToInt32(string.IsNullOrEmpty(n) ? "0" : n));
+            var result = IsGreaterThanThousand(Convert.ToInt32(n))
+                             ? 0
+                             : (Convert.ToInt32(string.IsNullOrEmpty(n) ? "0" : n));
             VelidateNumbersArePerRule(result);
 
             return result;
@@ -64,7 +71,9 @@ namespace TDD_Katas_project.StringCalculator
         private static void VelidateNumbersArePerRule(int number)
         {
             if (number < 0)
-                throw new ArgumentException(string.Format("string contains [{0}], which does not meet rule. entered number should not negative.", number));
+                throw new ArgumentException(
+                    string.Format(
+                        "string contains [{0}], which does not meet rule. entered number should not negative.", number));
         }
     }
 }
