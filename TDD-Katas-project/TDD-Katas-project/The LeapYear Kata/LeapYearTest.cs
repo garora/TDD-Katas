@@ -13,6 +13,7 @@ namespace TDD_Katas_project.The_LeapYear_Kata
         }
 
         [Test]
+        [TestCase(false, 2013)]
         [TestCase(false, 2001)]
         [TestCase(true, 1996)]
         [TestCase(true, 1992)]
