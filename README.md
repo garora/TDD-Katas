@@ -1,6 +1,6 @@
-# TDD-Katas : Continued from TDD-Kata practices [url:http://tddkatas.codeplex.com/]
+## TDD-Katas : Continued from TDD-Kata practices [http://tddkatas.codeplex.com/]
 
-## String Calculator
+### String Calculator
 
 	- Create a simple String calculator with a method int Add(string numbers)
 		- The method can take 0, 1 or 2 numbers, and will return their sum (for an empty string it will
@@ -24,7 +24,7 @@
 	Completed first Kata example	
 ----------------------------------------------------------------
 
-## The Bowling Game Kata
+### The Bowling Game Kata
 	- Following Uncle bob post from here : http://butunclebob.com/ArticleS.UncleBob.TheBowlingGameKata
 	- Create a new project or start in the existing project by adding Game.cs and TestGame.cs
 	- Create two public methods methods [refer to the presentation file]
@@ -40,12 +40,12 @@
 	- All test passed
 	- Still there is scope of refactoring
 
-## The FizzBuzz Kata
+### The FizzBuzz Kata
 	- Write a program that prints the numbers from 1 to 100. But for multiples of three print "Fizz" 
 	  instead of the number and for the multiples of five print "Buzz". For numbers which are multiples of both 
 	  three and five print "FizzBuzz".
 	  
-### Steps:
+#### Steps:
 
 	Lets divide this into different steps so, we can easily write and test this.
 	- Print numbers from 1 to 100
@@ -58,11 +58,11 @@
 	- Create test to verify supplied number within the range 1 to 100
 	- Create test to verify number and return result Fizz or Buzz or FizzBuzz per above criteria
 
-## The OddEven Kata
+### The OddEven Kata
 	- Write a program that prints numbers within specified range lets say 1 to 100. If number is odd print 'Odd'
 	  instead of the number. If number is even print 'Even' instead of number. Else print number [hint - if number is Prime].
 
-### Steps :
+#### Steps :
 
 	Lets divide into following stesp:
 	- Prints numbers from 1 to 100
@@ -72,14 +72,14 @@
 	- Make method to accept any number of range [currently  we have 1 to 100]
 	- Create a new method to check Odd/Even/Prime of a single supplied method
 
-## The PrimeFactor Kata
-	An awesome Kata from Uncle BoB [url:http://butunclebob.com/ArticleS.UncleBob.ThePrimeFactorsKata]
+### The PrimeFactor Kata
+	An awesome Kata from Uncle BoB [http://butunclebob.com/ArticleS.UncleBob.ThePrimeFactorsKata]
 
 -------------------
 
-##Kata - coming next [source url:http://www.cyber-dojo.com/]
+###Kata - coming next [http://www.cyber-dojo.com/]
 
-### Calc Stats:
+#### Calc Stats:
 
 	Your task is to process a sequence of integer numbers
 	to determine the following statistics:
@@ -96,7 +96,7 @@
 		o) number of elements in the sequence = 6
 		o) average value = 18.166666
 
-### Diversion :
+#### Diversion :
 
 	Think of binary numbers: sequences of 0's and 1's. How many 
 	n-digit binary numbers are there that don't have two adjacent
@@ -112,7 +112,7 @@
 	Having worked out the pattern, there's a second part to the 
 	question: can you prove why that relationship exists? 
 
-### Game of Life :
+#### Game of Life :
 
 	Your task is to write a program to calculate the next
 	generation of Conway's game of life, given any starting
@@ -146,7 +146,7 @@
 	...**...
 	........
 
-### Harry Potter :
+#### Harry Potter :
 
 	To try and encourage more sales of the 5 different Harry
 	Potter books they sell, a bookshop has decided to offer 
@@ -182,7 +182,7 @@
 
 	Answer: 51.20 EUR
 
-### LCD Digits :
+#### LCD Digits :
 
 	Your task is to create an LCD string representation of an
 	integer value using a 3x3 grid of space, underscore, and 
@@ -200,7 +200,7 @@
 	|_| ..| |.|
 	..| ..| |_|
 
-### Leap Year :
+#### Leap Year :
 
 	Write a function that returns true or false depending on 
 	whether its input integer is a leap year or not.
@@ -213,7 +213,7 @@
 	is a typical leap year, whereas 1900 is an atypical
 	common year and 2000 is an atypical leap year.
 
-### Mine Fields :
+#### Mine Fields :
 
 	A field of N x M squares is represented by N lines of 
 	exactly M characters each. The character '*' represents 
@@ -237,7 +237,7 @@
 	12*1
 	0111
 
-### Poker Hands
+#### Poker Hands
 
 	A poker deck contains 52 cards - each card has a suit which
 	is one of clubs, diamonds, hearts, or spades 
@@ -309,7 +309,7 @@
 	Input: Black: 2H 3D 5S 9C KD White: 2D 3H 5C 9S KH
 	Output: Tie
 
-### Recently Used List :
+#### Recently Used List :
 
 	Develop a recently-used-list class to hold strings 
 	uniquely in Last-In-First-Out order.
@@ -331,14 +331,14 @@
 	o) A bounded capacity can be specified, so there is an upper
 	   limit to the number of items contained, with the least
 	   recently added items dropped on overflow.
-#### I added more tests
+##### I added more tests
 	o) While getting items by index, supplied index-value should be within the bounds of List [eg.
 	if maximum item counts of list is 5 then supplied index is less than 4 as index starts from 0 (zero)]
 	o) Negative index value not allowed [>0]
 	o) Size limit is must if not supplied make 5 as default [0-4]
 	o) List can be non-sizable means without upper limit list can be created [Hint-try property or constructor initializers]
 
-### Reversi :
+#### Reversi :
 
 	Reversi is a board game for two players. The board contains
 	8x8 squares. The players place Black or White counters onto
@@ -372,7 +372,7 @@
 	........
 	B
 
-### Yehtzee :
+#### Yehtzee :
 
 	The game of yahtzee is a simple dice game. Each player rolls five
 	six-sided dice. They can re-roll some or all of the dice up to three
@@ -474,14 +474,14 @@
 		4,4,4,4,4 scores 0
 ---------------------------------------------------------------------
   
-## Many more from [url : http://codekata.pragprog.com/2007/01/code_kata_backg.html#more]
+### Many more from [http://codekata.pragprog.com/2007/01/code_kata_backg.html#more]
 
 ----------------------------------------------------------------------
 
-## The Word Wrap Kata [http://codingdojo.org/cgi-bin/wiki.pl?KataWordWrap]
+### The Word Wrap Kata [http://codingdojo.org/cgi-bin/wiki.pl?KataWordWrap]
 	Create a function which breaks words on specified space with new line. Its nothing but merely similar to word-processor.
 
-### Steps:
+#### Steps:
 		1. Create a public class named WordWrap
 		2. Create a method 'wrap' it can be a static method
 		3. Create a function which count the number of spliter words of non-space
@@ -490,11 +490,11 @@
 		6. Remove blank spaces if any in new line eg. Actual - "this is a test" WrappedText = "this\n is a t\nest"
 
 --------------------------------------------------------------------------------------------------------------------------
-## Natural Order String Sorting
+### Natural Order String Sorting
 --------------------------------------------------------------------------------------------------------------------------
-## There is no built-in feature available in .Net to provide us Natural String Order Soring.
+### There is no built-in feature available in .Net to provide us Natural String Order Soring.
 
-### What is Natural Order String Sorting?
+#### What is Natural Order String Sorting?
     Almost all framework provided ASCII order Sorting so, in case of string list : 1,2,3...,1A,2S the result would be as per ASCII order
 	But in Natural Order String this should be : 1,1A,2,2S,3... etc.
 
