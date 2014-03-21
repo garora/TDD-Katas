@@ -14,14 +14,14 @@
 		- the following input is ok:  "\n2,3"  (will equal 6)
 		- the following input is NOT ok:  "1,\n" (not need to prove it - just clarifying)
 	- Support different delimiters
-			to change a delimiter, the beginning of the string will contain a separate line that looks like this:   
+			to change a delimiter, the beginning of the string will contain a separate line that looks like this:
 			"//[delimiter]\n[numbers...]" for example "/;\n1;2" should return three where the default delimiter is ';' .
 			the first line is optional. all existing scenarios should still be supported
 	- Calling Add with a negative number will throw an exception "negatives not allowed" - and the negative that was passed.
-	  if there are multiple negatives, show all of them in the exception message 
-	
+	  if there are multiple negatives, show all of them in the exception message
+
 ----------------------------------------------------------------
-	Completed first Kata example	
+	Completed first Kata example
 ----------------------------------------------------------------
 
 ### The Bowling Game Kata
@@ -41,10 +41,10 @@
 	- Still there is scope of refactoring
 
 ### The FizzBuzz Kata
-	- Write a program that prints the numbers from 1 to 100. But for multiples of three print "Fizz" 
-	  instead of the number and for the multiples of five print "Buzz". For numbers which are multiples of both 
+	- Write a program that prints the numbers from 1 to 100. But for multiples of three print "Fizz"
+	  instead of the number and for the multiples of five print "Buzz". For numbers which are multiples of both
 	  three and five print "FizzBuzz".
-	  
+
 #### Steps:
 
 	Lets divide this into different steps so, we can easily write and test this.
@@ -98,36 +98,36 @@
 
 #### Diversion :
 
-	Think of binary numbers: sequences of 0's and 1's. How many 
+	Think of binary numbers: sequences of 0's and 1's. How many
 	n-digit binary numbers are there that don't have two adjacent
-	1 bits? 
+	1 bits?
 
 	For example, for three-digit numbers, Five of the possible
-	eight combinations meet the criteria: 
+	eight combinations meet the criteria:
 
-	   000, 001, 010, 011, 100, 101, 110, 111. 
+	   000, 001, 010, 011, 100, 101, 110, 111.
 
 	What is the number for sequences of length 4, 5, 10, n?
 
-	Having worked out the pattern, there's a second part to the 
-	question: can you prove why that relationship exists? 
+	Having worked out the pattern, there's a second part to the
+	question: can you prove why that relationship exists?
 
 #### Game of Life :
 
 	Your task is to write a program to calculate the next
 	generation of Conway's game of life, given any starting
-	position. You start with a two dimensional grid of cells, 
-	where each cell is either alive or dead. The grid is finite, 
-	and no life can exist off the edges. When calculating the 
+	position. You start with a two dimensional grid of cells,
+	where each cell is either alive or dead. The grid is finite,
+	and no life can exist off the edges. When calculating the
 	next generation of the grid, follow these four rules:
 
-	1. Any live cell with fewer than two live neighbours dies, 
+	1. Any live cell with fewer than two live neighbours dies,
 	   as if caused by underpopulation.
-	2. Any live cell with more than three live neighbours dies, 
+	2. Any live cell with more than three live neighbours dies,
 	   as if by overcrowding.
-	3. Any live cell with two or three live neighbours lives 
+	3. Any live cell with two or three live neighbours lives
 	   on to the next generation.
-	4. Any dead cell with exactly three live neighbours becomes 
+	4. Any dead cell with exactly three live neighbours becomes
 	   a live cell.
 
 	Examples: * indicates live cell, . indicates dead cell
@@ -149,27 +149,27 @@
 #### Harry Potter :
 
 	To try and encourage more sales of the 5 different Harry
-	Potter books they sell, a bookshop has decided to offer 
-	discounts of multiple-book purchases. 
+	Potter books they sell, a bookshop has decided to offer
+	discounts of multiple-book purchases.
 
-	One copy of any of the five books costs 8 EUR. 
+	One copy of any of the five books costs 8 EUR.
 
-	If, however, you buy two different books, you get a 5% 
+	If, however, you buy two different books, you get a 5%
 	discount on those two books.
 
-	If you buy 3 different books, you get a 10% discount. 
+	If you buy 3 different books, you get a 10% discount.
 
 	If you buy 4 different books, you get a 20% discount.
 
 	If you go the whole hog, and buy all 5, you get a huge 25%
-	discount. 
+	discount.
 
-	Note that if you buy, say, four books, of which 3 are 
-	different titles, you get a 10% discount on the 3 that 
-	form part of a set, but the fourth book still costs 8 EUR. 
+	Note that if you buy, say, four books, of which 3 are
+	different titles, you get a 10% discount on the 3 that
+	form part of a set, but the fourth book still costs 8 EUR.
 
-	Your mission is to write a piece of code to calculate the 
-	price of any conceivable shopping basket (containing only 
+	Your mission is to write a piece of code to calculate the
+	price of any conceivable shopping basket (containing only
 	Harry Potter books), giving as big a discount as possible.
 
 	For example, how much does this basket of books cost?
@@ -185,8 +185,8 @@
 #### LCD Digits :
 
 	Your task is to create an LCD string representation of an
-	integer value using a 3x3 grid of space, underscore, and 
-	pipe characters for each digit. Each digit is shown below 
+	integer value using a 3x3 grid of space, underscore, and
+	pipe characters for each digit. Each digit is shown below
 	(using a dot instead of a space)
 
 	._.   ...   ._.   ._.   ...   ._.   ._.   ._.   ._.   ._.
@@ -202,7 +202,7 @@
 
 #### Leap Year :
 
-	Write a function that returns true or false depending on 
+	Write a function that returns true or false depending on
 	whether its input integer is a leap year or not.
 
 	A leap year is defined as one that is divisible by 4,
@@ -215,9 +215,9 @@
 
 #### Mine Fields :
 
-	A field of N x M squares is represented by N lines of 
-	exactly M characters each. The character '*' represents 
-	a mine and the character '.' represents no-mine. 
+	A field of N x M squares is represented by N lines of
+	exactly M characters each. The character '*' represents
+	a mine and the character '.' represents no-mine.
 
 	Example input (a 4 x 3 mine-field of 12 squares, 2 of
 	which are mines)
@@ -228,9 +228,9 @@
 	....
 
 	Your task is to write a program to accept this input and
-	produce as output a hint-field of identical dimensions 
-	where each square is a * for a mine or the number of 
-	adjacent mine-squares if the square does not contain a mine. 
+	produce as output a hint-field of identical dimensions
+	where each square is a * for a mine or the number of
+	adjacent mine-squares if the square does not contain a mine.
 
 	Example output (for the above input)
 	*211
@@ -240,12 +240,12 @@
 #### Poker Hands
 
 	A poker deck contains 52 cards - each card has a suit which
-	is one of clubs, diamonds, hearts, or spades 
-	(denoted C, D, H, and S in the input data). 
+	is one of clubs, diamonds, hearts, or spades
+	(denoted C, D, H, and S in the input data).
 
-	Each card also has a value which is one of 
-	2, 3, 4, 5, 6, 7, 8, 9, 10, jack, queen, king, ace 
-	(denoted 2, 3, 4, 5, 6, 7, 8, 9, T, J, Q, K, A). 
+	Each card also has a value which is one of
+	2, 3, 4, 5, 6, 7, 8, 9, 10, jack, queen, king, ace
+	(denoted 2, 3, 4, 5, 6, 7, 8, 9, T, J, Q, K, A).
 
 	For scoring purposes, the suits are unordered while the
 	values are ordered as given above, with 2 being the lowest
@@ -260,28 +260,28 @@
 	cards have the same value, the hands are ranked by the next
 	highest, and so on.
 
-	Pair: 2 of the 5 cards in the hand have the same value. 
+	Pair: 2 of the 5 cards in the hand have the same value.
 	Hands which both contain a pair are ranked by the value of
-	the cards forming the pair. If these values are the same, 
-	the hands are ranked by the values of the cards not 
+	the cards forming the pair. If these values are the same,
+	the hands are ranked by the values of the cards not
 	forming the pair, in decreasing order.
 
-	Two Pairs: The hand contains 2 different pairs. Hands 
-	which both contain 2 pairs are ranked by the value of 
-	their highest pair. Hands with the same highest pair 
-	are ranked by the value of their other pair. If these 
-	values are the same the hands are ranked by the value 
+	Two Pairs: The hand contains 2 different pairs. Hands
+	which both contain 2 pairs are ranked by the value of
+	their highest pair. Hands with the same highest pair
+	are ranked by the value of their other pair. If these
+	values are the same the hands are ranked by the value
 	of the remaining card.
 
-	Three of a Kind: Three of the cards in the hand have the 
-	same value. Hands which both contain three of a kind are 
+	Three of a Kind: Three of the cards in the hand have the
+	same value. Hands which both contain three of a kind are
 	ranked by the value of the 3 cards.
 
-	Straight: Hand contains 5 cards with consecutive values. 
-	Hands which both contain a straight are ranked by their 
+	Straight: Hand contains 5 cards with consecutive values.
+	Hands which both contain a straight are ranked by their
 	highest card.
 
-	Flush: Hand contains 5 cards of the same suit. Hands which 
+	Flush: Hand contains 5 cards of the same suit. Hands which
 	are both flushes are ranked using the rules for High Card.
 
 	Full House: 3 cards of the same value, with the remaining 2
@@ -298,10 +298,10 @@
 
 	Examples:
 	Input: Black: 2H 3D 5S 9C KD White: 2C 3H 4S 8C AH
-	Output: White wins - high card: Ace 
+	Output: White wins - high card: Ace
 
 	Input: Black: 2H 4S 4C 2D 4H White: 2S 8S AS QS 3S
-	Output: White wins - flush 
+	Output: White wins - flush
 
 	Input: Black: 2H 3D 5S 9C KD White: 2C 3H 4S 8C KH
 	Output: Black wins - high card: 9
@@ -311,7 +311,7 @@
 
 #### Recently Used List :
 
-	Develop a recently-used-list class to hold strings 
+	Develop a recently-used-list class to hold strings
 	uniquely in Last-In-First-Out order.
 
 	o) The most recently added item is first, the least
@@ -385,14 +385,14 @@
 	They hold the three fives and re-roll the other two dice (1,3)
 		5,6,5,5,2
 
-	The player then places the roll in a category, such as ones, twos, fives, 
-	pair, two pairs etc (see below). If the roll is compatible with the category, 
-	the player gets a score for the roll according to the rules. If the roll is not 
+	The player then places the roll in a category, such as ones, twos, fives,
+	pair, two pairs etc (see below). If the roll is compatible with the category,
+	the player gets a score for the roll according to the rules. If the roll is not
 	compatible with the category, the player scores zero for the roll.
 
 	For example, suppose a player scores 5,6,5,5,2 in the fives category they
-	would score 15 (three fives). The score for that go is then added to their 
-	total and the category cannot be used again in the remaining goes for that game. 
+	would score 15 (three fives). The score for that go is then added to their
+	total and the category cannot be used again in the remaining goes for that game.
 	A full game consists of one go for each category. Thus, for their last go in
 	a game, a player must choose their only remaining category.
 
@@ -400,80 +400,80 @@
 	You do NOT have to program the random dice rolling.
 	The game is NOT played by letting the computer choose the highest scoring
 	category for a given roll.
-	  
+
 
 	Yahzee Categories and Scoring Rules
 	===================================
 
-	Chance: 
+	Chance:
 	  The player scores the sum of all dice, no matter what they read.
 	  For example,
 	   1,1,3,3,6 placed on "chance" scores 14 (1+1+3+3+6)
-	   4,5,5,6,1 placed on "chance" scores 21 (4+5+5+6+1)  
+	   4,5,5,6,1 placed on "chance" scores 21 (4+5+5+6+1)
 
-	Yahtzee: 
-	  If all dice have the same number, the player scores 50 points. 
+	Yahtzee:
+	  If all dice have the same number, the player scores 50 points.
 	  For example,
 	   1,1,1,1,1 placed on "yahtzee" scores 50
 	   1,1,1,2,1 placed on "yahtzee" scores 0
 
-	Ones, Twos, Threes, Fours, Fives, Sixes: 
-	  The player scores the sum of the dice that reads one, 
-	  two, three, four, five or six, respectively. 
-	  For example,  
+	Ones, Twos, Threes, Fours, Fives, Sixes:
+	  The player scores the sum of the dice that reads one,
+	  two, three, four, five or six, respectively.
+	  For example,
 	   1,1,2,4,4 placed on "fours" scores 8 (4+4)
 	   2,3,2,5,1 placed on "twos" scores 4  (2+2)
 	   3,3,3,4,5 placed on "ones" scores 0
 
-	Pair: 
+	Pair:
 	  The player scores the sum of the two highest matching dice.
-	  For example, when placed on "pair" 
+	  For example, when placed on "pair"
 	   3,3,3,4,4 scores 8 (4+4)
 	   1,1,6,2,6 scores 12 (6+6)
 	   3,3,3,4,1 scores 0
 	   3,3,3,3,1 scores 0
 
-	Two pairs: 
+	Two pairs:
 	  If there are two pairs of dice with the same number, the
-	  player scores the sum of these dice. 
+	  player scores the sum of these dice.
 	  For example, when placed on "two pairs"
 	   1,1,2,3,3 scores 8 (1+1+3+3)
 	   1,1,2,3,4 scores 0
 	   1,1,2,2,2 scores 0
 
-	Three of a kind: 
+	Three of a kind:
 	  If there are three dice with the same number, the player
-	  scores the sum of these dice. 
-	  For example, when placed on "three of a kind"  
+	  scores the sum of these dice.
+	  For example, when placed on "three of a kind"
 		3,3,3,4,5 scores 9 (3+3+3)
 		3,3,4,5,6 scores 0
 		3,3,3,3,1 scores 0
 
-	Four of a kind: 
+	Four of a kind:
 	  If there are four dice with the same number, the player
-	  scores the sum of these dice. 
-	  For example, when placed on "four of a kind"  
+	  scores the sum of these dice.
+	  For example, when placed on "four of a kind"
 		2,2,2,2,5 scores 8 (2+2+2+2)
 		2,2,2,5,5 scores 0
 		2,2,2,2,2 scores 0
 
-	Small straight: 
-	  When placed on "small straight", if the dice read 
+	Small straight:
+	  When placed on "small straight", if the dice read
 	  1,2,3,4,5, the player scores 15 (the sum of all the dice.
 
-	Large straight: 
-	  When placed on "large straight", if the dice read 
+	Large straight:
+	  When placed on "large straight", if the dice read
 	  2,3,4,5,6, the player scores 20 (the sum of all the dice).
 
-	Full house: 
+	Full house:
 	  If the dice are two of a kind and three of a kind, the
-	  player scores the sum of all the dice. 
-	  For example, when placed on "full house"  
-		1,1,2,2,2 scores 8 (1+1+2+2+2) 
+	  player scores the sum of all the dice.
+	  For example, when placed on "full house"
+		1,1,2,2,2 scores 8 (1+1+2+2+2)
 		2,2,3,3,4 scores 0
 		4,4,4,4,4 scores 0
 ---------------------------------------------------------------------
-  
+
 ### Many more from [http://codekata.pragprog.com/2007/01/code_kata_backg.html#more]
 
 ----------------------------------------------------------------------
