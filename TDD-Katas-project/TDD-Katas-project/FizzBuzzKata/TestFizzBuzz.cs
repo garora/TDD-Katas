@@ -8,7 +8,6 @@ namespace TDD_Katas_project.FizzBuzzKata
     public class TestFizzBuzz
     {
         #region Private members
-        //private string _result;
         private string _resultFizz;
         #endregion
 
@@ -21,7 +20,6 @@ namespace TDD_Katas_project.FizzBuzzKata
         [TestFixtureTearDown]
         public void TearDown()
         {
-            //_result = null;
             _resultFizz = null;
         }
         #endregion
