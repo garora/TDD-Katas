@@ -1,6 +1,8 @@
-## TDD-Katas : Continued from TDD-Kata practices [http://tddkatas.codeplex.com/]
+### TDD-Katas : Continued from TDD-Kata practices [http://tddkatas.codeplex.com/]
 
-### String Calculator
+Note: If you can correct any issues of this project, if you think. You can add any new Test, if you think this should be a part of this project. This is a place/project for pratice TDD-Katas
+
+#### String Calculator
 
 	- Create a simple String calculator with a method int Add(string numbers)
 		- The method can take 0, 1 or 2 numbers, and will return their sum (for an empty string it will
