@@ -1,33 +1,26 @@
-### TDD-Katas : Continued from TDD-Kata practices [http://tddkatas.codeplex.com/]
+#TDD-Katas : Continued from [TDD-Kata practices](http://tddkatas.codeplex.com/)
 
-Note: If you can correct any issues of this project, if you think. You can add any new Test, if you think this should be a part of this project. This is a place/project for pratice TDD-Katas
 
-#### String Calculator
+Note: This is a place to find and practice TDD Katas. Feel free to submit pull requests with additional tests, or issues if you find any.
 
-	- Create a simple String calculator with a method int Add(string numbers)
-		- The method can take 0, 1 or 2 numbers, and will return their sum (for an empty string it will
-  		  return 0) for example "" or "1" or "1,2"
-		- Start with the simplest test case of an empty string and move to 1 and two numbers
-		- Remember to solve things as simply as possible so that you force yourself to write tests you did
+## String Calculator Kata (via [Roy Osherove](http://osherove.com/tdd-kata-1/))
+
+* Create a simple String calculator with a method int Add(string numbers). The method can take 0, 1 or 2 numbers, and will return their sum (for an empty string it will return 0). For example "" or "1" or "1,2"
+	* Start with the simplest test case of an empty string and move to 1 and two numbers
+	* Remember to solve things as simply as possible so that you force yourself to write tests you did
 		  not think about
-		- Remember to refactor after each passing test
-	- Allow the Add method to handle an unknown amount of numbers
-	- Allow the Add method to handle new lines between numbers (instead of commas).
-		- the following input is ok:  "1\n2,3"  (will equal 6)
-		- the following input is NOT ok:  "1,\n" (not need to prove it - just clarifying)
-	- Support different delimiters
-			to change a delimiter, the beginning of the string will contain a separate line that looks like this:
-			"//[delimiter]\n[numbers...]" for example "//;\n1;2" should return three where the default delimiter is ';' .
-			the first line is optional. all existing scenarios should still be supported
-	- Calling Add with a negative number will throw an exception "negatives not allowed" - and the negative that was passed.
-	  if there are multiple negatives, show all of them in the exception message
+	* Remember to refactor after each passing test
+* Allow the Add method to handle an unknown amount of numbers
+* Allow the Add method to handle new lines between numbers (instead of commas).
+	* the following input is ok:  "1\n2,3"  (will equal 6)
+	* the following input is NOT ok:  "1,\n" (not need to prove it - just clarifying)
+* Support different delimiters. To change a delimiter, the beginning of the string will contain a separate line that looks like this: `[delimiter]\n[numbers...]`, for example `;\n1;2` should return three where the default delimiter is `;` .
+	* he first line is optional. all existing scenarios should still be supported
+* Calling Add with a negative number will throw an exception "negatives not allowed" - and the negative that was passed.
+	* if there are multiple negatives, show all of them in the exception message
 
-----------------------------------------------------------------
-	Completed first Kata example
-----------------------------------------------------------------
 
-### The Bowling Game Kata
-	- Following Uncle bob post from here : http://butunclebob.com/ArticleS.UncleBob.TheBowlingGameKata
+### The Bowling Game Kata ([via Uncle Bob](http://butunclebob.com/ArticleS.UncleBob.TheBowlingGameKata))
 	- Create a new project or start in the existing project by adding Game.cs and TestGame.cs
 	- Create two public methods methods [refer to the presentation file]
 	- Create Test Methods for the above Methods
@@ -74,8 +67,7 @@ Note: If you can correct any issues of this project, if you think. You can add a
 	- Make method to accept any number of range [currently  we have 1 to 100]
 	- Create a new method to check Odd/Even/Prime of a single supplied method
 
-### The PrimeFactor Kata
-	An awesome Kata from Uncle BoB [http://butunclebob.com/ArticleS.UncleBob.ThePrimeFactorsKata]
+### The PrimeFactor Kata (via [Uncle Bob](http://butunclebob.com/ArticleS.UncleBob.ThePrimeFactorsKata))
 
 -------------------
 
@@ -476,11 +468,11 @@ Note: If you can correct any issues of this project, if you think. You can add a
 		4,4,4,4,4 scores 0
 ---------------------------------------------------------------------
 
-### Many more from [http://codekata.pragprog.com/2007/01/code_kata_backg.html#more]
+### Many more from [PragProg.com](http://codekata.pragprog.com/2007/01/code_kata_backg.html#more)
 
 ----------------------------------------------------------------------
 
-### The Word Wrap Kata [http://codingdojo.org/cgi-bin/wiki.pl?KataWordWrap]
+### The Word Wrap Kata (via [CodingDojo](http://codingdojo.org/cgi-bin/wiki.pl?KataWordWrap))
 	Create a function which breaks words on specified space with new line. Its nothing but merely similar to word-processor.
 
 #### Steps:
@@ -500,3 +492,12 @@ Note: If you can correct any issues of this project, if you think. You can add a
     Almost all framework provided ASCII order Sorting so, in case of string list : 1,2,3...,1A,2S the result would be as per ASCII order
 	But in Natural Order String this should be : 1,1A,2,2S,3... etc.
 
+
+References
+====
+* TDD-Kata Practices: http://tddkatas.codeplex.com/
+* The Prime Factor Kata: http://butunclebob.com/ArticleS.UncleBob.ThePrimeFactorsKata
+* The Bowling Game Kata: http://butunclebob.com/ArticleS.UncleBob.TheBowlingGameKata
+* More: http://codekata.pragprog.com/2007/01/code_kata_backg.html#more
+* Word Wrap Kata: http://codingdojo.org/cgi-bin/wiki.pl?KataWordWrap
+* String Calculator: http://osherove.com/tdd-kata-1/
