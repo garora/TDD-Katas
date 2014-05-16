@@ -53,8 +53,6 @@
   <ItemGroup>
     <Compile Include="BowlingGame\Game.cs" />
     <Compile Include="BowlingGame\TestGame.cs" />
-    <Compile Include="CalcStatsKata\CalcStat.cs" />
-    <Compile Include="CalcStatsKata\TestCalcStat.cs" />
     <Compile Include="DiversionKata\Diversion.cs" />
     <Compile Include="DiversionKata\TestDiversion.cs" />
     <Compile Include="FizzBuzzKata\FizzBuzz.cs" />
@@ -66,18 +64,18 @@
     <Compile Include="StringCalculator\Calculator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StringCalculator\TestCalculator.cs" />
-    <Compile Include="The CalcStats Kata\CalcStat.cs" />
-    <Compile Include="The CalcStats Kata\CalcStatTest.cs" />
-    <Compile Include="The LeapYear Kata\LeapYear.cs" />
-    <Compile Include="The LeapYear Kata\LeapYearTest.cs" />
-    <Compile Include="The Natural String Sorting Kata\NaturalStringSorting.cs" />
-    <Compile Include="The Natural String Sorting Kata\NaturalStringSortingTest.cs" />
-    <Compile Include="The PrimeFactor Kata\PrimeFactor.cs" />
-    <Compile Include="The PrimeFactor Kata\PrimeFactorTest.cs" />
-    <Compile Include="The RecentlyUsedList kata\RecentlyUsedList.cs" />
-    <Compile Include="The RecentlyUsedList kata\RecentlyUsedListTest.cs" />
-    <Compile Include="The WordWrap Kata\WordWrap.cs" />
-    <Compile Include="The WordWrap Kata\WordWrapTest.cs" />
+    <Compile Include="TheCalcStatsKata\CalcStat.cs" />
+    <Compile Include="TheCalcStatsKata\CalcStatTest.cs" />
+    <Compile Include="TheLeapYearKata\LeapYear.cs" />
+    <Compile Include="TheLeapYearKata\LeapYearTest.cs" />
+    <Compile Include="TheNaturalStringSortingKata\NaturalStringSorting.cs" />
+    <Compile Include="TheNaturalStringSortingKata\NaturalStringSortingTest.cs" />
+    <Compile Include="ThePrimeFactorKata\PrimeFactor.cs" />
+    <Compile Include="ThePrimeFactorKata\PrimeFactorTest.cs" />
+    <Compile Include="TheRecentlyUsedList kata\RecentlyUsedList.cs" />
+    <Compile Include="TheRecentlyUsedList kata\RecentlyUsedListTest.cs" />
+    <Compile Include="TheWordWrapKata\WordWrap.cs" />
+    <Compile Include="TheWordWrapKata\WordWrapTest.cs" />
     <Compile Include="Utility\EnumerableComparer.cs" />
     <Compile Include="Utility\SimpleNaturalStringOrder.cs" />
   </ItemGroup>
@@ -88,7 +86,7 @@
   <ItemGroup>
     <None Include="BowlingGame\Bowling Game Kata.ppt" />
     <None Include="packages.config" />
-    <None Include="The PrimeFactor Kata\Prime Factors Kata.ppt" />
+    <None Include="ThePrimeFactorKata\Prime Factors Kata.ppt" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
