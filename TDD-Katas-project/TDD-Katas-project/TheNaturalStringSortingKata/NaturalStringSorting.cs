@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
-using TDD_Katas_project.Utility;
+using TDD_Katas_project.Common.Utility;
 
 namespace TDD_Katas_project.The_Natural_String_Sorting_Kata
 {

@@ -53,6 +53,8 @@
   <ItemGroup>
     <Compile Include="BowlingGame\Game.cs" />
     <Compile Include="BowlingGame\TestGame.cs" />
+    <Compile Include="Common\Utility\EnumerableComparer.cs" />
+    <Compile Include="Common\Utility\SimpleNaturalStringOrder.cs" />
     <Compile Include="TheDiversionKata\Diversion.cs" />
     <Compile Include="TheDiversionKata\TestDiversion.cs" />
     <Compile Include="FizzBuzzKata\FizzBuzz.cs" />
@@ -78,8 +80,6 @@
     <Compile Include="TheRecentlyUsedList kata\RecentlyUsedListTest.cs" />
     <Compile Include="TheWordWrapKata\WordWrap.cs" />
     <Compile Include="TheWordWrapKata\WordWrapTest.cs" />
-    <Compile Include="Utility\EnumerableComparer.cs" />
-    <Compile Include="Utility\SimpleNaturalStringOrder.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="BowlingGame\TheBowlingGameKata.txt" />
