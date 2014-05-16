@@ -53,12 +53,12 @@
   <ItemGroup>
     <Compile Include="BowlingGame\Game.cs" />
     <Compile Include="BowlingGame\TestGame.cs" />
-    <Compile Include="DiversionKata\Diversion.cs" />
-    <Compile Include="DiversionKata\TestDiversion.cs" />
+    <Compile Include="TheDiversionKata\Diversion.cs" />
+    <Compile Include="TheDiversionKata\TestDiversion.cs" />
     <Compile Include="FizzBuzzKata\FizzBuzz.cs" />
     <Compile Include="FizzBuzzKata\TestFizzBuzz.cs" />
-    <Compile Include="GameOfLifeKata\GameOfLife.cs" />
-    <Compile Include="GameOfLifeKata\TestGameOfLife.cs" />
+    <Compile Include="TheGameOfLifeKata\GameOfLife.cs" />
+    <Compile Include="TheGameOfLifeKata\TestGameOfLife.cs" />
     <Compile Include="OddEvenKata\OddEven.cs" />
     <Compile Include="OddEvenKata\TestOddEven.cs" />
     <Compile Include="StringCalculator\Calculator.cs" />
@@ -66,6 +66,8 @@
     <Compile Include="StringCalculator\TestCalculator.cs" />
     <Compile Include="TheCalcStatsKata\CalcStat.cs" />
     <Compile Include="TheCalcStatsKata\CalcStatTest.cs" />
+    <Compile Include="TheHarryPoterKata\HarryPoter.cs" />
+    <Compile Include="TheHarryPoterKata\TestHarryPoter.cs" />
     <Compile Include="TheLeapYearKata\LeapYear.cs" />
     <Compile Include="TheLeapYearKata\LeapYearTest.cs" />
     <Compile Include="TheNaturalStringSortingKata\NaturalStringSorting.cs" />
