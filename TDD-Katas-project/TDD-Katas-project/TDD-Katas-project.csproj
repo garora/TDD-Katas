@@ -55,6 +55,8 @@
     <Compile Include="BowlingGame\TestGame.cs" />
     <Compile Include="CalcStatsKata\CalcStat.cs" />
     <Compile Include="CalcStatsKata\TestCalcStat.cs" />
+    <Compile Include="DiversionKata\Diversion.cs" />
+    <Compile Include="DiversionKata\TestDiversion.cs" />
     <Compile Include="FizzBuzzKata\FizzBuzz.cs" />
     <Compile Include="FizzBuzzKata\TestFizzBuzz.cs" />
     <Compile Include="OddEvenKata\OddEven.cs" />
