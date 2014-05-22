@@ -59,7 +59,7 @@ Note: This is a place to find and practice TDD Katas. Feel free to submit pull r
 
 #### Steps :
 
-	Lets divide into following stesp:
+	Lets divide into following steps:
 	- Prints numbers from 1 to 100
 	- Print "Even" instead of number, if the number is even, means divisible by 2
 	- Print "Odd" instead of number, if the number is odd, means not divisible by 2 but not divisible by itself too
@@ -174,7 +174,7 @@ Note: This is a place to find and practice TDD Katas. Feel free to submit pull r
 	1 copy of the fourth book
 	1 copy of the fifth book
 
-	Answer: 51.20 EUR
+	Answer: 51.60 EUR
 
 #### LCD Digits :
 
