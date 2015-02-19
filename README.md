@@ -1,3 +1,6 @@
+#For more info visit: http://garora.github.io/TDD-Katas/
+
+
 #TDD-Katas : Continued from [TDD-Kata practices](http://tddkatas.codeplex.com/)
 
 
