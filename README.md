@@ -43,6 +43,12 @@ Note: This is a place to find and practice TDD Katas. Feel free to submit pull r
 	  instead of the number and for the multiples of five print "Buzz". For numbers which are multiples of both
 	  three and five print "FizzBuzz".
 
+### Including new implementation to The FizzBuzz Kata
+	- Added a different implementation for FizzBuzz using Reactive extensions.
+	- The changes are described at: http://blog.drorhelper.com/2015/02/fizzbuzz-tdd-kata-using-reactive.html
+	- Pull Request by: https://github.com/dhelper (manually merged by @garora)
+	  
+
 #### Steps:
 
 	Lets divide this into different steps so, we can easily write and test this.
