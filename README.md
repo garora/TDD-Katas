@@ -1,3 +1,6 @@
+Explained 'Learning Test Driven Development with TDD Katas' : http://goo.gl/5NYpVI
+
+
 #For more info visit: http://garora.github.io/TDD-Katas/
 
 
