@@ -1,7 +1,8 @@
-Explained 'Learning Test Driven Development with TDD Katas' : http://goo.gl/5NYpVI
+###Explained [Learning Test Driven Development with TDD Katas](http://goo.gl/5NYpVI)
+###Nuget package: [TDD Katas](https://www.nuget.org/packages/TDD.Katas/)
 
 
-#For more info visit: http://garora.github.io/TDD-Katas/
+#For more info visit: [here](http://garora.github.io/TDD-Katas/)
 
 
 #TDD-Katas : Continued from [TDD-Kata practices](http://tddkatas.codeplex.com/)
