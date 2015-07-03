@@ -15,7 +15,9 @@ namespace TDD_Katas_project.StringSum
         [Test]
         public void AddReturnSum(string num1, string num2, string expectedResult)
         {
-            //call method here
+            var result = StringSumKata.Sum(num1, num2);
+
+            Assert.That(expectedResult, Is.EqualTo(result));
         }
     }
 }
