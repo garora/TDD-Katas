@@ -10,6 +10,15 @@
 
 Note: This is a place to find and practice TDD Katas. Feel free to submit pull requests with additional tests, or issues if you find any.
 
+## String Sum Kata 
+
+* Write a simple String Sum utility with a function <em>string Sum(string num1, string num2)</em>, which can accept only natural numbers and will return their sum. Replace entered number with <em>0 (zero)</em> if entered number is not a natural number.
+* Stat with a simplest test case with an empty string
+* Create a simple method <em>string Sum(string num1, string num2)</em>
+* Write a test to pass small numbers and refactor, if test passed
+* try to write more code and refactor
+
+
 ## String Calculator Kata (via [Roy Osherove](http://osherove.com/tdd-kata-1/))
 
 * Create a simple String calculator with a method int Add(string numbers). The method can take 0, 1 or 2 numbers, and will return their sum (for an empty string it will return 0). For example "" or "1" or "1,2"
