@@ -67,6 +67,8 @@
     <Compile Include="Common\Utility\SimpleNaturalStringOrder.cs" />
     <Compile Include="FizzBuzzKata\Rx\FizzBuzzRx.cs" />
     <Compile Include="FizzBuzzKata\Rx\TestFizzBuzzRx.cs" />
+    <Compile Include="StringSum\StringSumKata.cs" />
+    <Compile Include="StringSum\TestStringSumKata.cs" />
     <Compile Include="TheDiversionKata\Diversion.cs" />
     <Compile Include="TheDiversionKata\TestDiversion.cs" />
     <Compile Include="FizzBuzzKata\FizzBuzz.cs" />
