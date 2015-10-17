@@ -1,5 +1,5 @@
 ###How to contribute:
-Want to contribute? Make a pull request (PR) to [develop](/TDD-Katas/tree/develop) branch. Do not make any PR to Master branch.
+Want to contribute? Make a pull request (PR) to [develop](https://github.com/garora/TDD-Katas/tree/develop) branch. Do not make any PR to Master branch.
 
 ###Explained [Learning Test Driven Development with TDD Katas](http://goo.gl/5NYpVI)
 ###Nuget package: [TDD Katas](https://www.nuget.org/packages/TDD.Katas/)
