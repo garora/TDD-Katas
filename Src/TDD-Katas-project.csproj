@@ -61,48 +61,50 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BowlingGame\Game.cs" />
-    <Compile Include="BowlingGame\TestGame.cs" />
-    <Compile Include="Common\Utility\EnumerableComparer.cs" />
-    <Compile Include="Common\Utility\SimpleNaturalStringOrder.cs" />
-    <Compile Include="FizzBuzzKata\Rx\FizzBuzzRx.cs" />
-    <Compile Include="FizzBuzzKata\Rx\TestFizzBuzzRx.cs" />
-    <Compile Include="StringSum\StringSumKata.cs" />
-    <Compile Include="StringSum\TestStringSumKata.cs" />
-    <Compile Include="TheDiversionKata\Diversion.cs" />
-    <Compile Include="TheDiversionKata\TestDiversion.cs" />
-    <Compile Include="FizzBuzzKata\FizzBuzz.cs" />
-    <Compile Include="FizzBuzzKata\TestFizzBuzz.cs" />
-    <Compile Include="TheGameOfLifeKata\GameOfLife.cs" />
-    <Compile Include="TheGameOfLifeKata\TestGameOfLife.cs" />
-    <Compile Include="OddEvenKata\OddEven.cs" />
-    <Compile Include="OddEvenKata\TestOddEven.cs" />
-    <Compile Include="StringCalculator\Calculator.cs" />
+    <Compile Include="cs\BowlingGame\Game.cs" />
+    <Compile Include="cs\BowlingGame\TestGame.cs" />
+    <Compile Include="cs\Common\Utility\EnumerableComparer.cs" />
+    <Compile Include="cs\Common\Utility\SimpleNaturalStringOrder.cs" />
+    <Compile Include="cs\FizzBuzzKata\FizzBuzz.cs" />
+    <Compile Include="cs\FizzBuzzKata\Rx\FizzBuzzRx.cs" />
+    <Compile Include="cs\FizzBuzzKata\Rx\TestFizzBuzzRx.cs" />
+    <Compile Include="cs\FizzBuzzKata\TestFizzBuzz.cs" />
+    <Compile Include="cs\OddEvenKata\OddEven.cs" />
+    <Compile Include="cs\OddEvenKata\TestOddEven.cs" />
+    <Compile Include="cs\StringCalculator\Calculator.cs" />
+    <Compile Include="cs\StringCalculator\TestCalculator.cs" />
+    <Compile Include="cs\StringSum\StringSumKata.cs" />
+    <Compile Include="cs\StringSum\TestStringSumKata.cs" />
+    <Compile Include="cs\TheCalcStatsKata\CalcStat.cs" />
+    <Compile Include="cs\TheCalcStatsKata\CalcStatTest.cs" />
+    <Compile Include="cs\TheDiversionKata\Diversion.cs" />
+    <Compile Include="cs\TheDiversionKata\TestDiversion.cs" />
+    <Compile Include="cs\TheGameOfLifeKata\GameOfLife.cs" />
+    <Compile Include="cs\TheGameOfLifeKata\TestGameOfLife.cs" />
+    <Compile Include="cs\TheHarryPoterKata\HarryPoter.cs" />
+    <Compile Include="cs\TheHarryPoterKata\TestHarryPoter.cs" />
+    <Compile Include="cs\TheLeapYearKata\LeapYear.cs" />
+    <Compile Include="cs\TheLeapYearKata\LeapYearTest.cs" />
+    <Compile Include="cs\TheNaturalStringSortingKata\NaturalStringSorting.cs" />
+    <Compile Include="cs\TheNaturalStringSortingKata\NaturalStringSortingTest.cs" />
+    <Compile Include="cs\ThePrimeFactorKata\PrimeFactor.cs" />
+    <Compile Include="cs\ThePrimeFactorKata\PrimeFactorTest.cs" />
+    <Compile Include="cs\TheRecentlyUsedList kata\RecentlyUsedList.cs" />
+    <Compile Include="cs\TheRecentlyUsedList kata\RecentlyUsedListTest.cs" />
+    <Compile Include="cs\TheWordWrapKata\WordWrap.cs" />
+    <Compile Include="cs\TheWordWrapKata\WordWrapTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StringCalculator\TestCalculator.cs" />
-    <Compile Include="TheCalcStatsKata\CalcStat.cs" />
-    <Compile Include="TheCalcStatsKata\CalcStatTest.cs" />
-    <Compile Include="TheHarryPoterKata\HarryPoter.cs" />
-    <Compile Include="TheHarryPoterKata\TestHarryPoter.cs" />
-    <Compile Include="TheLeapYearKata\LeapYear.cs" />
-    <Compile Include="TheLeapYearKata\LeapYearTest.cs" />
-    <Compile Include="TheNaturalStringSortingKata\NaturalStringSorting.cs" />
-    <Compile Include="TheNaturalStringSortingKata\NaturalStringSortingTest.cs" />
-    <Compile Include="ThePrimeFactorKata\PrimeFactor.cs" />
-    <Compile Include="ThePrimeFactorKata\PrimeFactorTest.cs" />
-    <Compile Include="TheRecentlyUsedList kata\RecentlyUsedList.cs" />
-    <Compile Include="TheRecentlyUsedList kata\RecentlyUsedListTest.cs" />
-    <Compile Include="TheWordWrapKata\WordWrap.cs" />
-    <Compile Include="TheWordWrapKata\WordWrapTest.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="BowlingGame\TheBowlingGameKata.txt" />
-    <Content Include="StringCalculator\StringCalculator.txt" />
+    <Content Include="cs\BowlingGame\TheBowlingGameKata.txt" />
+    <Content Include="cs\StringCalculator\StringCalculator.txt" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="BowlingGame\Bowling Game Kata.ppt" />
+    <None Include="cs\BowlingGame\Bowling Game Kata.ppt" />
+    <None Include="cs\ThePrimeFactorKata\Prime Factors Kata.ppt" />
     <None Include="packages.config" />
-    <None Include="ThePrimeFactorKata\Prime Factors Kata.ppt" />
+    <None Include="py\Roman Numeral TDD Kata\roman.py" />
+    <None Include="py\Roman Numeral TDD Kata\roman_test.py" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
