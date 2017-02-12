@@ -68,6 +68,8 @@
     <Compile Include="FizzBuzzKata\Rx\FizzBuzzRx.cs" />
     <Compile Include="FizzBuzzKata\Rx\TestFizzBuzzRx.cs" />
     <Compile Include="FizzBuzzKata\TestFizzBuzz.cs" />
+    <Compile Include="LCDDigits\LCDDigits.cs" />
+    <Compile Include="LCDDigits\TestLCDDigits.cs" />
     <Compile Include="OddEvenKata\OddEven.cs" />
     <Compile Include="OddEvenKata\TestOddEven.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
