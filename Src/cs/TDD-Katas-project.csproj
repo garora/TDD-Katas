@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -70,6 +70,8 @@
     <Compile Include="FizzBuzzKata\TestFizzBuzz.cs" />
     <Compile Include="LCDDigits\LCDDigits.cs" />
     <Compile Include="LCDDigits\TestLCDDigits.cs" />
+    <Compile Include="MineFields\MineFields.cs" />
+    <Compile Include="MineFields\TestMineFields.cs" />
     <Compile Include="OddEvenKata\OddEven.cs" />
     <Compile Include="OddEvenKata\TestOddEven.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
