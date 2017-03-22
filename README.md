@@ -1,14 +1,14 @@
-###How to contribute:
+### How to contribute:
 Want to contribute? Make a pull request (PR) to [develop](https://github.com/garora/TDD-Katas/tree/develop) branch. Do not make any PR to Master branch.
 
-###Explained [Learning Test Driven Development with TDD Katas](http://goo.gl/5NYpVI)
-###Nuget package: [TDD Katas](https://www.nuget.org/packages/TDD.Katas/)
+### Explained [Learning Test Driven Development with TDD Katas](http://goo.gl/5NYpVI)
+### Nuget package: [TDD Katas](https://www.nuget.org/packages/TDD.Katas/)
 
 
-#For more info visit: [here](http://garora.github.io/TDD-Katas/)
+# For more info visit: [here](http://garora.github.io/TDD-Katas/)
 
 
-#TDD-Katas : Continued from [TDD-Kata practices](http://tddkatas.codeplex.com/)
+# TDD-Katas : Continued from [TDD-Kata practices](http://tddkatas.codeplex.com/)
 
 
 Note: This is a place to find and practice TDD Katas. Feel free to submit pull requests with additional tests, or issues if you find any.
