@@ -115,7 +115,7 @@ Note: This is a place to find and practice TDD Katas. Feel free to submit pull r
 
 -------------------
 
-###Kata - coming next [http://www.cyber-dojo.com/]
+### Kata - coming next [http://www.cyber-dojo.com/]
 
 #### Calc Stats:
 
