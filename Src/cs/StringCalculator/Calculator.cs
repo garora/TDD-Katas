@@ -68,7 +68,7 @@ namespace TDD_Katas_project.StringCalculator
             return getPossibleDelimiters.ToCharArray().Any(input.Contains);
         }
 
-        private static void VelidateNumbersArePerRule(int number)
+        private static void ValidateNumbersAsPerRule(int number)
         {
             if (number < 0)
                 throw new ArgumentException(
