@@ -1,4 +1,6 @@
-﻿using System;
+﻿// Copyright (c) Gaurav Aroraa
+// Licensed under the MIT License. See License.txt in the project root for license information.
+using System;
 using System.Linq;
 
 namespace TDD_Katas_project.StringCalculator
@@ -52,7 +54,7 @@ namespace TDD_Katas_project.StringCalculator
             var result = IsGreaterThanThousand(Convert.ToInt32(n))
                              ? 0
                              : (Convert.ToInt32(string.IsNullOrEmpty(n) ? "0" : n));
-            VelidateNumbersArePerRule(result);
+            ValidateNumbersAsPerRule(result);
 
             return result;
         }
@@ -72,8 +74,7 @@ namespace TDD_Katas_project.StringCalculator
         {
             if (number < 0)
                 throw new ArgumentException(
-                    string.Format(
-                        "string contains [{0}], which does not meet rule. entered number should not negative.", number));
+                    $"string contains [{number}], which does not meet rule. entered number should not negative.");
         }
     }
 }

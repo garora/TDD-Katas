@@ -1,4 +1,7 @@
-﻿#region Description of Kara - Recently Used List
+﻿// Copyright (c) Gaurav Aroraa
+// Licensed under the MIT License. See License.txt in the project root for license information.
+
+#region Description of Kara - Recently Used List
 //Recently Used List :
 
 //    Develop a recently-used-list class to hold strings 

@@ -1,0 +1,16 @@
+﻿extensions: designer.cs generated.cs
+extensions: .cs .cpp .h
+// Copyright (c) Gaurav Aroraa
+// Licensed under the MIT License. See License.txt in the project root for license information.
+extensions: .aspx .ascx
+<%-- 
+Copyright (c) Gaurav Aroraa
+Licensed under the MIT License. See License.txt in the project root for license information.
+--%>
+extensions: .vb
+'Copyright (c) Gaurav Aroraa
+'Licensed under the MIT License. See License.txt in the project root for license information.
+extensions:  .xml .config .xsd
+<!--
+Copyright (c) Gaurav Aroraa
+Licensed under the MIT License. See License.txt in the project root for license information.-->

@@ -1,4 +1,6 @@
-﻿using System;
+﻿// Copyright (c) Gaurav Aroraa
+// Licensed under the MIT License. See License.txt in the project root for license information.
+using System;
 using System.Globalization;
 
 namespace TDD_Katas_project.TheWordWrapKata

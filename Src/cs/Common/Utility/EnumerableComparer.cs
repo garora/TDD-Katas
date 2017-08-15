@@ -1,4 +1,7 @@
-﻿//Adapted from : http://www.interact-sw.co.uk/iangblog/2007/12/13/natural-sorting
+﻿// Copyright (c) Gaurav Aroraa
+// Licensed under the MIT License. See License.txt in the project root for license information.
+
+//Adapted from : http://www.interact-sw.co.uk/iangblog/2007/12/13/natural-sorting
 //Used whole code as it, still looking if there is any scope of improvement
 
 using System.Collections.Generic;
