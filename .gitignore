@@ -11,6 +11,7 @@
 *resharper*
 _compareTemp
 _notes
+.vs
 aspnet_client
 output
 output/*
