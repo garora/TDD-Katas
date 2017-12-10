@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2006
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{FB2581EA-4AF6-4CF5-B74D-EA8F8ADA71A7}"
 EndProject
@@ -11,7 +11,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDD-Katas-project", "Src\cs\TDD-Katas-project.csproj", "{BEDADFEE-66FB-41D8-8D09-3C6D9EFB1C90}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDD-Katas-NET", "Src\CSharp\Net Framework\TDD-Katas-NET.csproj", "{BEDADFEE-66FB-41D8-8D09-3C6D9EFB1C90}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,5 +29,8 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{BEDADFEE-66FB-41D8-8D09-3C6D9EFB1C90} = {FB2581EA-4AF6-4CF5-B74D-EA8F8ADA71A7}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {831FCE8B-919C-4742-B492-E67E260FB656}
 	EndGlobalSection
 EndGlobal
