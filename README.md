@@ -10,5 +10,12 @@ MIT License, refer: [License info](/LICENSE.txt) for more information.
 ### For more info visit: [here](http://garora.github.io/TDD-Katas/)
 ### TDD-Katas : Continued from [TDD-Kata practices](http://tddkatas.codeplex.com/)
 
+### More flavors
+There are more flavors of the repository:
 
-Note: This is a place to find and practice TDD Katas. Feel free to submit pull requests with additional tests, or issues if you find any.
+ 1. (TDD Katas in .NET Core)[https://github.com/garora/TDD-Katas-NETCore]
+ 2. (TDD Katas in JavaScript)[https://github.com/garora/TDD-Katas-NETCore]
+ 3. (TDD Katas in Python)[https://github.com/garora/TDD-Katas-NETCore]
+ 4. (TDD Katas in PHP)[https://github.com/garora/TDD-Katas-NETCore]
+
+_Note: This is a place to find and practice TDD Katas. Feel free to submit pull requests with additional tests, or issues if you find any._
