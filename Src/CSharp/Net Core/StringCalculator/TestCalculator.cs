@@ -37,7 +37,6 @@ namespace TDD_Katas_NETCore.StringCalculator
         [TestCase("0,2", 2)]
         [TestCase("0,2,2", 4)]
         [TestCase("0,3", 3)]
-        [TestCase("0,3,2", 5)]
         [TestCase("0,3,3", 6)]
         [TestCase("0,3,2", 5)]
         [Test]
