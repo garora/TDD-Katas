@@ -11,7 +11,7 @@ MIT License, refer: [License info](/LICENSE.txt) for more information.
 ### TDD-Katas : Continued from [TDD-Kata practices](http://tddkatas.codeplex.com/)
 
 ### More flavors
-There are more flavors of the repository:
+Lookig for implementation in your technology? There are more flavors of the repository:
 
  1. [TDD Katas in .NET Core](https://github.com/garora/TDD-Katas-NETCore)
  2. [TDD Katas in JavaScript](https://github.com/garora/TDD-Katas-NETCore)
