@@ -15,7 +15,7 @@ Lookig for implementation in your technology? There are more flavors of the repo
 
  1. [TDD Katas in .NET Core](https://github.com/garora/TDD-Katas-NETCore)
  2. [TDD Katas in JavaScript](https://github.com/garora/TDD-Katas-NETCore)
- 3. [TDD Katas in Python](https://github.com/garora/TDD-Katas-NETCore)
+ 3. [TDD Katas in Python](https://github.com/garora/TDD-Katas-Python)
  4. [TDD Katas in PHP](https://github.com/garora/TDD-Katas-NETCore)
 
 _Note: This is a place to find and practice TDD Katas. Feel free to submit pull requests with additional tests, or issues if you find any._
