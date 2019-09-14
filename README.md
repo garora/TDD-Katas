@@ -10,6 +10,24 @@ MIT License, refer: [License info](/LICENSE.txt) for more information.
 ### For more info visit: [here](http://garora.github.io/TDD-Katas/)
 ### TDD-Katas : Continued from [TDD-Kata practices](http://tddkatas.codeplex.com/)
 
+### Contributors
+Many thanks to all the contributors who spent their time to create Katas and write code. Their contribution is priceless, A small gratitude for their contributions:
+
+ 1. [Justin Kurtz](https://github.com/justinkurtz)
+ 2. [Choi Jung Hyun](https://github.com/cjhnim)
+ 3. [Mikkel Nylander Bundgaard](https://github.com/mikkelbu)
+ 4. [Krzysztof Mędrela](https://github.com/chrismedrela)
+ 5. [Bruno Sanches](https://github.com/brunops)
+ 6. [Stephanie Melnyk](https://github.com/smelnyk-va)
+ 7. [Saurabh Mishra](https://github.com/saurabh9694)
+ 8. [John Lianoglou](https://github.com/prometheas)
+ 9. [Mattias Josefsson](https://github.com/matjos)
+ 10. [Māris Krivtežs](https://github.com/marisks)
+ 11. [Florian Brinker](https://github.com/fbrinker)
+ 12. [Santiago Castro](https://github.com/bryant1410)
+ 13. [Sean Killeen](https://github.com/SeanKilleen)
+ 14. [M Farag](https://github.com/MoeFarag)
+ 
 ### More flavors
 Lookig for implementation in your technology? There are more flavors of the repository:
 
