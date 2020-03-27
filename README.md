@@ -40,4 +40,4 @@ Lookig for implementation in your technology? There are more flavors of the repo
 ### License
 MIT License, refer: [License info](/LICENSE.txt) for more information.
 
-> Note: We recently upgraded our projects to `.NET Core 3.0`. If you want to fetch previous version, please refer to [.NET45](/tree/net45). Feel free to submit pull requests with additional tests.
+> Note: We recently upgraded our projects to `.NET Core 3.0`. If you want to fetch previous version, please refer to [.NET45](https://github.com/garora/TDD-Katas/tree/net45). Feel free to submit pull requests with additional tests.
