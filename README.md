@@ -1,9 +1,9 @@
 ### Description
 Simply defines the Test Driven Development Katas. In this, lets try to create most famous katas to understand what are exactly Katas. These Katas can also be used for practicising your C# skills for Unit testing.
+
 ### How to contribute:
 Want to contribute? Make a pull request (PR) to [develop](https://github.com/garora/TDD-Katas/tree/develop) branch. Do not make any PR to Master branch.
-### License
-MIT License, refer: [License info](/LICENSE.txt) for more information.
+
 ### Explained [Learning Test Driven Development with TDD Katas](http://goo.gl/5NYpVI)
 ### Nuget package: [TDD Katas](https://www.nuget.org/packages/TDD.Katas/)
 
@@ -37,4 +37,7 @@ Lookig for implementation in your technology? There are more flavors of the repo
  4. [TDD Katas in Python](https://github.com/garora/TDD-Katas-Python)
  5. [TDD Katas in PHP](https://github.com/garora/TDD-Katas-PHP)
 
-_Note: This is a place to find and practice TDD Katas. Feel free to submit pull requests with additional tests, or issues if you find any._
+### License
+MIT License, refer: [License info](/LICENSE.txt) for more information.
+
+> Note: We recently upgraded our projects to `.NET Core 3.0`. If you want to fetch previous version, please refer to [.NET45](/tree/net45). Feel free to submit pull requests with additional tests.
