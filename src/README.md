@@ -236,7 +236,7 @@ More tests:
 	1 copy of the fourth book
 	1 copy of the fifth book
 
-	Answer: 51.20 EUR
+	Answer: 51.60 EUR
 
 #### LCD Digits :
 
