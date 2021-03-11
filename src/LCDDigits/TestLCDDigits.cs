@@ -24,6 +24,7 @@ Example: 910
 
 namespace TDD_Katas_project.LCDDigits
 {
+#pragma warning disable 1591
     [TestFixture]
     [Category("LCDDigits Kata")]
     public class TestLCDDigits

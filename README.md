@@ -31,13 +31,16 @@ Many thanks to all the contributors who spent their time to create Katas and wri
 ### More flavors
 Lookig for implementation in your technology? There are more flavors of the repository:
 
- 1. [TDD Katas in .NET Core](https://github.com/garora/TDD-Katas-NETCore)
- 2. [TDD Katas in Java](https://github.com/garora/TDD-Katas-Java)
- 3. [TDD Katas in JavaScript](https://github.com/garora/TDD-Katas-JavaScript)
- 4. [TDD Katas in Python](https://github.com/garora/TDD-Katas-Python)
- 5. [TDD Katas in PHP](https://github.com/garora/TDD-Katas-PHP)
+ 1. [TDD Katas in Java](https://github.com/garora/TDD-Katas-Java)
+ 2. [TDD Katas in JavaScript](https://github.com/garora/TDD-Katas-JavaScript)
+ 3. [TDD Katas in Python](https://github.com/garora/TDD-Katas-Python)
+ 4. [TDD Katas in PHP](https://github.com/garora/TDD-Katas-PHP)
 
 ### License
 MIT License, refer: [License info](/LICENSE.txt) for more information.
 
-> Note: We recently upgraded our projects to `.NET Core 3.0`. If you want to fetch previous version, please refer to [.NET45](https://github.com/garora/TDD-Katas/tree/net45). Feel free to submit pull requests with additional tests.
+Note: We recently upgraded our projects to `.NET5.0`. For previous releases, please refer to:
+ 1. [.NETCore31](https://github.com/garora/TDD-Katas/tree/netcore31)
+ 2. [.NET45](https://github.com/garora/TDD-Katas/tree/net45)
+
+Feel free to submit pull requests with additional tests.

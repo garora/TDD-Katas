@@ -22,10 +22,7 @@ namespace TDD_Katas_project.Common.Utility
         /// <summary>
         /// Create a sequence comparer using the default comparer for T.
         /// </summary>
-        public EnumerableComparer()
-        {
-            _comp = Comparer<T>.Default;
-        }
+        public EnumerableComparer() => _comp = Comparer<T>.Default;
 
         /// <summary>
         /// Create a sequence comparer, using the specified item comparer
@@ -33,10 +30,7 @@ namespace TDD_Katas_project.Common.Utility
         /// </summary>
         /// <param name="comparer">Comparer for comparing each pair of
         /// items from the sequences.</param>
-        public EnumerableComparer(IComparer<T> comparer)
-        {
-            _comp = comparer;
-        }
+        public EnumerableComparer(IComparer<T> comparer) => _comp = comparer;
 
         /// <summary>
         /// Object used for comparing each element.

@@ -6,15 +6,26 @@ using System.Linq;
 
 namespace TDD_Katas_NETCore.FizzBuzzKata
 {
+    /// <summary>
+    /// FizzBuzz
+    /// </summary>
     public class FizzBuzz
     {
+        /// <summary>
+        /// Prints the fizz buzz.
+        /// </summary>
+        /// <returns></returns>
         public static string PrintFizzBuzz()
         {
             var resultFizzBuzz = string.Empty;
             resultFizzBuzz = GetNumbers(resultFizzBuzz);
             return resultFizzBuzz;
         }
-
+        /// <summary>
+        /// Prints the fizz buzz.
+        /// </summary>
+        /// <param name="number">The number.</param>
+        /// <returns></returns>
         public static string PrintFizzBuzz(int number)
         {
             CanThrowArgumentExceptionWhenNumberNotInRule(number);
@@ -22,13 +33,17 @@ namespace TDD_Katas_NETCore.FizzBuzzKata
             var result = GetFizzBuzzResult(number);
 
             if (string.IsNullOrEmpty(result))
+            {
                 result = GetFizzResult(number);
+            }
+
             if (string.IsNullOrEmpty(result))
+            {
                 result = GetBuzzResult(number);
+            }
 
             return string.IsNullOrEmpty(result) ? number.ToString(CultureInfo.InvariantCulture) : result;
         }
-
 
         private static string GetFizzBuzzResult(int number)
         {

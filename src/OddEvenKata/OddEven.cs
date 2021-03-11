@@ -4,10 +4,24 @@ using System;
 
 namespace TDD_Katas_project.OddEvenKata
 {
+    /// <summary>
+    /// OddEven
+    /// </summary>
     public class OddEven
     {
-        #region Public Methods
+        #region Public Methods        
+        /// <summary>
+        /// Prints the odd even.
+        /// </summary>
+        /// <param name="startNumber">The start number.</param>
+        /// <param name="lastNumber">The last number.</param>
+        /// <returns></returns>
         public static string PrintOddEven(int startNumber, int lastNumber) => GetOddEvenWithinRange(startNumber, lastNumber);
+        /// <summary>
+        /// Prints the single odd even.
+        /// </summary>
+        /// <param name="number">The number.</param>
+        /// <returns></returns>
         public static string PrintSingleOddEven(int number) => CheckSingleNumberOddEvenPrimeResult(number);
 
         #endregion

@@ -1,8 +1,11 @@
-﻿using System;
+﻿// Copyright (c) Gaurav Aroraa
+// Licensed under the MIT License. See License.txt in the project root for license information.
+using System;
 using NUnit.Framework;
 
 namespace TDD_Katas_NETCore.Bowling_Game
 {
+#pragma warning disable 1591
     [TestFixture]
     [Category("TheBowlingGameKataNETCore")]
     public class TestGame

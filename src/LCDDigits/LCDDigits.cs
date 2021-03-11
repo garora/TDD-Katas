@@ -62,19 +62,10 @@ namespace TDD_Katas_project.LCDDigits
             return output.ToString();
         }
 
-        private static int ConvertCharArrayToInteger(char[] numberArray, int numberIndex)
-        {
-            return (int)Char.GetNumericValue(numberArray[numberIndex]);
-        }
+        private static int ConvertCharArrayToInteger(char[] numberArray, int numberIndex) => (int)Char.GetNumericValue(numberArray[numberIndex]);
 
-        private static string GetDigitLine(int number, int digitHeight)
-        {
-            return LcdDigitsMap[number, digitHeight];
-        }
+        private static string GetDigitLine(int number, int digitHeight) => LcdDigitsMap[number, digitHeight];
 
-        private static char[] ConvertIntegerToArray(int number)
-        {
-            return number.ToString().ToCharArray();
-        }
+        private static char[] ConvertIntegerToArray(int number) => number.ToString().ToCharArray();
     }
 }
