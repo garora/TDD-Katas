@@ -6,16 +6,41 @@ using System.Linq;
 
 namespace TDD_Katas_project.TheCalcStatsKata
 {
+    /// <summary>
+    /// Calc Stat
+    /// </summary>
     public class CalcStat
     {
-        #region Members
+        /// <summary>
+        /// Calc Stat Keys
+        /// </summary>
         public enum CalcStatKeys
         {
-            Minimum = 1, Maximum = 2, ElementCount = 3, Average = 4
+            /// <summary>
+            /// The minimum
+            /// </summary>
+            Minimum = 1,
+            /// <summary>
+            /// The maximum
+            /// </summary>
+            Maximum = 2,
+            /// <summary>
+            /// The element count
+            /// </summary>
+            ElementCount = 3,
+            /// <summary>
+            /// The average
+            /// </summary>
+            Average = 4
         }
-        #endregion
 
-        #region Public Methods
+
+        /// <summary>
+        /// Numbers the stats.
+        /// </summary>
+        /// <param name="numbers">The numbers.</param>
+        /// <param name="keys">The keys.</param>
+        /// <returns></returns>
         public static string NumberStats(IList<int> numbers, CalcStatKeys keys)
         {
             switch (keys)
@@ -31,9 +56,6 @@ namespace TDD_Katas_project.TheCalcStatsKata
             }
             return null;
         }
-        #endregion
-
-        #region Private Methods
 
         private static string GetMinimumValue(IEnumerable<int> numbers) => numbers?.Min().ToString(CultureInfo.InvariantCulture);
 
@@ -42,7 +64,5 @@ namespace TDD_Katas_project.TheCalcStatsKata
         private static string GetElementCount(IEnumerable<int> numbers) => numbers?.Count().ToString(CultureInfo.InvariantCulture);
 
         private static string GetSeriesAverage(IEnumerable<int> numbers) => numbers?.Average().ToString(CultureInfo.InvariantCulture);
-
-        #endregion
     }
 }
