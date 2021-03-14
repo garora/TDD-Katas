@@ -4,6 +4,9 @@ using NUnit.Framework;
 
 namespace TDD_Katas_project.TheHarryPoterKata
 {
+    /// <summary>
+    /// 
+    /// </summary>
     [TestFixture]
     [Category("HarryPoterKata")]
     public class TestHarryPoter

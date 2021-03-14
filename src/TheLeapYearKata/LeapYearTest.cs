@@ -4,13 +4,24 @@ using NUnit.Framework;
 
 namespace TDD_Katas_project.TheLeapYearKata
 {
+    /// <summary>
+    /// Leap Year Tests
+    /// </summary>
     [TestFixture]
     [Category("The LeapYear")]
     public class LeapYearTest
     {
+        /// <summary>
+        /// Determines whether this instance [can test for leap year].
+        /// </summary>
         [Test]
         public void CanTestForLeapYear() => Assert.That(true, Is.EqualTo(LeapYear.IsLeapYear(1996)));
 
+        /// <summary>
+        /// Determines whether this instance [can test for leap years] the specified expected result.
+        /// </summary>
+        /// <param name="expectedResult">if set to <c>true</c> [expected result].</param>
+        /// <param name="year">The year.</param>
         [Test]
         [TestCase(false, 2013)]
         [TestCase(false, 2001)]
