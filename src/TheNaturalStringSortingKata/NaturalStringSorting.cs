@@ -8,19 +8,38 @@ using TDD_Katas_project.Common.Utility;
 
 namespace TDD_Katas_project.TheNaturalStringSortingKata
 {
+    /// <summary>
+    ///  Natural String Sorting
+    /// </summary>
     public class NaturalStringSorting
     {
-        #region Member variables
+        /// <summary>
+        /// 
+        /// </summary>
         public enum SortOrder
         {
-            Ascending, Descending
+            /// <summary>
+            /// The ascending
+            /// </summary>
+            Ascending,
+            /// <summary>
+            /// The descending
+            /// </summary>
+            Descending
         }
-        #endregion
 
-        #region Public Methods
-
+        /// <summary>
+        /// Sorts the string.
+        /// </summary>
+        /// <param name="strItems">The string items.</param>
+        /// <returns></returns>
         public List<string> SortString(string[] strItems) => SortString(strItems, SortOrder.Ascending);
-
+        /// <summary>
+        /// Sorts the string.
+        /// </summary>
+        /// <param name="strItems">The string items.</param>
+        /// <param name="order">The order.</param>
+        /// <returns></returns>
         public List<string> SortString(string[] strItems, SortOrder order)
         {
             Func<string, object> Convert = str =>
@@ -38,9 +57,6 @@ namespace TDD_Katas_project.TheNaturalStringSortingKata
             return GetSortedList(strItems, order, Convert);
 
         }
-        #endregion
-
-        #region Private Method
 
         private static List<string> GetSortedList(IEnumerable<string> strItems, SortOrder order, Func<string, object> convert)
         {
@@ -60,7 +76,5 @@ namespace TDD_Katas_project.TheNaturalStringSortingKata
             }
             return sorted;
         }
-
-        #endregion
     }
 }

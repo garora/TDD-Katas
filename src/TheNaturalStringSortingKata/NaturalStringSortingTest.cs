@@ -6,32 +6,39 @@ using System.Linq;
 
 namespace TDD_Katas_project.TheNaturalStringSortingKata
 {
+    /// <summary>
+    /// Natural StringSorting Test
+    /// </summary>
     [TestFixture]
     [Category("The Natural String Kata")]
     public class NaturalStringSortingTest
     {
-        #region Private Member Variables
+        
         private NaturalStringSorting _naturalStringSorting;
         private string[] _strings;
-        #endregion
 
-        #region Setup/TearDown
+                /// <summary>
+        /// Setups this instance.
+        /// </summary>
         [SetUp]
         public void Setup()
         {
             _naturalStringSorting = new NaturalStringSorting();
             _strings = new[] { "a1", "1", "3", "2", "b1", "1a", "b3", "23", "z 21", "21 1", "z22", "0" };
         }
+        /// <summary>
+        /// Tears down.
+        /// </summary>
         [TearDown]
         public void TearDown()
         {
             _naturalStringSorting = null;
             _strings = null;
         }
-        #endregion
 
-        #region Test Methods
-
+        /// <summary>
+        /// Determines whether this instance [can sort string default order].
+        /// </summary>
         [Test]
         public void CanSortStringDefaultOrder()
         {
@@ -39,6 +46,9 @@ namespace TDD_Katas_project.TheNaturalStringSortingKata
             string[] result = { "0", "1", "1a", "2", "3", "23", "21 1", "a1", "b1", "b3", "z 21", "z22" };
             Assert.That(sortString, Is.EqualTo(ToList(result)));
         }
+        /// <summary>
+        /// Determines whether this instance [can sort string DES order].
+        /// </summary>
         [Test]
         public void CanSortStringDesOrder()
         {
@@ -47,11 +57,8 @@ namespace TDD_Katas_project.TheNaturalStringSortingKata
             Assert.That(sortString, Is.EqualTo(ToList(result)));
 
         }
-        #endregion
-
-        #region Private Methods
+                     
         private static List<string> ToList(params string[] items) => items.ToList();
 
-        #endregion
     }
 }
