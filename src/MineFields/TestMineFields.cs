@@ -164,9 +164,15 @@ namespace TDD_Katas_project.MineFields
         }
 
         [Test]
-        [TestCase(0, 0, -1)][TestCase(1, 0, -1)][TestCase(2, 0, 1)]
-        [TestCase(0, 1, 2)][TestCase(1, 1, 2)][TestCase(2, 1, 1)]
-        [TestCase(0, 2, 0)][TestCase(1, 2, 0)][TestCase(2, 2, 0)]
+        [TestCase(0, 0, -1)]
+        [TestCase(1, 0, -1)]
+        [TestCase(2, 0, 1)]
+        [TestCase(0, 1, 2)]
+        [TestCase(1, 1, 2)]
+        [TestCase(2, 1, 1)]
+        [TestCase(0, 2, 0)]
+        [TestCase(1, 2, 0)]
+        [TestCase(2, 2, 0)]
         public void build_three_by_three_field_and_two_of_mine(int xPos, int yPos, int expect)
         {
             MineFields fields = new MineFields();

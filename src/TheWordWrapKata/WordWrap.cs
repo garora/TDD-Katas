@@ -37,12 +37,12 @@ namespace TDD_Katas_project.TheWordWrapKata
         #endregion
 
         #region MyRegion
-        
+
         private static string GetWrappedwordWithoutBlankSpacesAtStartOfNewLine(string wrappedword)
         {
             var newWrappedWord = wrappedword;
             var spaceCounter = 0;
-            
+
             for (var outCounter = 0; outCounter < wrappedword.Length; outCounter++)
             {
                 if (IsContainNewLine(wrappedword[outCounter].ToString()))
@@ -53,7 +53,7 @@ namespace TDD_Katas_project.TheWordWrapKata
                         else
                             break;
                     }
-                
+
                 if (spaceCounter <= 0) continue;
 
                 newWrappedWord = RemoveWhiteSpacesFromWrappedWord(wrappedword, outCounter, spaceCounter); //RemoveWhiteSpacesFromWrappedWord(wrappedword, outCounter + 1, spaceCounter);

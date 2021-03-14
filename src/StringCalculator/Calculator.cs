@@ -5,14 +5,19 @@ using System.Linq;
 
 namespace TDD_Katas_project.StringCalculator
 {
+    /// <summary>
+    /// Calculator
+    /// </summary>
     public class Calculator
     {
-        public static int Add(string numbers)
-        {
-            return string.IsNullOrEmpty(numbers)
-                       ? 0
-                       : GetSum(numbers);
-        }
+        /// <summary>
+        /// Adds the specified numbers.
+        /// </summary>
+        /// <param name="numbers">The numbers.</param>
+        /// <returns></returns>
+        public static int Add(string numbers) => string.IsNullOrEmpty(numbers)
+                                                   ? 0
+                                                   : GetSum(numbers);
 
         private static int GetSum(string numbers)
         {
@@ -37,11 +42,9 @@ namespace TDD_Katas_project.StringCalculator
 
         private static string GetSpecificDelimiter(string numbers) => numbers.Substring(2, numbers.IndexOf("\n", StringComparison.Ordinal) - 2);
 
-        private static string GetSpecificNumbers(string numbers)
-        {
-            return numbers.Substring(numbers.IndexOf("\n", StringComparison.Ordinal) + 1,
+        private static string GetSpecificNumbers(string numbers) => numbers.Substring(numbers.IndexOf("\n", StringComparison.Ordinal) + 1,
                                      numbers.Length - numbers.IndexOf("\n", StringComparison.Ordinal) - 1);
-        }
+
         private static int ParseToInt(string n)
         {
             var result = IsGreaterThanThousand(Convert.ToInt32(n))

@@ -7,7 +7,7 @@ namespace TDD_Katas_project.LCDDigits
 {
     class LCDDigits
     {
-        private static readonly int DIGIT_HEIGHT_DIMENSION = 1 ;
+        private static readonly int DIGIT_HEIGHT_DIMENSION = 1;
         private static readonly string[,] LcdDigitsMap = {
             {"._.",
              "|.|",
@@ -40,13 +40,13 @@ namespace TDD_Katas_project.LCDDigits
              "|_|",
              "..|" }
         };
-              
+
 
         internal static string GetDigits(int number)
         {
             var output = new StringBuilder();
             char[] numberArray = ConvertIntegerToArray(number);
-            
+
             for (int digitHeight = 0; digitHeight < LcdDigitsMap.GetLength(DIGIT_HEIGHT_DIMENSION); digitHeight++)
             {
                 for (int numberIndex = 0; numberIndex < numberArray.Length; numberIndex++)
@@ -55,7 +55,7 @@ namespace TDD_Katas_project.LCDDigits
                         GetDigitLine(ConvertCharArrayToInteger(numberArray, numberIndex),
                         digitHeight));
                 }
-                
+
                 output.AppendLine();
             }
 

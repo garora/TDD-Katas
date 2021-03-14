@@ -4,7 +4,7 @@ using NUnit.Framework;
 
 namespace TDD_Katas_project.OddEvenKata
 {
-    
+
     [TestFixture]
     [Category("OddEven Kata")]
 #pragma warning disable CS1591 // Missing XML comment for publicly visible type or member

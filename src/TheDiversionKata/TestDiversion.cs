@@ -8,6 +8,6 @@ namespace TDD_Katas_project.TheDiversionKata
     [Category("DiversionKata")]
     public class TestDiversion
     {
-       
+
     }
 }
