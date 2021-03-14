@@ -4,8 +4,16 @@ using System.Collections.Generic;
 
 namespace TDD_Katas_project.ThePrimeFactorKata
 {
+    /// <summary>
+    /// Prime Factor
+    /// </summary>
     public class PrimeFactor
     {
+        /// <summary>
+        /// Generates the specified number.
+        /// </summary>
+        /// <param name="number">The number.</param>
+        /// <returns></returns>
         public static IList<int?> Generate(int number)
         {
             IList<int?> primes = new List<int?>();
