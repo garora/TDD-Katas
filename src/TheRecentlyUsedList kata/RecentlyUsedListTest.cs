@@ -7,22 +7,28 @@ using System.Linq;
 
 namespace TDD_Katas_project.TheRecentlyUsedList_kata
 {
+    /// <summary>
+    /// The Recently Used List Kata
+    /// </summary>
     [TestFixture]
     [Category("The Recently Used List Kata")]
     public class RecentlyUsedListTest
     {
-        #region Private Methods
         private RecentlyUsedList<string> _recentlyUsedList;
         private int _size;
-        #endregion
 
-        #region Setup/TearDown
+        /// <summary>
+        /// Setups this instance.
+        /// </summary>
         [SetUp]
         public void Setup()
         {
             _recentlyUsedList = new RecentlyUsedList<string>();
             _size = 10;
         }
+        /// <summary>
+        /// Tears down.
+        /// </summary>
         [TearDown]
         public void TearDown()
         {
@@ -31,10 +37,9 @@ namespace TDD_Katas_project.TheRecentlyUsedList_kata
         }
 
 
-        #endregion
-
-        #region Test Methods
-
+        /// <summary>
+        /// Determines whether this instance [can add items].
+        /// </summary>
         [Test]
         public void CanAddItems()
         {
@@ -43,6 +48,9 @@ namespace TDD_Katas_project.TheRecentlyUsedList_kata
             Assert.That(listCount, Is.GreaterThan(0), string.Format("List items count should be Greater than {0} but is {1}", 0, listCount));
 
         }
+        /// <summary>
+        /// Determines whether this instance [can add unique items].
+        /// </summary>
         [Test]
         public void CanAddUniqueItems()
         {
@@ -59,6 +67,9 @@ namespace TDD_Katas_project.TheRecentlyUsedList_kata
             Assert.That(actuallist, Is.EqualTo(expectedlist));
 
         }
+        /// <summary>
+        /// Determines whether this instance [can add items in lifo order].
+        /// </summary>
         [Test]
         public void CanAddItemsInLifoOrder()
         {
@@ -73,6 +84,9 @@ namespace TDD_Katas_project.TheRecentlyUsedList_kata
             Assert.That(actuallist, Is.EqualTo(expectedlist));
 
         }
+        /// <summary>
+        /// Determines whether this instance [can avoid insertion of items are beyond list size].
+        /// </summary>
         [Test]
         public void CanAvoidInsertionOfItemsAreBeyondListSize()
         {
@@ -91,7 +105,9 @@ namespace TDD_Katas_project.TheRecentlyUsedList_kata
             Assert.That(actuallist, Is.EqualTo(expectedlist));
 
         }
-
+        /// <summary>
+        /// Determines whether this instance [can test item by index].
+        /// </summary>
         [Test]
         public void CanTestItemByIndex()
         {
@@ -105,7 +121,9 @@ namespace TDD_Katas_project.TheRecentlyUsedList_kata
 
             Assert.That(actuallistitem, Is.EqualTo(expectedlistitem));
         }
-
+        /// <summary>
+        /// Determines whether this instance [can test default list size].
+        /// </summary>
         [Test]
         public void CanTestDefaultListSize()
         {
@@ -113,7 +131,9 @@ namespace TDD_Katas_project.TheRecentlyUsedList_kata
             var actuallistsize = _recentlyUsedList.Size;
             Assert.That(actuallistsize, Is.EqualTo(expectedlistSize));
         }
-
+        /// <summary>
+        /// Determines whether this instance [can throw argument exception when supplied index is out of scope].
+        /// </summary>
         [Test]
         public void CanThrowArgumentExceptionWhenSuppliedIndexIsOutOfScope()
         {
@@ -127,7 +147,9 @@ namespace TDD_Katas_project.TheRecentlyUsedList_kata
 
             Assert.That(exception.Message, Is.EqualTo(string.Format("supplied index [{0}] should not greater than [{1}].", index, _recentlyUsedList.Count - 1)));
         }
-
+        /// <summary>
+        /// Determines whether this instance [can throw argument exception when supplied index contain negative value].
+        /// </summary>
         [Test]
         public void CanThrowArgumentExceptionWhenSuppliedIndexContainNegativeValue()
         {
@@ -141,7 +163,9 @@ namespace TDD_Katas_project.TheRecentlyUsedList_kata
             Assert.That(exception.Message, Is.EqualTo(string.Format("supplied index [{0}] should be non-negative and not greater than [{1}].", index, _recentlyUsedList.Count - 1)));
 
         }
-
+        /// <summary>
+        /// Determines whether this instance [can throw argument exception when supplied item is nullor empty].
+        /// </summary>
         [Test]
         public void CanThrowArgumentExceptionWhenSuppliedItemIsNullorEmpty()
         {
@@ -156,18 +180,17 @@ namespace TDD_Katas_project.TheRecentlyUsedList_kata
             }
 
         }
+        /// <summary>
+        /// Determines whether this instance [can define list size].
+        /// </summary>
         [Test]
         public void CanDefineListSize()
         {
             var sizeableList = new RecentlyUsedList<string>(_size);
             Assert.That(_size, Is.EqualTo(sizeableList.Size));
         }
-        #endregion
-
-        #region Private Methods
+              
         private List<string> ToList(params string[] items) => items.ToList();
-
-        #endregion
 
     }
 }
