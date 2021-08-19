@@ -4,11 +4,16 @@ Simply defines the Test Driven Development Katas. In this, lets try to create mo
 ### How to contribute:
 Want to contribute? Make a pull request (PR) to [develop](https://github.com/garora/TDD-Katas/tree/develop) branch. Do not make any PR to Master branch.
 
-### Explained [Learning Test Driven Development with TDD Katas](http://goo.gl/5NYpVI)
+### Explained 
 ### Nuget package: [TDD Katas](https://www.nuget.org/packages/TDD.Katas/)
 
-### For more info visit: [here](http://garora.github.io/TDD-Katas/)
-### TDD-Katas : Continued from [TDD-Kata practices](http://tddkatas.codeplex.com/)
+### For more info visit: [here](/KatasReadme.md)
+### Articles on TDD-Katas 
+Articles from the developers:
+ 
+ 1. [Learning Test Driven Development with TDD Katas](http://goo.gl/5NYpVI)
+ 2. [TDD-Kata practices](http://tddkatas.codeplex.com/) - `Obsolete`
+ 3. 
 
 ### Contributors
 Many thanks to all the contributors who spent their time to create Katas and write code. Their contribution is priceless, A small gratitude for their contributions:
@@ -28,6 +33,7 @@ Many thanks to all the contributors who spent their time to create Katas and wri
  13. [Sean Killeen](https://github.com/SeanKilleen)
  14. [M Farag](https://github.com/MoeFarag)
  15. [Oleg Kainov](https://github.com/okainov)
+ 16. [Javier González](https://github.com/vitota95)
  
 ### More flavors
 Lookig for implementation in your technology? There are more flavors of the repository:
