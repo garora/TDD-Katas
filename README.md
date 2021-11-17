@@ -13,7 +13,7 @@ Articles from the developers:
  
  1. [Learning Test Driven Development with TDD Katas](http://goo.gl/5NYpVI)
  2. [TDD-Kata practices](http://tddkatas.codeplex.com/) - `Obsolete`
- 3. 
+ 
 
 ### Contributors
 Many thanks to all the contributors who spent their time to create Katas and write code. Their contribution is priceless, A small gratitude for their contributions:
