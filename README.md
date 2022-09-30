@@ -34,6 +34,7 @@ Many thanks to all the contributors who spent their time to create Katas and wri
  14. [M Farag](https://github.com/MoeFarag)
  15. [Oleg Kainov](https://github.com/okainov)
  16. [Javier González](https://github.com/vitota95)
+ 17. [Javier González](https://github.com/vitota95)
  
 ### More flavors
 Lookig for implementation in your technology? There are more flavors of the repository:
