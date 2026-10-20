@@ -133,7 +133,7 @@ More tests:
 
 -------------------
 
-### Kata - coming next [http://www.cyber-dojo.com/]
+### Additional Katas [http://www.cyber-dojo.com/]
 
 #### Calc Stats:
 
@@ -399,7 +399,7 @@ More tests:
 	........
 	B
 
-#### Yehtzee :
+#### Yahtzee :
 
 	The game of yahtzee is a simple dice game. Each player rolls five
 	six-sided dice. They can re-roll some or all of the dice up to three
